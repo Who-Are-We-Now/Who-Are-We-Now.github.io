@@ -1,0 +1,306 @@
+// FROM MINKYOUONG’s MOCKUPS
+// sass --watch style.scss:style.css
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Basic Type
+# Element Defaults
+  ## Nav
+  ## Structure
+  ## Elements
+# Section Specific Overrides
+  ## Structure
+  ## Elements
+# Responsive Layout
+--------------------------------------------------------------*/
+
+
+
+@font-face { 
+    font-family: "belarius"; 
+    src:url("../fonts/belarius_var.ttf") format("truetype");
+} 
+@font-face {
+    font-family: "Belarius-Oblique"; 
+    src: url("../fonts/Belarius_var-Oblique.ttf") format("truetype");
+}
+@font-face { 
+    font-family: "Gimlet"; 
+    src: url("../fonts/GimletVariable-VF-Testing.woff") format("woff"),
+        url("../fonts/GimletVariable-VF-Testing.woff2") format("woff2"); 
+} 
+
+@font-face {
+    font-family: "OsramBeta-Black";
+    src: url("../fonts/OsramBeta-Black.otf") format("opentype");
+}
+
+
+
+
+/*
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Basic Type
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+*/
+  
+*{
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+html {
+  
+    -webkit-text-size-adjust: none;
+}
+
+body {
+    font-family: "Gimlet"; 
+    font-family: "belarius";
+    padding: 60px 40px;
+    line-height: 1.4;
+    font-variation-settings: "wght" 400, "wdth" 120, "SRIF" 100;
+    overflow-x: hidden;
+}
+
+h1 {
+
+}
+
+
+h2 {
+}
+
+p {
+
+}
+    
+ul, li {
+
+}
+img {
+  
+}
+
+nav {
+    position: fixed;
+    font-variation-settings: "wght" 700, "wdth" 120, "SRIF" 100;
+    font-family: "OsramBeta-Black";
+    z-index: 100;
+    top: 20px;
+    left:20px;
+    ul {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        padding-inline-start: 0px;
+    }
+    li {
+        list-style-type: none;
+        border: solid 1px black;
+        padding: 10px;
+        display: inline-block;
+        background-color: white;
+        
+        cursor: pointer;
+    }
+  
+}
+
+.toc {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background-color: white;
+    z-index:100;
+
+    ul {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        padding-inline-start: 0px;
+    }
+    li {
+        list-style-type: none;
+        font-size: 1.8rem;
+        font-variation-settings: "wght" 100, "wdth" 100, "SRIF" 100;
+
+        border-bottom: 1px solid;
+        padding: 10px 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        padding: 0 40px;
+    }
+    h3 {
+        font-size: .8rem;
+        font-variation-settings: "wght" 700, "wdth" 100, "SRIF" 100;
+        margin-block-start: .5rem;
+        margin-block-end: 0;
+        
+    }
+    p {
+        margin-block-start: 0.2rem;
+    }
+    .toc-sample {
+        width: 100px;
+        height: 75px;
+        background-color: gray;
+        display: inline-block;
+        margin-right: 10px;
+
+    }
+
+    p, h3 {
+        display: inline-block;
+        padding-right:20px;
+        margin-block-end: 0;
+    }
+    
+}
+.cols {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+
+}
+[class*="col-"] {
+    position: relative;
+    top:0;
+    width: 50%;
+    flex: none;
+    font-size: 1.3rem;
+    padding: 0 3rem;
+
+}
+.cols.questions {
+    display:inline-block;
+}
+.cols.cover {
+    width: 100%;
+    height: 100vh;
+    font-family: "OsramBeta-Black";
+        margin:0;
+        padding:0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    flex-direction: column;
+    h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 5rem;
+        margin:0;
+        padding:0;
+        margin-block-start: 0;
+        margin-block-end:0;
+    }
+    h3 {
+        font-size: 2rem;
+        margin-block-start: 0em;
+        margin-block-end: .1em;
+    }
+}
+.col-l {
+    transition: font-variation-settings .2s ease-in-out;
+}
+.col-r {
+    position: sticky;
+    top: 20%;
+    margin-bottom: 10rem;
+}
+.plot {
+    // border: solid 1px red;
+    min-height: 100vh;
+    height: 100%;
+    width: 60%;
+  
+}
+.questions {
+    text-align:center;
+}
+.sample {
+    width: 50%;
+    height: 300px;
+    background-color: gray;
+    transition: all ease-in .2s;
+}
+.sample.is-active{
+    width: 100%;
+    height: 500px;
+    background-color: gray;
+    margin-left: -10vw;
+}
+
+
+.col-l {
+    width: 90vw;
+}
+.on .col-l,
+.on-prev .col-l, 
+.on-next .col-l{
+    width: 45vw;
+    font-variation-settings: "wght" 400, "wdth" 80, "SRIF" 100;
+}
+
+.quote {
+    font-style:italic;
+    text-indent: 5%;
+    width: 95%;
+    // font-size:2rem;
+}
+
+img.peripheral {
+    opacity: 0;
+    z-index: -100;
+    left: -15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    transition: opacity ease-in .2s;
+}
+
+.on-img .peripheral {
+    opacity: 1;
+    z-index: 10;
+}
+
+// .cols {
+//     border: solid 1px black;
+// }
+// .col-l {
+//     border: solid 1px red;
+// }
+
+.col-l span.line {
+    display:block;
+}
+
+body#gimlet {
+    font-family: "Gimlet"; 
+    font-variation-settings: "wght" 400, "wdth" 100, "SRIF" 100;
+    .narrow {
+        font-variation-settings: "wght" 400, "wdth" 64, "SRIF" 100; 
+    }
+}
+
+
+body.black {
+    background-color:black;
+    color:white;
+    transition: all ease-in .2s;
+
+    nav li {
+        background-color:black;
+        border: solid 1px white;
+        transition: all ease-in .2s;
+    }
+}

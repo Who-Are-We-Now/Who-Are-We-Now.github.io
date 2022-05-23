@@ -1,0 +1,32 @@
+{
+  "name": "wawn-web",
+  "version": "1.0.0",
+  "description": "Who Are We Now? Digital Publication",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --watch src/_sass/main.scss:docs/assets/css/main.css",
+    "build:sass": "sass src/_sass/main.scss:docs/assets/css/main.css",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marieotsuka/wawn-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marieotsuka/wawn-web/issues"
+  },
+  "homepage": "https://github.com/marieotsuka/wawn-web#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "markdown-it": "^13.0.1",
+    "markdown-it-attrs": "^4.1.4",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.52.0"
+  }
+}

@@ -1,0 +1,18 @@
+<section class="footnotes-list">
+{% assign footnotes = '' | footnotes: page %}
+
+{% assign count = footnotes | size %}
+
+{% if count > 0 %}
+<footer role="doc-endnotes" id="footnotes-label">
+  <ol>
+    {% for footnote in footnotes %}
+    <li id="{{ footnote.id }}-note" role="doc-endnote">
+    	<span class="footnote-no">{{ footnote.id }}</span>
+      {{ footnote.text | markdown }}
+      <a href="#{{ footnote.id }}-ref"aria-label="Back to reference {{ forloop.index }}"role="doc-backlink">↩</a> </li>
+    {% endfor %}
+  </ol>
+</footer>
+{% endif %}
+</section>

@@ -1,0 +1,23 @@
+---
+layout: default.liquid
+---
+
+<section class="chapter-header">
+	<h1><span class="chapter-number">{{chapter}}</span>
+		<span class="chapter-title">{{title}}</span></h1>
+</section>
+<article>
+	<div class="cols">
+		<div class="col">
+			{{content}}
+		</div>
+		<div class="col">
+			{% assign figurepage = collections.figures[0] %}
+			{% include "partials/figures.liquid" figures: figurepage, chapter: chapter %}
+		</div>
+	</div>
+	{% include "partials/footnotes.liquid" page: page %}
+</article>
+
+<!-- script that draws plots into containers -->
+<script src="/assets/js/plot.js"></script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+
+    <title>{{title}} — Who are we now?</title>
+    <meta name="title" content="Who are we now?">
+    <meta name="description" content="Description goes here">
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="{{'/assets/css/main.css' | url}}" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="{{'/assets/js/lib/scrollama.js' | url}}"></script>
+    <script src="{{'/assets/js/script.js' | url}}"></script>
+</head>
+<body id="{{title|slugify}}" class="{{layout}}">
+{% include "partials/header" %}
+<main>
+    {{ content }}
+</main>
+{% include "partials/footer" %}
+</body>
+</html>

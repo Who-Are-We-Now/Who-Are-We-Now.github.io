@@ -1,0 +1,11 @@
+---
+layout: default.liquid
+---
+
+<ul>
+{% for c in collections.all %}
+<li>
+	<a href="{{c.url | url}}">{{c.data.title}}</a>
+</li>
+{% endfor %}
+</ul>

@@ -1,0 +1,442 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Use Imports
+# Element Defaults
+  ## Typography
+  ## Structure
+  ## Nav
+  ## Elements
+# Section Specific Overrides
+  ## Structure
+  ## Elements
+# Responsive Layout
+--------------------------------------------------------------*/
+
+@use 'colors';
+@use 'fonts';
+
+/*-----------------------------------------
+>>> ELEMENT DEFAULTS
+-------------------------------------------*/
+
+/* reset browser default styles*/
+*{
+	margin:  0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*define global variables*/
+:root{
+	/* font-sizes */
+	--base-size: 18px; 
+	--large-size: 80px;
+	--heading-size: 36px;
+	--medium-size: 24px;
+	--caption-size: 14px;
+	--small-size: 11px;
+
+	/* VF variables */
+	--wght: 300;
+	--wdth: 120;
+	--SRIF: 100;
+
+	/* structures */
+	--max-width: 1200px;
+
+	/* spacing */
+	--sectionpad: 80px;
+	--pad: 10px;
+	--indent: 5rem;
+
+	/* figure styles */
+	--stroke:  2px;
+}
+
+body{
+	max-width: var(--max-width);
+	width: 80%;
+	margin: auto;
+	font-family: 'Belarius Variable', serif;
+	font-variation-settings: "wght" var(--wght), "wdth" var(--wdth), "SRIF" var(--SRIF);
+	font-size: var(--base-size);
+}
+
+
+
+/*--------------------------------------*/
+/* TYPOGRAPHY --------------------------*/
+/*--------------------------------------*/
+
+.belarius{
+	font-family: 'Belarius Variable';
+	font-variation-settings: "wght" var(--wght), "wdth" var(--wdth), "SRIF" var(--SRIF);
+}
+.belarius-oblique{
+	font-family: 'Belarius Variable Oblique', serif;
+	font-variation-settings: "wght" var(--wght), "wdth" var(--wdth), "SRIF" var(--SRIF);
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+	font-weight: 900;
+	font-family: 'Osram', sans-serif;
+	margin-bottom: var(--pad);
+}
+
+h1{
+	font-size: var(--heading-size);
+}
+
+h2{
+	font-size: var(--hsize);
+}
+
+p{	
+	@extend .belarius;
+	position: relative;
+	text-indent: var(--indent);
+	line-height: 1.6;
+}
+
+p:first-child, hr+p, blockquote+p{
+	text-indent: 0;
+}
+
+em{
+	@extend .belarius-oblique;
+}
+
+a{
+	color: var(--orange);
+}
+
+li {
+	list-style-type: none;
+}
+
+blockquote{
+	@extend .belarius;
+	--wdth: 80;
+	--wght: 400;
+	margin: 1em var(--indent);
+}
+
+article{
+	
+}
+
+hr{
+	border: 0;
+	background: 0;
+	margin: var(--sectionpad) 0;
+
+	&:before{
+		content: "* * *";
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+/*--------------------------------------*/
+/* STRUCTURES & LAYOUTS ----------------*/
+/*--------------------------------------*/
+
+header, main, footer, section{
+	padding: var(--sectionpad) 0;
+}
+
+/* Part Intros ----------------*/
+
+.section{
+	background: var(--default);
+	text-align: center;
+	color: var(--white);
+}
+.part-cover{
+	height: 100vh;
+	a{
+		color: var(--white);
+		text-decoration: none;
+	}
+	h1{
+		font-size: var(--large-size);
+	}
+	h2{
+		font-size: var(--heading-size);
+	}
+}
+
+.questions{
+	@extend .belarius;
+	--wdth: 80;
+	--wght: 400;
+	font-size: var(--medium-size);
+	margin: var(--sectionpad) 0;
+	// font-size: var(--medium)
+}
+
+/* Chapters ----------------*/
+
+.chapter-header{
+	padding: var(--sectionpad) 0;
+	h1{
+		display: flex;
+	}
+}
+.chapter-number{
+	width: var(--indent);
+}
+
+
+/* Article layout ----------------*/
+
+.cols{
+	display: flex;
+}
+.col:first-child{
+	flex: 2;
+	margin-right: var(--sectionpad);
+}
+.col{
+	flex: 1;
+}
+table{
+	font-family: 'Osram';
+	font-size: var(--caption-size);
+	margin: var(--sectionpad) 0;
+	width: 100%;
+	td, th{
+		font-weight: normal;
+		padding: var(--pad);
+		text-align: left;
+	}
+	td{
+		border: 1px solid black;
+	}
+	td:first-child{
+		text-align: right;
+		border: 0;
+	}
+}
+/*--------------------------------------*/
+/* REFERENCE & FOOTNOTE STYLES ---------*/
+/*--------------------------------------*/
+
+// body { counter-reset: footnotes }
+
+// [role="doc-noteref"] .ref-no::before{
+//   counter-increment: footnotes;
+//   content: counter(footnotes);
+// }
+
+.reference{
+	display: inline;
+	cursor: pointer;
+	.ref-no{
+		font-family: 'Osram';
+		font-weight: 500;
+		font-size: var(--small-size);
+		position: relative;
+		bottom: 8px;
+
+		&:hover{
+			color: var(--orange);
+		}
+	}
+	.ref-text{
+		line-height: 1.5;
+
+		display: none;
+		position: absolute;
+		z-index: 20;
+		width: 300px;
+		left: 0px;
+		background: var(--light-grey);
+		border: 1px solid black;
+		padding: var(--pad);
+		&.visible{
+			display: block;
+		}
+	}
+
+}
+
+.caption{
+	font-size: var(--caption-size);
+	letter-spacing: 0.03em;
+	text-indent: 0;
+}
+
+.footnotes-list{
+
+	footer{
+		column-count: 2;
+		column-gap: calc( 2 * var(--pad));
+		@extend .caption;
+	}
+	// ol{
+	// 	counter-reset: list-number;
+	// }
+	li {
+		.footnote-no{
+			display: inline-block;
+			width: var(--indent);
+			text-align: right;
+			padding-right: 1em;
+		}
+	// 	&::before{
+	// 		counter-increment: list-number;
+	// 		content: counter(list-number);
+	// 		padding-right: var(--pad);
+	// 		display: inline-block;
+	// 	}
+	}
+}
+
+/*--------------------------------------*/
+/* FIGURE STYLES -----------------------*/
+/*--------------------------------------*/
+figure{
+	padding: var(--sectionpad) 0;
+	img{
+		max-width: 100%;
+	}
+}
+
+.periphery {
+	position: relative;
+	height: 100vh;
+	// left: 0%;
+    opacity: 0;
+    // z-index: -100;
+    // left: -15%;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // width: 15%;
+    transition: opacity ease-in 400ms;
+
+	&.img-on{
+    	opacity: 1;
+    	// position: sticky;
+    	// top: 0;
+    	// top: var(--sectionpad);
+    }
+}
+
+/*--------------------------------------*/
+/* PLOT TYLES --------------------------*/
+/*--------------------------------------*/
+.figure-title{
+	font-family: 'Osram';
+	margin-bottom: 1rem;
+	padding-left: 30px;
+	font-weight: 500;
+	max-width: 20em;
+}
+.fig-no{
+	color: var(--grey);
+	font-size: 0.7em;
+/*	*/
+	letter-spacing: 1px;
+}
+.plot-container{
+	width: 100%;
+	height: 500px;
+/*	border: 1px solid black;*/
+	box-sizing: content-box;
+}
+svg{
+	width: 100%;
+	height: 100%;
+}
+
+/*svg classes*/
+/*note: SVG has a different syntax than CSS*/
+.axis path{
+     stroke:black;
+     stroke-width:2px ;
+ }   
+
+.axis line{
+	stroke: black;
+	stroke-width: 1.5px;
+} 
+
+text{
+	font-family: 'Osram', sans-serif;
+	font-size: 16px;
+}
+
+.area{
+	opacity: 0.5;
+	stroke-width: 0;
+}
+
+.line{
+	stroke-width: var(--stroke);
+	fill: none;
+}
+
+.plot0{
+	&.area{
+    	fill: var(--color0);
+    }
+    &.line{
+        stroke: var(--color0);
+    }
+}
+.plot1{
+	&.area{
+    	fill: var(--color1);
+	}
+	&.line{
+    	stroke: var(--color1);
+    }
+}
+
+.plot2{
+	&.area{
+    	fill: var(--color2);
+	}
+	&.line{
+    	stroke: var(--color2);
+	}
+}
+
+.plot3{
+	&.area{
+    	fill: var(--color3);
+	}
+	&.line{
+    	stroke: var(--color3);
+    }
+}
+
+.plot4{
+	&.area{
+    	fill: var(--color4);
+	}
+	&.line{
+    	stroke: var(--color4);
+    }
+}
+
+.plot5{
+	&.area{
+    	fill: var(--color5);
+    }
+    &.line{
+    	stroke: var(--color5);
+	}
+}
+
+.bin{
+	stroke: none;
+	fill: var(--bin1);
+}
+.bin:nth-child(2n){
+	fill:  var(--bin2);
+}

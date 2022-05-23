@@ -1,0 +1,16 @@
+---
+layout: default.liquid
+---
+
+{% assign firstpage = collections[page.fileSlug][0].url %}{{ firstpage | log }}
+<section class="part-cover">
+	<h2>Part {{part}}</h2>
+	<a href="{{firstpage}}"><h1>{{ title }}</h1></a>
+</section></a>
+<section>
+	<ul class="questions">
+		{% for q in questions[part] %}
+		<li class="question">{{q}}</li>
+		{% endfor %}
+	</ul>
+</section>

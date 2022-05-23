@@ -1,0 +1,33 @@
+/*define fonts*/
+@font-face{
+	font-family: 'Belarius Variable';
+	src: url(../fonts/Belarius_var.ttf);
+}
+@font-face{
+	font-family: 'Belarius Variable Oblique';
+	src: url(../fonts/Belarius_var-Oblique.ttf);
+}
+
+// @font-face{
+// 	font-family: 'Belarius Sans';
+// 	font-weight: 400;
+// 	src: url(../fonts/BelariusSans-Regular.otf);
+// }
+
+@font-face{
+	font-family: 'Osram';
+	font-weight: 400;
+	src: url(../fonts/OsramBeta-Regular.otf);
+}
+
+@font-face{
+	font-family: 'Osram';
+	src: url(../fonts/OsramBeta-Medium.otf);
+	font-weight: 500;
+}
+
+@font-face{
+	font-family: 'Osram';
+	src: url(../fonts/OsramBeta-Black.otf);
+	font-weight: 900;
+}
