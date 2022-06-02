@@ -16,19 +16,19 @@ $(function(){
 
 // IMAGE TREATMENT
 	let img = $('.periphery');
-	// $( img ).each(function() {
-	//   let width = Math.random() * window.innerWidth / 2.0;
-	//   let height = Math.random() * window.innerHeight / 2.0;
-	//   let x = Math.random() * (window.innerWidth - width);
-	//   let y = Math.random() * (window.innerHeight - height);
-	//   console.log(x);
+	$( img ).each(function() {
+	  let width = Math.random() * window.innerWidth / 2.0;
+	  let height = Math.random() * window.innerHeight / 2.0;
+	  let x = Math.random() * (window.innerWidth - width);
+	  let y = Math.random() * (window.innerHeight - height);
+	  console.log(x);
 
-	//   $(this).css({
-	//     left: x + 'px',
-	//     top: y  + 'px'
-	//     // width: width  + 'px'
-	//   });
-	// });
+	  $(this).css({
+	    left: x + 'px',
+	    top: y  + 'px',
+	    width: width  + 'px'
+	  });
+	});
 
 	const scroller = scrollama();
 
@@ -45,6 +45,11 @@ $(function(){
 	  .onStepExit((response) => {
 	  	response.element.classList.remove('img-on');
 	    // { element, index, direction }
+	  });
+
+	  //navigation toggle
+	  $('.navlink').click(function() {
+		$('ul.toc').toggleClass('display');
 	  });
 
 });

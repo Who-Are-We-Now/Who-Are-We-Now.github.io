@@ -1,3 +1,5 @@
+// sass --watch main.scss:../../docs/assets/css/main.css
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -15,6 +17,7 @@
 
 @use 'colors';
 @use 'fonts';
+
 
 /*-----------------------------------------
 >>> ELEMENT DEFAULTS
@@ -39,6 +42,8 @@
 
 	/* VF variables */
 	--wght: 300;
+	--wght-medium: 600;
+	--wght-bold: 900;
 	--wdth: 120;
 	--SRIF: 100;
 
@@ -55,9 +60,8 @@
 }
 
 body{
-	max-width: var(--max-width);
-	width: 80%;
-	margin: auto;
+	width: 100vw;
+	padding: 2rem;
 	font-family: 'Belarius Variable', serif;
 	font-variation-settings: "wght" var(--wght), "wdth" var(--wdth), "SRIF" var(--SRIF);
 	font-size: var(--base-size);
@@ -80,7 +84,7 @@ body{
 h1,h2,h3,h4,h5,h6{
 	font-weight: normal;
 	font-weight: 900;
-	font-family: 'Osram', sans-serif;
+	font-family: 'Osram Black', sans-serif;
 	margin-bottom: var(--pad);
 }
 
@@ -139,6 +143,9 @@ hr{
 	}
 }
 
+
+
+
 /*--------------------------------------*/
 /* STRUCTURES & LAYOUTS ----------------*/
 /*--------------------------------------*/
@@ -147,6 +154,82 @@ header, main, footer, section{
 	padding: var(--sectionpad) 0;
 }
 
+/* Navigation ----------------*/
+
+header {
+	position: absolute;
+	top:0;
+	left:0;
+	padding: 0;
+	background-color: var(--white);
+}
+nav {
+	.navlink {
+		position: fixed;
+		top: 10px;
+		left: 10px;
+		z-index: 100;
+		border: solid 2px;
+		display: inline-block;
+		background-color: white;
+		font-size: calc(var(--medium-size) / 2);
+		padding: 5px;
+		font-variation-settings: "wght" var(--wght-bold); 
+		cursor: pointer;
+	}
+	ul.toc {
+		padding-inline-start: 0;
+		width: 100vw;
+		padding-top: 40px;
+		min-height: 100vh;
+		// transform: translateY(-100vh);
+		display:none;
+		transition: display ease-in .5s;
+		&.display {
+			// transform: translateY(0vh);
+			display:block;
+		}
+
+		li {
+			width: 100vw;
+			border-bottom: 1px solid;
+			padding: 10px 4rem;
+			font-size: 1.5rem;
+			text-indent: -1.7rem;
+			padding-left: 2rem;
+			font-variation-settings: "wght" var(--wght-medium); 
+		}
+		li.part {
+			display: list-item;
+			list-style-type: upper-roman;
+			// display: inline-block;
+		}
+		li.part::marker {
+			display: inline-block;
+			list-style-position:outside;
+			width: 2rem;
+		}
+		li.chapter {
+			list-style-type: none;
+			font-variation-settings: "wght" var(--wght); 
+		}
+		
+		h4 {
+			font-size: var(--caption-size);
+			font-family: 'Osram Medium';
+		}
+	}
+	a {
+		color: var(--default);
+		text-decoration: none;
+	}
+}
+
+
+main {
+	max-width: var(--max-width);
+	margin: auto;
+}
 /* Part Intros ----------------*/
 
 .section{
@@ -203,7 +286,7 @@ header, main, footer, section{
 	flex: 1;
 }
 table{
-	font-family: 'Osram';
+	font-family: 'Osram Regular';
 	font-size: var(--caption-size);
 	margin: var(--sectionpad) 0;
 	width: 100%;
@@ -220,6 +303,9 @@ table{
 		border: 0;
 	}
 }
+
+
+
 /*--------------------------------------*/
 /* REFERENCE & FOOTNOTE STYLES ---------*/
 /*--------------------------------------*/
@@ -235,8 +321,7 @@ table{
 	display: inline;
 	cursor: pointer;
 	.ref-no{
-		font-family: 'Osram';
-		font-weight: 500;
+		font-family: 'Osram Medium';
 		font-size: var(--small-size);
 		position: relative;
 		bottom: 8px;
@@ -298,6 +383,7 @@ table{
 /*--------------------------------------*/
 /* FIGURE STYLES -----------------------*/
 /*--------------------------------------*/
+
 figure{
 	padding: var(--sectionpad) 0;
 	img{
@@ -305,11 +391,19 @@ figure{
 	}
 }
 
+figcaption {
+	font-family: 'Osram Regular';
+	font-size: var(--caption-size);
+}
+
 .periphery {
-	position: relative;
+	// position: relative;
+	position: fixed;
 	height: 100vh;
 	// left: 0%;
     opacity: 0;
+	max-width: 25vw;
+	min-width: 15vw;
     // z-index: -100;
     // left: -15%;
     // position: fixed;
@@ -330,10 +424,9 @@ figure{
 /* PLOT TYLES --------------------------*/
 /*--------------------------------------*/
 .figure-title{
-	font-family: 'Osram';
+	font-family: 'Osram Medium';
 	margin-bottom: 1rem;
 	padding-left: 30px;
-	font-weight: 500;
 	max-width: 20em;
 }
 .fig-no{
@@ -366,7 +459,7 @@ svg{
 } 
 
 text{
-	font-family: 'Osram', sans-serif;
+	font-family: 'Osram Regular', sans-serif;
 	font-size: 16px;
 }
 

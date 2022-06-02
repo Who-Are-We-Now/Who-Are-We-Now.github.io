@@ -22,14 +22,23 @@ module.exports = function(eleventyConfig) {
     return md.renderInline(content); 
   });
 
-  eleventyConfig.addShortcode('img', function(caption, path) {
-      let chapter = this.page.filePathStem.split('/')[2];
-      return `<figure class="periphery">
-                <img src="/assets/figures/${chapter}/${path}" alt="${caption}" title="${caption}"/>
-                <figcaption>${caption}</figcaption>
-              </figure>`;
+
+
+  eleventyConfig.addShortcode('img', function(caption, path) { /*main*/
+    let chapter = this.page.filePathStem.split('/')[2];
+    return `<figure class="main">
+              <img src="/assets/figures/${chapter}/${path}" alt="${caption}" title="${caption}"/>
+              <figcaption>${caption}</figcaption>
+            </figure>`;
   });
 
+  eleventyConfig.addShortcode('img2', function(caption, path) { /*periphery*/
+    let chapter = this.page.filePathStem.split('/')[2];
+    return `<figure class="periphery">
+              <img src="/assets/figures/${chapter}/${path}" alt="${caption}" title="${caption}"/>
+              <figcaption>${caption}</figcaption>
+            </figure>`;
+  });
 
   eleventyConfig.addShortcode('plot', function(label) {      
       return `<figure class="plot" id="${label}">
@@ -39,6 +48,7 @@ module.exports = function(eleventyConfig) {
   // eleventyConfig.addFilter("markdown", (content) => {
   //   return md.render(content);
   // });
+
 
   const FOOTNOTE_MAP = []
 
@@ -53,6 +63,21 @@ module.exports = function(eleventyConfig) {
                 <span class="ref-no">${id}</span><span class="caption ref-text">${text}</span>
               </span>`;
   });
+
+
+
+  eleventyConfig.addCollection("p1_ch", function(collection) {
+    return collection.getFilteredByGlob("src/part-1/chapter-*/index.md");
+  });
+  eleventyConfig.addCollection("p2_ch", function(collection2) {
+    return collection2.getFilteredByGlob("src/part-2/chapter-*/index.md");
+  });
+  eleventyConfig.addCollection("p2_in", function(collection2) {
+    return collection2.getFilteredByGlob("src/part-2/interlude/index.md");
+  });
+
+
+
 
   eleventyConfig.addFilter(
     'footnotes', 
