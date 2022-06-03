@@ -31,9 +31,11 @@ function intializePlots(){
     //setup DOM elements
     let info = `
       <div class="plot-title">${plot_data.title} <span class="fig-no">${plot_data.plot_key}</span></div>
-      <div class="plot-content" style="${color_settings}"></div>
-      `
+      <div class="plot-content"></div>
+      <div class="plot-labels"></div>
+      `;
     el.innerHTML = info;
+    el.style.cssText = color_settings;
 
     // plot the data into that figure
     setup(plot_data.file, key);
@@ -42,18 +44,17 @@ function intializePlots(){
 
 }
 
-let margin = {top: 10, right: 30, bottom: 30, left: 60};
+let margin = {top: 10, right: 70, bottom: 30, left: 60};
 let width = 700 - margin.left - margin.right;
 let height = 500 - margin.top - margin.bottom;
 
 function setup( file, key ){
 
   // append the svg object to the body of the page
-  // this coontains all plot components
+  // this contains all plot components
   let svg = d3.select('#'+key).select('.plot-content')
   .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+    .attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
   .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
@@ -67,9 +68,7 @@ function setup( file, key ){
     });
 }
 
-
-
-function plotData( data, svg) {
+function plotData(data, svg) {
   
   const z = data.z;
   const z2 = Math.pow(data.z, 2); //z-squared
@@ -109,24 +108,42 @@ function plotData( data, svg) {
       .y(d => y(d.percent));
 
 
-  function drawError(svg, data, classname){
+  function drawError(svg, errordata, index){
     svg.append("path")
-        .datum(data)
-        .attr("class", "area "+ classname)
+        .datum(errordata)
+        .attr("class", "area series"+ index)
         .attr("d", area);
   }
 
-  function drawLine(svg, data, classname){
-    console.log(data);
+  function drawLine(svg, linedata, index){
+    console.log(linedata);
     svg.append("path")
-        .datum(data)
-        .attr("class", "line "+ classname)
+        .datum(linedata)
+        .attr("class", "line series"+ index)
         .attr("d", line);
+
+    // adds series labels at the end of each line
+    let label = data.series[index].s;  
+    let container = svg.node().parentNode.parentNode.nextElementSibling;
+
+    let ypos = 75*( y(linedata[linedata.length-1].percent) / height );
+    console.log(ypos);
+    let label_el = document.createElement("div");
+    label_el.innerText = label;
+    label_el.classList.add("label", "series"+index);
+    label_el.style.cssText = `top: ${ypos}%`;
+    container.append(label_el);
+    
+    // svg.append("text") //dont use svg text because they won’t wrap
+    //   .attr("transform", "translate(" + (width+3) + "," +  + ")")
+    //   .attr("dy", ".35em")
+    //   .attr("text-anchor", "start")
+    //   .attr("class", "label plot"+ index)
+    //   .text(label);
   }
 
 
-  function drawBins(svg, data){
-    
+  function drawBins(svg, data){    
     // append the rectangles for the bar chart
     svg.selectAll(".bar")
         .data(data)
@@ -139,7 +156,6 @@ function plotData( data, svg) {
         })
         .attr("height", height);
   }
-
 
   
   const ages = Array
@@ -208,6 +224,7 @@ function plotData( data, svg) {
           low: 100 * (p0 - pe),
           high: 100 * (p0 + pe),
         }
+
         let datapoint = {
           x: ages_avg,
           percent: percent
@@ -220,16 +237,18 @@ function plotData( data, svg) {
 
         dataset[i].push(datapoint);
         errorset[i].push(error_area);
-        rects[i].push(bin); //todo: this only needs to happen for 1 series
 
+        if(i == 0){
+          //this only needs to happen for the first series
+          rects[i].push(bin); 
+        }        
       };
 
-
-      drawLine(svg, dataset[i], 'plot'+i); //svg container, data, classname for CSS styling
-      drawError(svg, errorset[i], 'plot'+i);
-
+      drawLine(svg, dataset[i], i); //svg container, data, index for CSS styling
+      drawError(svg, errorset[i], i);
   });
 
+  // console.log(rects);
   drawBins(svg, rects[0]);
-  console.log(rects);
+
 }

@@ -25,17 +25,17 @@
   src: url(../fonts/Belarius_var-Oblique.ttf);
 }
 @font-face {
-  font-family: "Osram Regular";
+  font-family: "Osram";
   font-weight: 400;
   src: url(../fonts/OsramBeta-Regular.otf);
 }
 @font-face {
-  font-family: "Osram Medium";
+  font-family: "Osram";
   src: url(../fonts/OsramBeta-Medium.otf);
   font-weight: 500;
 }
 @font-face {
-  font-family: "Osram Black";
+  font-family: "Osram";
   src: url(../fonts/OsramBeta-Black.otf);
   font-weight: 900;
 }
@@ -112,7 +112,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-weight: 900;
-  font-family: "Osram Black", sans-serif;
+  font-family: "Osram", sans-serif;
   margin-bottom: var(--pad);
 }
 
@@ -295,7 +295,7 @@ main {
 }
 
 table {
-  font-family: "Osram Regular";
+  font-family: "Osram";
   font-size: var(--caption-size);
   margin: var(--sectionpad) 0;
   width: 100%;
@@ -378,7 +378,7 @@ figure img {
 }
 
 figcaption {
-  font-family: "Osram Regular";
+  font-family: "Osram";
   font-size: var(--caption-size);
 }
 
@@ -395,13 +395,18 @@ figcaption {
 }
 
 /*--------------------------------------*/
-/* PLOT TYLES --------------------------*/
+/* PLOT STYLES --------------------------*/
 /*--------------------------------------*/
-.figure-title {
-  font-family: "Osram Medium";
+.plot {
+  position: relative;
+}
+
+.plot-title {
+  font-family: "Osram";
+  font-weight: 500;
   margin-bottom: 1rem;
   padding-left: 30px;
-  max-width: 20em;
+  max-width: 25em;
 }
 
 .fig-no {
@@ -411,11 +416,13 @@ figcaption {
   letter-spacing: 1px;
 }
 
-.plot-container {
-  width: 100%;
-  height: 500px;
-  /*	border: 1px solid black;*/
-  box-sizing: content-box;
+.plot-labels {
+  top: 0;
+  right: 0;
+  top: calc(var(--sectionpad) + 1em);
+  width: 100px;
+  height: 100%;
+  position: absolute;
 }
 
 svg {
@@ -436,8 +443,7 @@ svg {
 }
 
 text {
-  font-family: "Osram Regular", sans-serif;
-  font-size: 16px;
+  font-family: "Osram", sans-serif;
 }
 
 .area {
@@ -450,46 +456,73 @@ text {
   fill: none;
 }
 
-.plot0.area {
+.label {
+  font-family: "Osram", sans-serif;
+  line-height: 1.1;
+  white-space: normal;
+  font-size: var(--caption-size);
+  position: absolute;
+  padding-top: 1em;
+}
+
+.series0.area {
   fill: var(--color0);
 }
-.plot0.line {
+.series0.line {
   stroke: var(--color0);
 }
+.series0.label {
+  color: var(--color0);
+}
 
-.plot1.area {
+.series1.area {
   fill: var(--color1);
 }
-.plot1.line {
+.series1.line {
   stroke: var(--color1);
 }
+.series1.label {
+  color: var(--color1);
+}
 
-.plot2.area {
+.series2.area {
   fill: var(--color2);
 }
-.plot2.line {
+.series2.line {
   stroke: var(--color2);
 }
+.series2.label {
+  color: var(--color2);
+}
 
-.plot3.area {
+.series3.area {
   fill: var(--color3);
 }
-.plot3.line {
+.series3.line {
   stroke: var(--color3);
 }
+.series3.label {
+  color: var(--color3);
+}
 
-.plot4.area {
+.series4.area {
   fill: var(--color4);
 }
-.plot4.line {
+.series4.line {
   stroke: var(--color4);
 }
+.series4.label {
+  color: var(--color4);
+}
 
-.plot5.area {
+.series5.area {
   fill: var(--color5);
 }
-.plot5.line {
+.series5.line {
   stroke: var(--color5);
+}
+.series5.label {
+  color: var(--color5);
 }
 
 .bin {
