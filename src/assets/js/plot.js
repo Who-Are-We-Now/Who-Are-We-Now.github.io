@@ -1,6 +1,6 @@
 let data_index = {};
 //get the json index file
-fetch('/assets/data/plot-index.json')
+fetch('/assets/data/plotIndex.json')
   .then(response => response.json())
   .then(data => {
     data_index = data;

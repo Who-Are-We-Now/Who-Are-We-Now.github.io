@@ -1,6 +1,8 @@
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs')
 
+const figures = require("./src/_data/figures.json"); //read in figures index file
+
 // Add within your config module
 const md = new markdownIt({
   html: true,
@@ -22,23 +24,22 @@ module.exports = function(eleventyConfig) {
     return md.renderInline(content); 
   });
 
-
-
-  eleventyConfig.addShortcode('img', function(caption, path) { /*main*/
+  eleventyConfig.addShortcode('img', function(id) { /*main*/
     let chapter = this.page.filePathStem.split('/')[2];
+    let img = figures[id];
     return `<figure class="main">
-              <img src="/assets/figures/${chapter}/${path}" alt="${caption}" title="${caption}"/>
-              <figcaption>${caption}</figcaption>
+              <img src="/assets/figures/${chapter}/${img.file}" alt="${img.alt}" title="${img.alt}"/>
+              <figcaption>${img.caption}</figcaption>
             </figure>`;
   });
 
-  eleventyConfig.addShortcode('img2', function(caption, path) { /*periphery*/
-    let chapter = this.page.filePathStem.split('/')[2];
-    return `<figure class="periphery">
-              <img src="/assets/figures/${chapter}/${path}" alt="${caption}" title="${caption}"/>
-              <figcaption>${caption}</figcaption>
-            </figure>`;
-  });
+  // eleventyConfig.addShortcode('img2', function(caption, path) { /*periphery*/
+  //   let chapter = this.page.filePathStem.split('/')[2];
+  //   return `<figure class="periphery">
+  //             <img src="/assets/figures/${chapter}/${path}" alt="${caption}" title="${caption}"/>
+  //             <figcaption>${caption}</figcaption>
+  //           </figure>`;
+  // });
 
   eleventyConfig.addShortcode('plot', function(label) {      
       return `<figure class="plot" id="${label}">

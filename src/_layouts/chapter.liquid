@@ -12,10 +12,6 @@ tags: article
 		<div class="col">
 			{{content}}
 		</div>
-		<div class="col">
-			{% assign figurepage = collections.figures[0] %}
-			{% include "partials/figures.liquid" figures: figurepage, chapter: chapter %}
-		</div>
 	</div>
 	{% include "partials/footnotes.liquid" page: page %}
 </article>
