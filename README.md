@@ -47,26 +47,84 @@ layout: chapter
 (Layouts are determined in the `_layous` folder, using the `liquid` template language.)
 
 
-## Plots
-`src/assets/data`
-This folder contains
+## Figures
+`src/assets/figures`
+This folder contains the image files embedded in the text, organized by chapter.
 
-`plot-index.json`
-- This file contains some basic meta data for each plot
+`src/_data/figures.json`
+- This file contains the meta data for each image, and is used by the shortcode configuration in `.eleventy.js` to render the relevant image within the text.
+
+An image data object:
+```json
+"dither": {
+  "chapter": 1,
+  "file": "Michelangelo_s_David_-_Floyd-Steinberg.png",
+  "caption": "caption text",
+  "alt": "image description",
+  "credit": "full image credit"
+}
+```
+
+Access the [Google Spreadsheet Figure Index document](https://docs.google.com/spreadsheets/d/1IesfG4c_-hBnCqwY8FcPtHmb6G9iVIAAMhwgGiLEERQ/edit#gid=0) from which this is generated.
 
 #### Id
-`genderhandedr`: The object keys are the `id`s inserted into the `<figure>` tags generated, and are used to associate the appropriate `json` data from the `/assets/data` folder.
+`id`
+
+Within the `index.md` file, use `{% img {id} %}` where `{id}` is the unique id associated with the image (column A)
+
+```liquid
+{% img "dither" %}
+```
+
+
+#### Chapter
+`chapter`
+
+#### File
+`file`
+
+#### Caption
+`caption`
+
+#### Alt Text
+`alt`
+
+#### Credit
+`credit`
+
+
+## Plots
+`src/assets/data`
+This folder contains the json files containing plot data.
+
+`plotIndex.json`
+- This file contains some basic information for each plot, and is used by the `plot.js` file to populate the relevant plot data.
+
+A plot data object:
+```json
+"genderhandedr": {
+  "plot_key": 1.3,
+  "title": "Sample Title",
+  "file": "Ch01_Fig002_GenderHandedR.json",
+  "colors": ["orange", "green", "violet", "blue"]
+},
+```
+
+Access the [Google Spreadsheet Plot Index document](https://docs.google.com/spreadsheets/d/1bFUxOfCAC6VjF-Dqr1dLvbmhHS8OW30jgPz3dXwHlNk/edit#gid=0) from which this is generated.
+
+
+#### Id
+`genderhandedr`: The object keys are the `id`s inserted into the `<figure>` tags generated, and are used to associate the appropriate `json` data from the `/assets/data` folder. These `id`s are used in the shortcodes of the content document.
+
+Within the `index.md` file, use `{% plot {id} %}` where `{id}` is the unique id associated with the plot (column A)
+
+```liquid
+{% plot "genderhandedr" %}
+```
 
 They have been generated based off of the naming of the original `json` file.
 
-```json
-"genderhandedr": {
-	"plot_key": 1.3,
-	"title": "Sample Title",
-	"file": "Ch01_Fig002_GenderHandedR.json",
-	"colors": ["orange", "green", "violet", "blue"]
-},
-```
+
 #### Plot Key
 `plot_key`: A numerical identifier for the plot.
 We will be using this identifier in the search feature, as well as to connect figures in the book to that online.
