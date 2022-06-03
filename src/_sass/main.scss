@@ -84,7 +84,7 @@ body{
 h1,h2,h3,h4,h5,h6{
 	font-weight: normal;
 	font-weight: 900;
-	font-family: 'Osram', sans-serif;
+	font-family: 'Osram Bold', sans-serif;
 	margin-bottom: var(--pad);
 }
 
@@ -308,7 +308,7 @@ main {
 	flex: 1;
 }
 table{
-	font-family: 'Osram';
+	font-family: 'Osram Regular';
 	font-size: var(--caption-size);
 	margin: var(--sectionpad) 0;
 	width: 100%;
