@@ -65,18 +65,30 @@ module.exports = function(eleventyConfig) {
   });
 
 
+  // eleventy.addCollection('toc', function(config) {
+  //     return collections.article
+  //         .sort((a, b) => b.data.chapter - a.data.chapter);
+  // });
+  eleventyConfig.addCollection("toc", collection => {
+      const articles = collection.getFilteredByTag("article")
+        .sort((a, b) => {
+          return Number(a.data.chapter) - Number(b.data.chapter);
+        });
+      return articles;
+    });
 
-  eleventyConfig.addCollection("p1_ch", function(collection) {
-    return collection.getFilteredByGlob("src/part-1/chapter-*/index.md");
-  });
-  eleventyConfig.addCollection("p2_ch", function(collection2) {
-    return collection2.getFilteredByGlob("src/part-2/chapter-*/index.md");
-  });
-  eleventyConfig.addCollection("p2_in", function(collection2) {
-    return collection2.getFilteredByGlob("src/part-2/interlude/index.md");
-  });
-
-
+  // eleventyConfig.addFilter('sortByChapter', values => {
+  //   return values.slice().sort((a, b) => a.data.chapter.localeCompare(b.data.chapter))
+  // });
+  // eleventyConfig.addCollection("p1_ch", function(collection) {
+  //   return collection.getFilteredByGlob("src/part-1/chapter-*/index.md");
+  // });
+  // eleventyConfig.addCollection("p2_ch", function(collection2) {
+  //   return collection2.getFilteredByGlob("src/part-2/chapter-*/index.md");
+  // });
+  // eleventyConfig.addCollection("p2_in", function(collection2) {
+  //   return collection2.getFilteredByGlob("src/part-2/interlude/index.md");
+  // });
 
 
   eleventyConfig.addFilter(

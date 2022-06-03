@@ -158,12 +158,14 @@ header, main, footer, section{
 
 header {
 	position: absolute;
+	z-index: 100;
 	top:0;
 	left:0;
 	padding: 0;
 	background-color: var(--white);
 }
 nav {
+	background: var(--white);
 	.navlink {
 		position: fixed;
 		top: 10px;
@@ -230,6 +232,7 @@ main {
 	max-width: var(--max-width);
 	margin: auto;
 }
+
 /* Part Intros ----------------*/
 
 .section{
@@ -296,7 +299,7 @@ table{
 		text-align: left;
 	}
 	td{
-		border: 1px solid black;
+		border: 1px solid var(--default);
 	}
 	td:first-child{
 		text-align: right;
@@ -304,6 +307,11 @@ table{
 	}
 }
 
+/* Interlude ----------------*/
+.interlude{
+	background: var(--default);
+	color: var(--white);
+}
 
 
 /*--------------------------------------*/
@@ -339,7 +347,7 @@ table{
 		width: 300px;
 		left: 0px;
 		background: var(--light-grey);
-		border: 1px solid black;
+		border: 1px solid var(--default);
 		padding: var(--pad);
 		&.visible{
 			display: block;

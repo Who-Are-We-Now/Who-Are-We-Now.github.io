@@ -1,6 +1,6 @@
 ---
-chapter: 9
+chapter: 12.5
 title: A view from above
-layout: chapter
+layout: interlude
 ---
 

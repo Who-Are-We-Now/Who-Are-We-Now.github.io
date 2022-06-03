@@ -4,50 +4,28 @@
 			Who are we now?
 		</div>
 		<ul class="toc">
-			<li><a href="">Preface</a></li>
-			<li><a href="">Introduction: Anonymous Identity</a></li>
-			<li class="part"><a href="">Handedness</a></li>
-			<ul>
-				{% assign i = 0 %} 	
-				{%- for item in collections.p1_ch -%}
-					{% assign i = i | plus:1 %}
-					<li class="chapter">
-						<a href="{{ item.url | url }}"> 
-							<h4>Chapter {{ i }}</h4>
-							{{ item.data.title }}
-						</a>
-					</li>
-			  	{%- endfor -%}
-
-			</ul>
-			<li class="part"><a href="">Sex and gender</a></li>
-			<ul>
-				<li class="chapter"><a href="">Box: Sex and gender survey</a></li>
-				{%- for item in collections.p2_ch -%}
-					{% if forloop.index0 < 1 %}
-						{% assign i = i | plus: 1 %}
-						<li class="chapter">
-							<a href="{{ item.url | url }}">
-								<h4>Chapter {{ i }}</h4> 
-								{{ item.data.title }}
-							</a>
-						</li>
-					{% endif%}
-			  	{%- endfor -%}
-				  	<li class="chapter"><a href="">Interlude: Planetary consciousness</a></li>
-				{%- for item in collections.p2_ch -%}
-					{% if forloop.index0 > 0 %}
-						{% assign i = i | plus: 1 %}
-						<li class="chapter">
-							<a href="{{ item.url | url }}">
-								<h4>Chapter {{ i }}</h4> 
-								{{ item.data.title }}
-							</a>
-						</li>
-					{% endif%}
-			  	{%- endfor -%}
-				  <li class="chapter"><a href="">Interlude: A view from above</a></li>
-			</ul>
+			{%- for item in collections.toc -%}
+				{% if item.data.layout == "intro" or item.data.layout == "interlude"%}
+				<li>
+					<a href="{{ item.url | url }}"> 
+						{{ item.data.title }}					
+					</a>
+				</li>
+				{% elsif item.data.layout == "chapter"%}
+				<li class="chapter">
+					<a href="{{ item.url | url }}"> 
+						<h4>Chapter {{ item.data.chapter }}</h4>
+						{{ item.data.title }}
+					</a>
+				</li>
+				{% elsif item.data.layout == "section"%}
+				<li class="part">
+					<a href="{{ item.url | url }}"> 
+						Part {{ item.data.part }}						
+					</a>
+				</li>
+				{% endif %}
+		  	{%- endfor -%}
 		</ul>
 	</nav>
 </header>

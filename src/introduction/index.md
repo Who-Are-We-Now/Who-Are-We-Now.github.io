@@ -1,5 +1,5 @@
 ---
-chapter: Introduction
+chapter: 0
 title: Anonymous identity
 layout: intro
 ---
@@ -91,6 +91,7 @@ Who are we now? is in three parts, mirroring my own journey through this territo
 The first stage, Chapters 1-3, is like a booster rocket to get us off the ground: Handedness. The majority status of right-handedness is built into our biology. Across many cultures, it has almost universally resulted in a right-handed in-group and left-handed out-group with real social consequences. This often unnoticed human trait may seem inconsequential— but it isn’t. If you’re left-handed, you’re probably nodding knowingly as you read. If you’re right-handed, you’re probably puzzled. That’s partly the point.
 [[Greenhorn_7 (1).jpg]]
 Beyond raising our consciousness, handedness offers us a kind of practice run for a second rocket stage: Sex and gender, covered in Chapters 4-15. This is the heart of the book, treating the aspects of identity that many people consider the most private, and that are in dramatic transition, particularly for young city dwellers. This stage brings us from the familiar territory of (apparent) sexual and gender-conforming majorities to a population overview that reveals a more unfamiliar reality. It’s as if we’d begun at ground level on Main Street, USA, but the houses and storefronts were revealed to be a Potemkin village from above: many people’s private lives and selves are not as they present them publicly.
+
 For our final stage, Humanity, we’ll be in a position to study ourselves quite literally from outer space. Chapters 16-19 zoom out to consider the forces that attract people to each other, not just individually but collectively, and how these have resulted in profound changes to our planet that can easily be seen from orbit— especially on Earth’s night side, our cities glowing like fairy lights. Accelerating urbanization in the past couple of centuries has generated unprecedented cultural innovation and has been fundamental to the creation of the new identities explored in previous chapters. It’s also now polarizing us culturally and politically in dangerous new ways. We’ll conclude with some guesses about (and hopes for) a broader, more inclusive future, predicated on a broader, more inclusive human identity.
 In the quiet moments after each of these rocket stages has finished its burn and fallen away, I hope you’ll experience something similar to what I did at certain points throughout this project. It feels related to the so-called “overview effect” astronauts have described when they look back at Earth from outer space and confront the reality that we’re all living on a tiny, fragile ball hanging in the void. As Wikipedia puts it:
 “From space, national boundaries vanish, the conflicts that divide people become less important, and the need to create a planetary society with the united will to protect this “pale blue dot” becomes both obvious and imperative.”

@@ -170,12 +170,16 @@ header, main, footer, section {
 /* Navigation ----------------*/
 header {
   position: absolute;
+  z-index: 100;
   top: 0;
   left: 0;
   padding: 0;
   background-color: var(--white);
 }
 
+nav {
+  background: var(--white);
+}
 nav .navlink {
   position: fixed;
   top: 10px;
@@ -302,11 +306,17 @@ table td, table th {
   text-align: left;
 }
 table td {
-  border: 1px solid black;
+  border: 1px solid var(--default);
 }
 table td:first-child {
   text-align: right;
   border: 0;
+}
+
+/* Interlude ----------------*/
+.interlude {
+  background: var(--default);
+  color: var(--white);
 }
 
 /*--------------------------------------*/
@@ -333,7 +343,7 @@ table td:first-child {
   width: 300px;
   left: 0px;
   background: var(--light-grey);
-  border: 1px solid black;
+  border: 1px solid var(--default);
   padding: var(--pad);
 }
 .reference .ref-text.visible {
