@@ -183,20 +183,20 @@ nav {
 nav .navlink {
   position: fixed;
   top: 10px;
-  left: 10px;
+  left: 2rem;
   z-index: 100;
   border: solid 2px;
   display: inline-block;
   background-color: white;
   font-size: calc(var(--medium-size) / 2);
   padding: 5px;
-  font-variation-settings: "wght" var(--wght-bold);
+  font-family: "Osram black";
   cursor: pointer;
 }
 nav ul.toc {
   padding-inline-start: 0;
   width: 100vw;
-  padding-top: 40px;
+  padding: 40px 0;
   min-height: 100vh;
   display: none;
   transition: display ease-in 0.5s;
@@ -207,28 +207,35 @@ nav ul.toc.display {
 nav ul.toc li {
   width: 100vw;
   border-bottom: 1px solid;
-  padding: 10px 4rem;
-  font-size: 1.5rem;
-  text-indent: -1.7rem;
+  font-family: "Osram Regular";
+  font-size: 2rem;
+}
+nav ul.toc li::before {
+  content: "";
+  display: inline-block;
+}
+nav ul.toc li a {
+  display: inline-block;
+  padding: 10px 0;
   padding-left: 2rem;
-  font-variation-settings: "wght" var(--wght-medium);
+  transition: all ease-in 0.5s;
+}
+nav ul.toc li a:hover, nav ul.toc li a.is-active {
+  font-family: "Osram Black";
 }
 nav ul.toc li.part {
   display: list-item;
-  list-style-type: upper-roman;
-}
-nav ul.toc li.part::marker {
-  display: inline-block;
-  list-style-position: outside;
-  width: 2rem;
 }
 nav ul.toc li.chapter {
   list-style-type: none;
   font-variation-settings: "wght" var(--wght);
 }
+nav ul.toc li.chapter a {
+  padding-left: 4rem;
+}
 nav ul.toc h4 {
   font-size: var(--caption-size);
-  font-family: "Osram Medium";
+  font-family: "Osram Black";
 }
 nav a {
   color: var(--default);

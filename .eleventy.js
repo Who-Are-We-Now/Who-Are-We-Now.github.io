@@ -77,6 +77,8 @@ module.exports = function(eleventyConfig) {
       return articles;
     });
 
+    
+
   // eleventyConfig.addFilter('sortByChapter', values => {
   //   return values.slice().sort((a, b) => a.data.chapter.localeCompare(b.data.chapter))
   // });
