@@ -84,7 +84,7 @@ body{
 h1,h2,h3,h4,h5,h6{
 	font-weight: normal;
 	font-weight: 900;
-	font-family: 'Osram Black', sans-serif;
+	font-family: 'Osram', sans-serif;
 	margin-bottom: var(--pad);
 }
 
@@ -308,7 +308,7 @@ main {
 	flex: 1;
 }
 table{
-	font-family: 'Osram Regular';
+	font-family: 'Osram';
 	font-size: var(--caption-size);
 	margin: var(--sectionpad) 0;
 	width: 100%;
@@ -419,7 +419,7 @@ figure{
 }
 
 figcaption {
-	font-family: 'Osram Regular';
+	font-family: 'Osram';
 	font-size: var(--caption-size);
 }
 
@@ -440,21 +440,25 @@ figcaption {
     transition: opacity ease-in 400ms;
 
 	&.img-on{
-    	opacity: 1;
-    	// position: sticky;
-    	// top: 0;
-    	// top: var(--sectionpad);
+    opacity: 1;
+    // position: sticky;
+    // top: 0;
+    // top: var(--sectionpad);
     }
 }
 
 /*--------------------------------------*/
-/* PLOT TYLES --------------------------*/
+/* PLOT STYLES --------------------------*/
 /*--------------------------------------*/
-.figure-title{
-	font-family: 'Osram Medium';
+.plot{
+	position: relative;
+}
+.plot-title{
+	font-family: 'Osram';
+	font-weight: 500;
 	margin-bottom: 1rem;
 	padding-left: 30px;
-	max-width: 20em;
+	max-width: 25em;
 }
 .fig-no{
 	color: var(--grey);
@@ -462,11 +466,14 @@ figcaption {
 /*	*/
 	letter-spacing: 1px;
 }
-.plot-container{
-	width: 100%;
-	height: 500px;
-/*	border: 1px solid black;*/
-	box-sizing: content-box;
+
+.plot-labels{
+	top: 0;
+	right: 0;
+	top: calc(var(--sectionpad) + 1em);
+	width: 100px;
+	height: 100%;
+	position: absolute;
 }
 svg{
 	width: 100%;
@@ -486,71 +493,97 @@ svg{
 } 
 
 text{
-	font-family: 'Osram Regular', sans-serif;
-	font-size: 16px;
+	font-family: 'Osram', sans-serif;
 }
 
 .area{
 	opacity: 0.5;
 	stroke-width: 0;
 }
-
 .line{
 	stroke-width: var(--stroke);
 	fill: none;
 }
 
-.plot0{
-	&.area{
-    	fill: var(--color0);
-    }
-    &.line{
-        stroke: var(--color0);
-    }
-}
-.plot1{
-	&.area{
-    	fill: var(--color1);
-	}
-	&.line{
-    	stroke: var(--color1);
-    }
+.label{
+	font-family: 'Osram', sans-serif;
+	line-height: 1.1;
+	white-space: normal;
+	font-size: var(--caption-size);
+	position: absolute;
+	padding-top: 1em;
 }
 
-.plot2{
+.series0{
 	&.area{
-    	fill: var(--color2);
-	}
-	&.line{
-    	stroke: var(--color2);
-	}
+    fill: var(--color0);
+  }
+  &.line{
+    stroke: var(--color0);
+  }
+	&.label{
+    color: var(--color0);
+  }
 }
 
-.plot3{
+.series1{
 	&.area{
-    	fill: var(--color3);
+    fill: var(--color1);
 	}
 	&.line{
-    	stroke: var(--color3);
-    }
+  	stroke: var(--color1);
+  }
+	&.label{
+    color: var(--color1);
+  }
 }
 
-.plot4{
+.series2{
 	&.area{
-    	fill: var(--color4);
+    fill: var(--color2);
 	}
 	&.line{
-    	stroke: var(--color4);
-    }
+    stroke: var(--color2);
+	}
+	&.label{
+    color: var(--color2);
+  }	
 }
 
-.plot5{
+.series3{
 	&.area{
-    	fill: var(--color5);
-    }
-    &.line{
-    	stroke: var(--color5);
+    fill: var(--color3);
 	}
+	&.line{
+    stroke: var(--color3);
+  }
+	&.label{
+    color: var(--color3);
+  }	
+}
+
+.series4{
+	&.area{
+    fill: var(--color4);
+	}
+	&.line{
+    stroke: var(--color4);
+  }
+  &.label{
+    color: var(--color4);
+  }	
+}
+
+.series5{
+	&.area{
+    fill: var(--color5);
+    }
+  &.line{
+    stroke: var(--color5);
+	}
+	&.label{
+    color: var(--color5);
+  }	
 }
 
 .bin{

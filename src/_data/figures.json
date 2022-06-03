@@ -1,0 +1,30 @@
+{
+  "handxray": {
+    "chapter": 1,
+    "file": "8a5bfbbe5200e5a808fc12e826c695_jumbo.jpeg",
+    "caption": "caption text",
+    "alt": "image description",
+    "credit": "full image credit"
+  },
+  "muscledrawing": {
+    "chapter": 1,
+    "file": "262806-1333033147.jpg",
+    "caption": "caption text",
+    "alt": "image description",
+    "credit": "full image credit"
+  },
+  "palmcomparison": {
+    "chapter": 1,
+    "file": "4174086442_6e9228333e_k-Enhanced Grey.jpg",
+    "caption": "caption text",
+    "alt": "image description",
+    "credit": "full image credit"
+  },
+  "dither": {
+    "chapter": 1,
+    "file": "Michelangelo_s_David_-_Floyd-Steinberg.png",
+    "caption": "caption text",
+    "alt": "image description",
+    "credit": "full image credit"
+  }
+}
