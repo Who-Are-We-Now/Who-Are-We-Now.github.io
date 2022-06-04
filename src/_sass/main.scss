@@ -35,7 +35,7 @@
 	/* font-sizes */
 	--base-size: 18px; 
 	--large-size: 80px;
-	--heading-size: 36px;
+	--heading-size: 48px;
 	--medium-size: 24px;
 	--caption-size: 14px;
 	--small-size: 11px;
@@ -82,9 +82,7 @@ body{
 	font-variation-settings: "wght" var(--wght), "wdth" var(--wdth), "SRIF" var(--SRIF);
 }
 h1,h2,h3,h4,h5,h6{
-	font-weight: normal;
-	font-weight: 900;
-	font-family: 'Osram Bold', sans-serif;
+	font-family: 'Osram Black', sans-serif;
 	margin-bottom: var(--pad);
 }
 
@@ -165,28 +163,42 @@ header {
 	background-color: var(--white);
 }
 nav {
-	background: var(--white);
 	.navlink {
 		position: fixed;
 		top: 10px;
 		left: 2rem;
 		z-index: 100;
-		border: solid 2px;
-		display: inline-block;
-		background-color: white;
-		font-size: calc(var(--medium-size) / 2);
-		padding: 5px;
-		font-family: 'Osram black';
-		// font-variation-settings: "wght" var(--wght-bold); 
-		cursor: pointer;
+		.home,
+		.current-page {
+			border: solid 2px;
+			display: inline-block;
+			background-color: var(--white);
+			font-size: calc(var(--medium-size) / 2);
+			padding: 5px;
+			margin-right: 5px;
+			font-family: 'Osram black';
+			cursor: pointer;
+			&:hover {
+				background-color: var(--default);
+				border-color: var(--default);
+				color: var(--white);
+			}
+		}
 	}
 	ul.toc {
+		position:fixed;
+		top: 0;
+		left: 0;
 		padding-inline-start: 0;
 		width: 100vw;
+		height: 100vh;
+		overflow: auto;
 		padding:  40px 0;
 		min-height: 100vh;
 		// transform: translateY(-100vh);
 		display:none;
+		background-color: var(--white);
+
 		transition: display ease-in .5s;
 		&.display {
 			// transform: translateY(0vh);
@@ -197,7 +209,7 @@ nav {
 			width: 100vw;
 			border-bottom: 1px solid;
 			font-family: "Osram Regular";
-			font-size: 2rem;
+			font-size: var(--medium-size);			
 			&::before {
 				content:"";
 				display: inline-block;
@@ -299,13 +311,16 @@ main {
 
 .cols{
 	display: flex;
+	align-items: flex-start;
 }
 .col:first-child{
-	flex: 2;
-	margin-right: var(--sectionpad);
+	// flex: 2;
+	// margin-right: var(--sectionpad);
 }
 .col{
-	flex: 1;
+	width: 50%;
+    flex: none;
+    padding: 0 2rem;
 }
 table{
 	font-family: 'Osram Regular';
@@ -330,6 +345,16 @@ table{
 .interlude{
 	background: var(--default);
 	color: var(--white);
+	nav {
+		.navlink,
+		ul.toc {
+			background: var(--default);
+			color: var(--white);
+		}
+		a {
+			color: var(--white);
+		}
+	}
 }
 
 
@@ -412,14 +437,20 @@ table{
 /*--------------------------------------*/
 
 figure{
-	padding: var(--sectionpad) 0;
+	&.main {
+		position: absolute;
+		left: calc(50% + var(--sectionpad));
+		padding: var(--sectionpad) 0;
+		max-width: calc(50% - var(--sectionpad)*2);
+	}
 	img{
 		max-width: 100%;
 	}
 }
 
+
 figcaption {
-	font-family: 'Osram';
+	font-family: 'Osram Medium';
 	font-size: var(--caption-size);
 }
 
@@ -454,8 +485,7 @@ figcaption {
 	position: relative;
 }
 .plot-title{
-	font-family: 'Osram';
-	font-weight: 500;
+	font-family: 'Osram Regular';
 	margin-bottom: 1rem;
 	padding-left: 30px;
 	max-width: 25em;
@@ -493,7 +523,7 @@ svg{
 } 
 
 text{
-	font-family: 'Osram', sans-serif;
+	font-family: 'Osram Regular', sans-serif;
 }
 
 .area{
@@ -506,7 +536,7 @@ text{
 }
 
 .label{
-	font-family: 'Osram', sans-serif;
+	font-family: 'Osram Regular', sans-serif;
 	line-height: 1.1;
 	white-space: normal;
 	font-size: var(--caption-size);

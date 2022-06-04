@@ -25,17 +25,17 @@
   src: url(../fonts/Belarius_var-Oblique.ttf);
 }
 @font-face {
-  font-family: "Osram";
+  font-family: "Osram Regular";
   font-weight: 400;
   src: url(../fonts/OsramBeta-Regular.otf);
 }
 @font-face {
-  font-family: "Osram";
+  font-family: "Osram Medium";
   src: url(../fonts/OsramBeta-Medium.otf);
   font-weight: 500;
 }
 @font-face {
-  font-family: "Osram";
+  font-family: "Osram Black";
   src: url(../fonts/OsramBeta-Black.otf);
   font-weight: 900;
 }
@@ -68,7 +68,7 @@
   /* font-sizes */
   --base-size: 18px;
   --large-size: 80px;
-  --heading-size: 36px;
+  --heading-size: 48px;
   --medium-size: 24px;
   --caption-size: 14px;
   --small-size: 11px;
@@ -110,9 +110,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-weight: 900;
-  font-family: "Osram", sans-serif;
+  font-family: "Osram Black", sans-serif;
   margin-bottom: var(--pad);
 }
 
@@ -177,28 +175,41 @@ header {
   background-color: var(--white);
 }
 
-nav {
-  background: var(--white);
-}
 nav .navlink {
   position: fixed;
   top: 10px;
   left: 2rem;
   z-index: 100;
+}
+nav .navlink .home,
+nav .navlink .current-page {
   border: solid 2px;
   display: inline-block;
-  background-color: white;
+  background-color: var(--white);
   font-size: calc(var(--medium-size) / 2);
   padding: 5px;
+  margin-right: 5px;
   font-family: "Osram black";
   cursor: pointer;
 }
+nav .navlink .home:hover,
+nav .navlink .current-page:hover {
+  background-color: var(--default);
+  border-color: var(--default);
+  color: var(--white);
+}
 nav ul.toc {
+  position: fixed;
+  top: 0;
+  left: 0;
   padding-inline-start: 0;
   width: 100vw;
+  height: 100vh;
+  overflow: auto;
   padding: 40px 0;
   min-height: 100vh;
   display: none;
+  background-color: var(--white);
   transition: display ease-in 0.5s;
 }
 nav ul.toc.display {
@@ -208,7 +219,7 @@ nav ul.toc li {
   width: 100vw;
   border-bottom: 1px solid;
   font-family: "Osram Regular";
-  font-size: 2rem;
+  font-size: var(--medium-size);
 }
 nav ul.toc li::before {
   content: "";
@@ -290,19 +301,17 @@ main {
 /* Article layout ----------------*/
 .cols {
   display: flex;
-}
-
-.col:first-child {
-  flex: 2;
-  margin-right: var(--sectionpad);
+  align-items: flex-start;
 }
 
 .col {
-  flex: 1;
+  width: 50%;
+  flex: none;
+  padding: 0 2rem;
 }
 
 table {
-  font-family: "Osram";
+  font-family: "Osram Regular";
   font-size: var(--caption-size);
   margin: var(--sectionpad) 0;
   width: 100%;
@@ -323,6 +332,14 @@ table td:first-child {
 /* Interlude ----------------*/
 .interlude {
   background: var(--default);
+  color: var(--white);
+}
+.interlude nav .navlink,
+.interlude nav ul.toc {
+  background: var(--default);
+  color: var(--white);
+}
+.interlude nav a {
   color: var(--white);
 }
 
@@ -377,15 +394,18 @@ table td:first-child {
 /*--------------------------------------*/
 /* FIGURE STYLES -----------------------*/
 /*--------------------------------------*/
-figure {
+figure.main {
+  position: absolute;
+  left: calc(50% + var(--sectionpad));
   padding: var(--sectionpad) 0;
+  max-width: calc(50% - var(--sectionpad) * 2);
 }
 figure img {
   max-width: 100%;
 }
 
 figcaption {
-  font-family: "Osram";
+  font-family: "Osram Medium";
   font-size: var(--caption-size);
 }
 
@@ -409,8 +429,7 @@ figcaption {
 }
 
 .plot-title {
-  font-family: "Osram";
-  font-weight: 500;
+  font-family: "Osram Regular";
   margin-bottom: 1rem;
   padding-left: 30px;
   max-width: 25em;
@@ -450,7 +469,7 @@ svg {
 }
 
 text {
-  font-family: "Osram", sans-serif;
+  font-family: "Osram Regular", sans-serif;
 }
 
 .area {
@@ -464,7 +483,7 @@ text {
 }
 
 .label {
-  font-family: "Osram", sans-serif;
+  font-family: "Osram Regular", sans-serif;
   line-height: 1.1;
   white-space: normal;
   font-size: var(--caption-size);
