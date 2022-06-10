@@ -1,10 +1,10 @@
 let data_index = {};
 //get the json index file
-fetch('/assets/data/plotIndex.json')
+fetch('/assets/data/plots_web.json')
   .then(response => response.json())
   .then(data => {
     data_index = data;
-    // console.log(data_index);
+    console.log(data_index);
     intializePlots();
   });
 
@@ -16,29 +16,38 @@ function intializePlots(){
   plots.forEach( el =>{
     let key = el.id;
     
-    //setup graphs
-    let plot_data = data_index[key];
+    data_index.forEach(function(p){
+      if (p.id == key){
+        let plot_data = p;
 
-    let color_settings = '';
+        //setup DOM elements
+        let info = `
+          <div class="plot-title">${plot_data.title} <span class="fig-no">${plot_data.plot_key}</span></div>
+          <div class="plot-content"></div>
+          <div class="plot-labels"></div>
+          `;
+        el.innerHTML = info;
 
-    //setup Dynamic CSS Styles
-    plot_data.colors.forEach( (color,i) =>{
-      color_settings += 
-          `--color${i}: var(--${color});`
+        // plot the data into that figure
+        setup(key+'.json', key);
+      }
     });
 
+    let colors = el.getAttribute('data-colors').split(',');
+    let color_settings = "";
 
-    //setup DOM elements
-    let info = `
-      <div class="plot-title">${plot_data.title} <span class="fig-no">${plot_data.plot_key}</span></div>
-      <div class="plot-content"></div>
-      <div class="plot-labels"></div>
-      `;
-    el.innerHTML = info;
+    // setup Dynamic CSS Styles
+    colors.forEach( (color,i) =>{
+      color_settings += 
+          `--color${i}: var(--${color.replace(/\s/g, '')});`
+    });
+    console.log(color_settings);
     el.style.cssText = color_settings;
+    //setup graphs
+    // let plot_data = data_index[key];
 
-    // plot the data into that figure
-    setup(plot_data.file, key);
+    // let color_settings = '';
+
 
   });
 
