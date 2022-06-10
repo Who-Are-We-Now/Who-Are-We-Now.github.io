@@ -1,8 +1,23 @@
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs')
+const {parse} = require('csv-parse/sync');
+const fs = require("fs");
 
 const figures = require("./src/_data/figures.json"); //read in figures index file
 
+function readCSV() {
+  const input = fs.readFileSync("./src/_data/plots_web.csv", "utf8");
+  // console.log(input);
+  const records = parse(input, {
+    columns: true,
+    skip_empty_lines: true,
+  });
+  console.log(`${records.length} records found.`);
+  return records;
+}
+
+const plots = readCSV();
+  
 // Add within your config module
 const md = new markdownIt({
   html: true,
@@ -41,9 +56,8 @@ module.exports = function(eleventyConfig) {
   //           </figure>`;
   // });
 
-  eleventyConfig.addShortcode('plot', function(label) {      
-      return `<figure class="plot" id="${label}">
-                ${label}
+  eleventyConfig.addShortcode('plot', function(label, colors) {      
+      return `<figure class="plot" id="${label}" data-colors="${colors}">
               </figure>`;
   });
   // eleventyConfig.addFilter("markdown", (content) => {

@@ -30,22 +30,22 @@ $(function(){
 	  });
 	});
 
-	const scroller = scrollama();
+	// const scroller = scrollama();
 
-	// setup the instance, pass callback functions
-	scroller
-	  .setup({
-	    step: ".periphery",
-	  })
-	  .onStepEnter((response) => {
-	    // { element, index, direction }
-	    response.element.classList.add('img-on');
-	    console.log('intersecting');
-	  })
-	  .onStepExit((response) => {
-	  	response.element.classList.remove('img-on');
-	    // { element, index, direction }
-	  });
+	// // setup the instance, pass callback functions
+	// scroller
+	//   .setup({
+	//     step: ".periphery",
+	//   })
+	//   .onStepEnter((response) => {
+	//     // { element, index, direction }
+	//     response.element.classList.add('img-on');
+	//     console.log('intersecting');
+	//   })
+	//   .onStepExit((response) => {
+	//   	response.element.classList.remove('img-on');
+	//     // { element, index, direction }
+	//   });
 
 	  //navigation toggle
 	  $('.current-page').click(function() {
