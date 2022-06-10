@@ -4,6 +4,8 @@ title: Whom to believe?
 layout: chapter
 ---
 
+<div class="col">
+
 While language and anonymous societies give us humans our superpowers, they can also limit our thinking. Those limitations can be hard to see, because social discourse— “the conversation”, as many people have taken to calling it— defines the building blocks of thought itself.
 
 First, by identifying with abstract, discrete symbols like “Palestinian” or “Israeli”, “straight” or “gay”, we can impose arbitrary thresholds or cutoffs on properties that usually come in many shades of “yes and”. We may struggle to notice when people don’t fall neatly into our categories. The result can be uncomfortable for those in the middle, artificially collapsing a continuous and multidimensional human landscape into opposing camps: tribalism. The consequences can be severe, even deadly, especially when those camps are very unequal in size or privilege.
@@ -43,9 +45,11 @@ In real life, we make assumptions like these all the time. They are, however, ju
 Unsurprisingly, a large majority of people— about 86%—  answer “yes” to right-handed, and “no” to left-handed. A minority, just under 12%, answer “yes” to left-handed, and “no” to right-handed. This accounts for about 97.8% of the population, which tells us that the assumption that a person is either left- or right-handed, but not both or neither, is generally correct. However, it doesn’t cover everyone. About 1 in 46 people answer either “yes” to both or “no” to both.
 
 These people belong to an “excluded middle”. By answering as they have, they’ve opted out of our usual multiple-choice, either/or assumption about left- and right-handedness. One in 46 is not such a small number, either. If our sample is representative of the US, this works out to about 7.2 million Americans. That’s more than the combined population of LA and Chicago.
+</div>
 
 {% img "dither" %}
 
+<div class="col">
 The fact that we can see this excluded middle in our statistics shows us that yes/no questions are not as binary as they seem. Or rather, each individual question is binary, and forces each respondent to “round up or down” with every answer. However, when we look at the aggregated answers of multiple yes/no questions over many subjects, we can make out the excluded middle in the pattern of yeses and nos. This is a bit like the old printing and graphics technique known as “halftoning” or “dithering”, which allows a black and white printer or screen to render images in shades of gray— even if each pixel can only be black or white. We’ll shortly explore how we can produce a nuanced “halftoned” image of the human landscape using only the unpromising ingredients of binary (and redundant-seeming) yes/no questions.
 
 ***
@@ -60,17 +64,21 @@ Nonetheless, I did set some “traps” in the surveys, to filter out respondent
 As noted, people whose yes/no answers in the main body of the survey aren’t self-explanatory often elaborate on them in free response field at the end of the survey. I left the wording of this final question deliberately vague, along the lines of “Is there anything else you’d like to add?”, to encourage this. This open-endedness helps compensate for the rigidity of the yes/no questions. The tradeoff is that while those yes/no questions are perfect for analyzing statistically by computer, free text narratives aren’t easily quantifiable. They do tell stories that give us insight, though, like this one from a 62 year old woman living in a small town in rural Washington:
 
 > Due to an industrial accident ten years ago, I lost half of my right hand, so [some] of these questions were hard to answer because I’ve had to “adapt” by learning how to use my left hand for things like writing, etc. I wouldn’t necessarily call myself [ambidextrous], though, because if that hadn’t happened, I would still be strictly right-handed.
+</div>
 
 {%img "handxray" %}
 
+<div class="col">
 Injuries leading to outcomes like these are in fact not so uncommon. A recent paper in a medical journal{% ref 22, "K Ziegler-Graham, EJ MacKenzie, PL Ephraim, TG Travison, and R Brookmeyer, *Estimating the prevalence of limb loss in the United States: 2005 to 2050,* Arch Phys Med Rehabil. 2008 Mar;89(3):422-9. doi: 10.1016/j.apmr.2007.11.005. PMID: 18295618." %} estimated that “One in 190 Americans is currently living with the loss of a limb”. Many respondents described far more commonplace injuries affecting handedness: “I badly burnt my left hand as a kid and was forced to [learn] to write with my right hand”;{% ref 23, "A 36 year old man from Henderson, Kentucky." %} “When I was young I was becoming ambidextrous, but due to an injury my right hand became dominant”;{% ref 24, "A 35 year old man from Springville, Utah." %} “I was forced to switch when I got [juvenile rheumatoid] arthritis at 13”;{% ref 25, "A 67 year old woman from Kearney, Nebraska." %} or even “I can write reasonably well with my right hand because I broke my left wrist for a while”.{% ref 26, "A 34 year old woman from Bellevue, Nebraska." %}
 
 ***
 
 Although some hand or arm problems are congenital, most injuries happen at some moment in a person’s life, and affect things from that time forward. This makes it interesting to look beyond overall percentages, and start to break down people’s responses by age using graphs like the one below.
+</div>
 
 {% plot "handedlr" %}
 
+<div class="col">
 We’ll be using age breakdowns like these a lot, so a word of explanation is in order. The graphs are generated by dividing responses into age brackets or “bins”, which are shown as shaded regions alternating between light gray and light yellow. Here, the bins are ages 18-21, 21-25, 25-30, 30-40, 40-50, and 50-80.{% ref 27, "These bins or intervals are “half-open” and would be written in mathematical notation as [18,21), [21,25) and so on, meaning that someone aged exactly 21 would fall in the [21,25) bin, not the [18,21) bin. Questions about birth month (“Were you born in January or February?”), together with age in years, allow the ages of respondents to be calculated to within two months. Bin sizes are chosen to ensure that each contains enough samples for the error bar to be reasonably small, while still capturing significant changes by age, as described in the Appendix." %} For each quantity described in the legend, straight solid lines connect values from the center of one bin to the next showing how these quantities vary with age (hence the left edge of the graph is at the midpoint of the first bin, 19.5, and the right edge is at the midpoint of the last, 65). The black “Strictly right-handed” line shows the percentage of people who both answered “yes” to “Are you right-handed?” and “no” to “Are you left-handed?”; the gold “Strictly left-handed” line is the converse. Putting multiple quantities on the same graph this way can be useful for understanding patterns in the data.
 
 You’ll also notice shaded regions around the lines. Here, they look small, though in many later graphs they won’t be. These are important. They’re what data scientists call “error bars”. They represent the 90% confidence interval, meaning that if we assume every bin contains a random sampling from a much larger candidate population, then 90% of random samples of the same size would produce a percentage within this range.{% ref 28, "I’ve chosen a generous 90% confidence interval rather than the more common 68% confidence interval (one “standard deviation”) in order to both emphasize uncertainty where it exists and, where the regions are tight, make clear how many of the effects we’ll see are so large that they’re highly unlikely to be statistical artifacts." %} We can’t say for certain that the real percentage of the candidate population falls within this (or any) range, because we can only sample a tiny fraction of, say, all of the 18-21 year olds in the United States, and it’s impossible to guarantee that our sample isn’t biased— though I have taken pains to make it as unbiased as possible, using so-called “stratified sampling” methods as described in the [Appendix for data nerds](). Still, the error bars are useful in showing us how seriously to take the estimate. When they’re tight around the solid lines, as they are here, it means those numbers are pretty statistically reliable.
@@ -80,15 +88,19 @@ So what patterns do we see? There’s more afoot here than all-in, age-blind tab
 Big meta-analyses of the scientific literature suggest that about 10% of people are left-handed on average, and that left-handedness is about 23% more common in men (so, closer to about 9% of women and 11% of men). {% ref 29, "M. Papadatou-Pastou, M. Martin, M.R. Munafò, and G.V. Jones, (2008) Sex differences in left-handedness: A meta-analysis of 144 studies. Psychological Bulletin, 134(5), 677–699. https://doi.org/10.1037/a0012814" %} 
 
 It’s generally been theorized that this is due to some inherent sex-linked difference in brain development. There may be such a factor, but zooming in on the strictly left-handed curve and breaking it down by sex, we see something interesting.
+</div>
 
 {% plot "genderhandedl" %}
 
+<div class="col">
 On the whole, our survey data are consistent with the big studies— showing 9.6% of women strictly left-handed and 11.7% of men. {% ref 30, "Later on we’ll delve into the non-binariness of sex and gender. For purposes of the analysis here, “women” is a shorthand for those who answer “yes” to “Do you identify as female?” and “no” to “Do you identify as male?”, and vice versa for “men”. There are a number of other possible definitions based on the survey questions, but none of them would materially affect these results." %} However, that difference may only be significant before middle age; by 45, men and women seem pretty much alike, with both under 10% and falling. What’s going on here?
 
 Looking at strict *right*-handedness adds some further color.
+</div>
 
 {% plot "genderhandedr" %}
 
+<div class="col">
 Here, it’s *young* men and women who are all but indistinguishable; but as they age, fewer and fewer men report being strictly right-handed. By age 65, only about 75% are, as compared to about 83% of women. Those 90% confidence intervals show us that this effect is probably quite significant.
 
 It has been well-established that, on average, men are more accident prone than women. They use (and misuse) more power tools, fall off more roofs, lose more limbs, and are even (somewhat bafflingly) struck by lightning more often! {% ref 31, "[[Citations for all of these.]] On lightning see NOAA data, and Accuweather article http://www.accuweather.com/en/weather-news/men-vs-women-which-gender-is-more-likely-to-be-fatally-struck-by-lightning/351789" %}
@@ -122,7 +134,10 @@ Despite a lack of evidence that left-handed people have “something wrong”, t
 Speaking from the majority’s point of view, a 42 year old from Each China, Michigan wrote, “I seem to be right handed dominant. I think I have less emotional problems than left handed people”.
 
 To check for myself, I did include questions on the survey about depression, bipolar disorder, alcoholism, and a number of other conditions that have been at one time or another associated with left-handedness. The results are underwhelming, with the exception of cerebral palsy, one case where the link with left-handedness has long been well established. {% ref 37, "Only 14 people surveyed have cerebral palsy, but 4 of those are left-handed, which at about 29% is much higher than the expected rate of left-handedness. This is consistent with the medical literature." %} Left-handed people are also slightly overrepresented among the bipolar population, though the effect is modest.
+</div>
 
 {%img "palmcomparison" %}
 
+<div class="col">
 More fundamentally, though, the survey doesn’t bear out the idea that either left-handedness or ambidexterity are “aberrant or abnormal” traits. Ambidexterity in childhood may indeed be rare, perhaps as low as 1% or even less, based on the youngest people we can observe (unfortunately we can’t survey people under 18). But as we’ve seen, by middle age it also rises, and to well above 10%— even more common than strict left-handedness. That’s a pretty big excluded middle. This seems incompatible with the idea that ambidexterity is a rare medical condition you’re either born with or not. So whom should we believe, the doctors or the survey respondents?
+</div>

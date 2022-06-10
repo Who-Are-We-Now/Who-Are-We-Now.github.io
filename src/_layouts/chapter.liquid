@@ -9,12 +9,13 @@ tags: article
 </section>
 <article>
 	<div class="cols">
-		<div class="col">
+		<!-- <div class="col"> -->
 			{{content}}
-		</div>
+		<!-- </div> -->
 	</div>
-	{% include "partials/footnotes.liquid" page: page %}
+	
 </article>
 
+{% include "partials/footnotes.liquid" page: page %}
 <!-- script that draws plots into containers -->
 <script src="/assets/js/plot.js"></script>

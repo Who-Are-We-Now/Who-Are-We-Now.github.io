@@ -181,19 +181,21 @@ nav .navlink {
   left: 2rem;
   z-index: 100;
 }
-nav .navlink .home,
-nav .navlink .current-page {
-  border: solid 2px;
+nav div.home,
+nav div.current-page {
   display: inline-block;
-  background-color: var(--white);
-  font-size: calc(var(--medium-size) / 2);
+  font-size: calc(var(--medium-size) / 1.5);
   padding: 5px;
   margin-right: 5px;
   font-family: "Osram black";
   cursor: pointer;
+  border: solid 2px;
+  background-color: var(--white);
 }
-nav .navlink .home:hover,
-nav .navlink .current-page:hover {
+nav div.home:hover,
+nav div.home a:hover,
+nav div.current-page:hover,
+nav div.current-page a:hover {
   background-color: var(--default);
   border-color: var(--default);
   color: var(--white);
@@ -206,7 +208,7 @@ nav ul.toc {
   width: 100vw;
   height: 100vh;
   overflow: auto;
-  padding: 40px 0;
+  padding: 60px 0;
   min-height: 100vh;
   display: none;
   background-color: var(--white);
@@ -254,8 +256,9 @@ nav a {
 }
 
 main {
-  max-width: var(--max-width);
-  margin: auto;
+  width: calc(100vw - 4rem);
+  padding: 0 40px;
+  transition: all ease-in 0.2s;
 }
 
 /* Part Intros ----------------*/
@@ -302,12 +305,22 @@ main {
 .cols {
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
-
-.col {
+.cols div.col, .cols figure.main {
   width: 50%;
   flex: none;
   padding: 0 2rem;
+}
+.cols div.col.on,
+.cols div.col.on-prev,
+.cols div.col.on-next {
+  width: 45%;
+}
+.cols div.col.on p,
+.cols div.col.on-prev p,
+.cols div.col.on-next p {
+  font-variation-settings: "wght" 400, "wdth" 80, "SRIF" 100;
 }
 
 table {
@@ -394,12 +407,6 @@ table td:first-child {
 /*--------------------------------------*/
 /* FIGURE STYLES -----------------------*/
 /*--------------------------------------*/
-figure.main {
-  position: absolute;
-  left: calc(50% + var(--sectionpad));
-  padding: var(--sectionpad) 0;
-  max-width: calc(50% - var(--sectionpad) * 2);
-}
 figure img {
   max-width: 100%;
 }
@@ -558,6 +565,13 @@ text {
 
 .bin:nth-child(2n) {
   fill: var(--bin2);
+}
+
+/*--------------------------------------*/
+/* SECTION SPECIFIC OVERIDES   ---------*/
+/*--------------------------------------*/
+body#home .current-page::before {
+  content: "Table of Contents";
 }
 
 /*# sourceMappingURL=main.css.map */
