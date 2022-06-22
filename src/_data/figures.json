@@ -1,4 +1,18 @@
 {
+  "xenofem": {
+    "chapter": "preface",
+    "file": "xenofeminist_manifesto.jpg",
+    "caption": "Laboria Cuboniks, *The Xenofeminist Manifesto*, (New York: Verso, 2018)",
+    "alt": "Yellow book cover with black-and-white floral X over a magenta F",
+    "credit": "Image credit"
+  },
+  "bildlilli": {
+    "chapter": "introduction",
+    "file": "11807176_fullsize-SILO-ROUGH.jpg",
+    "caption": "Bild Lilli Doll",
+    "alt": "",
+    "credit": "Image credit"
+  },
   "handxray": {
     "chapter": 1,
     "file": "8a5bfbbe5200e5a808fc12e826c695_jumbo.jpeg",

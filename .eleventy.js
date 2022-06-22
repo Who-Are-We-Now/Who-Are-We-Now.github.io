@@ -5,6 +5,7 @@ const fs = require("fs");
 
 const figures = require("./src/_data/figures.json"); //read in figures index file
 
+
 function readCSV() {
   const input = fs.readFileSync("./src/_data/plots_web.csv", "utf8");
   // console.log(input);
@@ -21,10 +22,12 @@ const plots = readCSV();
 // Add within your config module
 const md = new markdownIt({
   html: true,
-  linkify: false
+  linkify: true,
+  typographer: true,
+  quotes: '“”‘’'
 });
+const markdownLib = md.use(markdownItAttrs);
 
-const markdownLib = md.use(markdownItAttrs)
 
 module.exports = function(eleventyConfig) {
   
@@ -33,36 +36,28 @@ module.exports = function(eleventyConfig) {
     files: './docs/assets/css/*.css'
   });
 
+  //markdown processing
   eleventyConfig.setLibrary('md', markdownLib);
-
   eleventyConfig.addFilter("markdown", (content) => {
     return md.renderInline(content); 
   });
 
-  eleventyConfig.addShortcode('img', function(id) { /*main*/
-    let chapter = this.page.filePathStem.split('/')[2];
-    let img = figures[id];
-    return `<figure class="main">
-              <img src="/assets/figures/${chapter}/${img.file}" alt="${img.alt}" title="${img.alt}"/>
-              <figcaption>${img.caption}</figcaption>
-            </figure>`;
-  });
+  // custom shortcodes
 
-  // eleventyConfig.addShortcode('img2', function(caption, path) { /*periphery*/
-  //   let chapter = this.page.filePathStem.split('/')[2];
-  //   return `<figure class="periphery">
-  //             <img src="/assets/figures/${chapter}/${path}" alt="${caption}" title="${caption}"/>
-  //             <figcaption>${caption}</figcaption>
-  //           </figure>`;
-  // });
+  eleventyConfig.addShortcode('img', function(id) { /*main*/
+    let img = figures[id];
+    if(img){
+      return `<figure class="main">
+                <img src="/assets/figures/${img.chapter}/${img.file}" alt="${img.alt}" title="${img.alt}"/>
+                <figcaption>${img.caption}</figcaption>
+              </figure>`;
+          }
+  });
 
   eleventyConfig.addShortcode('plot', function(label, colors) {      
       return `<figure class="plot" id="${label}" data-colors="${colors}">
               </figure>`;
   });
-  // eleventyConfig.addFilter("markdown", (content) => {
-  //   return md.render(content);
-  // });
 
 
   const FOOTNOTE_MAP = []
@@ -80,10 +75,8 @@ module.exports = function(eleventyConfig) {
   });
 
 
-  // eleventy.addCollection('toc', function(config) {
-  //     return collections.article
-  //         .sort((a, b) => b.data.chapter - a.data.chapter);
-  // });
+  //custom collections
+
   eleventyConfig.addCollection("toc", collection => {
       const articles = collection.getFilteredByTag("article")
         .sort((a, b) => {
@@ -91,21 +84,6 @@ module.exports = function(eleventyConfig) {
         });
       return articles;
     });
-
-    
-
-  // eleventyConfig.addFilter('sortByChapter', values => {
-  //   return values.slice().sort((a, b) => a.data.chapter.localeCompare(b.data.chapter))
-  // });
-  // eleventyConfig.addCollection("p1_ch", function(collection) {
-  //   return collection.getFilteredByGlob("src/part-1/chapter-*/index.md");
-  // });
-  // eleventyConfig.addCollection("p2_ch", function(collection2) {
-  //   return collection2.getFilteredByGlob("src/part-2/chapter-*/index.md");
-  // });
-  // eleventyConfig.addCollection("p2_in", function(collection2) {
-  //   return collection2.getFilteredByGlob("src/part-2/interlude/index.md");
-  // });
 
 
   eleventyConfig.addFilter(
