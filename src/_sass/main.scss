@@ -105,6 +105,11 @@ p:first-child, hr+p, blockquote+p{
 	text-indent: 0;
 }
 
+// don't indent after columns
+// div+p{
+// 	text-indent: 0;
+// }
+
 em{
 	@extend .belarius-oblique;
 }
@@ -125,7 +130,9 @@ blockquote{
 }
 
 article{
-	
+	p{
+		max-width: calc(var(--max-width) / 2);
+	}
 }
 
 hr{
@@ -320,31 +327,33 @@ main {
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	div.col, figure.main {
+
+	.col{
 		width: 50%;
 		flex: none;
-		padding: 0 2rem;
 	}
-
-	div.col.on,
-	div.col.on-prev, 
-	div.col.on-next{
-		width: 45%;
-		p {
-			font-variation-settings: "wght" 400, "wdth" 80, "SRIF" 100;
-		}
-	}
+	// div.col.on,
+	// div.col.on-prev, 
+	// div.col.on-next{
+	// 	width: 45%;
+	// 	p {
+	// 		font-variation-settings: "wght" 400, "wdth" 80, "SRIF" 100;
+	// 	}
+	// }
 	
 }
-.col:first-child{
-	// flex: 2;
-	// margin-right: var(--sectionpad);
+
+.image{
+	position: sticky;
+	top: 0;
+	padding-left: var(--sectionpad);
+
+	img{
+		max-height: 80vh;
+	}
 }
-// .col{
-// 	width: 50%;
-//     flex: none;
-//     padding: 0 2rem;
-// }
+
+
 table{
 	font-family: 'Osram Regular';
 	font-size: var(--caption-size);
@@ -410,13 +419,16 @@ table{
 
 .footnote-text{
 	line-height: 1.5;
-
+	font-size: .8em;
+	--wdth: 90;
 	display: none;
-	position: absolute;
-	z-index: 20;
+	position: fixed;
+	top: 30%;
+	right: var(--sectionpad);
+	left: auto;
+	z-index: 100;
 	width: 300px;
-	left: 0px;
-	background: var(--light-grey);
+
 	border: 1px solid var(--default);
 	padding: var(--pad);
 	&.visible{
@@ -476,6 +488,7 @@ figure{
 figcaption {
 	font-family: 'Osram Medium';
 	font-size: var(--caption-size);
+	text-align: center;
 }
 
 .periphery {

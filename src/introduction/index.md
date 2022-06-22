@@ -4,27 +4,31 @@ title: Anonymous Identity
 layout: intro
 ---
 
-An anonymous caller's voice played over the laptop's speakers. "Hi, Dan. This is a 26 year old bisexual man in New York, and I have a somewhat strange question. Watching the HBO show Westworld, I've been thinking... if there were hyper-advanced sex robots and you were to have sex with one, would that be cheating? I mean, isn't it just like a really fancy sex toy? Or is there some other component, like, if you had an emotional connection that means something else. I don't know. What do you think?"
-
 {% img 'bildlilli' %}
+
+An anonymous caller's voice played over the laptop's speakers. "Hi, Dan. This is a 26 year old bisexual man in New York, and I have a somewhat strange question. Watching the HBO show Westworld, I've been thinking... if there were hyper-advanced sex robots and you were to have sex with one, would that be cheating? I mean, isn't it just like a really fancy sex toy? Or is there some other component, like, if you had an emotional connection that means something else. I don't know. What do you think?"
 
 The recording clicked off. Dan Savage, looking both mischievous and a bit world-weary, waited a beat, then leaned into his microphone and spoke. "Joining me in our studio today to tackle this very important question about robots, Westworld, and AI is Blaise Agüera y Arcas, who is the head of Google's AI effort in Seattle."
 
 We dispatched the caller's question pretty quickly---"It's cheating if your partner thinks it's cheating, period, the end"---then went on to have a fun back and forth about robot sex, the state of machine learning today, the way we project feelings onto inanimate things, and what the Turing Test might look like---in bed. Bad puns about uncanny valleys were made.
 
+{% endimg %}
+
 (In case you're not familiar with it: the Turing Test was a thought experiment proposed by computer pioneer Alan Turing in 1950. He pointed out that, since we have no objective way of determining when a machine goes from being an "it" to a "who," we may as well simply ask it to convince us that it can stand in for a human in an online chat. As for the "uncanny valley," the phrase was invented by Japanese robotics professor Masahiro Mori in 1970 to refer to that in-between situation in which something humanoid is just realistic enough to be creepy---without being realistic enough to be convincing. The characters in the 2004 animated movie *The Polar Express* are an oft-cited example.)
 
 As we bantered, I remember hoping, somewhere in the back of my mind, that I wouldn't get in trouble with my employer when this episode of the Savage Lovecast aired.[^1] Sometime after we'd wandered off into the thickets of whether consciousness is an illusion, and when people with *Avatar* kinks would get their very own giant blue sexbots, Nancy Hartunian, the Lovecast's long-suffering producer, rolled her eyes and signaled for us to wrap it up.
 
-The recording stopped, but conversation continued. The ethical conundrum of how advanced a sex toy needs to be before we start having to ask for its consent was a welcome distraction, but I didn't really have robots, sexy or otherwise, on my mind that day. I was thinking about people. How were they voting? It was Election Day: Tuesday, November 8th, 2016. It was hard to think of anything else.
+{% img 'usvoting' %}
 
-[[us-voting-621756122.jpg]]
+The recording stopped, but conversation continued. The ethical conundrum of how advanced a sex toy needs to be before we start having to ask for its consent was a welcome distraction, but I didn't really have robots, sexy or otherwise, on my mind that day. I was thinking about people. How were they voting? It was Election Day: Tuesday, November 8th, 2016. It was hard to think of anything else.
 
 Dan, normally a worrywart, was uncharacteristically confident that Hillary had it in the bag. So was everyone else in Seattle, a famously/notoriously progressive little blue dot near the upper left corner of the American map. Despite an unspoken agreement not to jinx it, the mood was expectant, even festive. Parties were being planned for the evening, including one at our house. There was champagne chilling in the fridge. Nancy and her family would be dropping by.
 
 I was less certain. I'd been checking Nate Silver's FiveThirtyEight polling site obsessively, and while it, too, favored Hillary, her lead was far from decisive. Everyone seemed to be ignoring the margin of error, and it was substantial.
 
 Although not on the same scale as all of those big national polls, my own data had me wondering, too. I'd been running surveys using Amazon's Mechanical Turk platform, which lets you code up questionnaires and crowdsource responses from people all over the country. I had learned about Mechanical Turk because it was a frequently used tool for generating training data for AI, but I just wanted to use it to satisfy my own curiosity. At first, my questions were straightforward. They ran along the lines of: Who will you vote for? What issues do you care about? What do you believe? Who are you?
+
+{% endimg %}
 
 I didn't want to be exploitative, so I was paying my respondents decently---and this was turning into an expensive hobby. Still, it was cheap and easy compared to the phone banking or field operation it would have taken to run such a survey a few years ago. Now it could all be done from a laptop, and with a turnaround time of a few hours. I felt like I was learning a lot about my fellow human beings. Every insight suggested more questions I wanted to ask, hence a new survey, more graphs, more analysis. It was addictive.
 

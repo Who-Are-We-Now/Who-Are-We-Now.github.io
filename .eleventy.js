@@ -1,5 +1,5 @@
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
+// const jsdom = require("jsdom");
+// const { JSDOM } = jsdom;
 
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require('markdown-it-attrs')
@@ -53,7 +53,6 @@ markdownLib.renderer.rules.footnote_ref = (tokens, idx, options, env, slf )=> {
   return `<span id="fnref${refid}" class="reference">
             <sup class="footnote-ref">${caption}</sup>
           </span>
-          <div id="fnitem${refid}" class="footnote-text"></div>
           `
 }
 // markdownLib.renderer.rules.footnote_block_open = () => (
@@ -83,62 +82,43 @@ module.exports = function(eleventyConfig) {
     return md.renderInline(content); 
   });
 
+  //footnote popups
+  // eleventyConfig.addTransform("popup_footnote", function(content) {
+  //     //collect all footnotes
+  //     let dom = new JSDOM(content);
+  //     let document = dom.window.document;
+  //     let notes = document.querySelectorAll(".footnote-item");
 
-  eleventyConfig.addTransform("popup_footnote", function(content) {
-      // Eleventy 1.0+: use this.inputPath and this.outputPath instead
-      //collect all footnotes
-      let dom = new JSDOM(content);
-      let document = dom.window.document;
-      let notes = document.querySelectorAll(".footnote-item");
+  //     // console.log(notes);
+  //     notes.forEach( (el,i) =>{
+  //       let ref = el.querySelector('.footnote-backref');
+  //       ref.remove(); //remove footnote reference
 
-      // console.log(notes);
-      notes.forEach( (el,i) =>{
-        let ref = el.querySelector('.footnote-backref');
-        ref.remove(); //remove footnote reference
+  //       let key = el.id.replace('fn',''); //get footnote index
 
-        let key = el.id.replace('fn',''); //get footnote index
+  //       //add footnote HTML to popup placeholder
+  //       let placeholder = document.querySelector('#fnitem'+key);
+  //       placeholder.innerHTML = el.innerHTML;
+  //     });
 
-        //add footnote HTML to popup placeholder
-        let placeholder = document.querySelector('#fnitem'+key);
-        placeholder.innerHTML = el.innerHTML;
-      });
+  //     content = dom.serialize();
 
-      content = dom.serialize();
+  //     return content;
+  //   });
 
-      return content;
-    });
 
   // custom shortcodes
-
-  eleventyConfig.addShortcode('img', function(id) { /*main*/
+  eleventyConfig.addPairedShortcode('img', function(content, id){
     let img = figures[id];
     if(img){
-      return `<figure class="main">
-                <img src="/assets/figures/${img.chapter}/${img.file}" alt="${img.alt}" title="${img.alt}"/>
-                <figcaption>${img.caption}</figcaption>
-              </figure>`;
-          }
+      //append to figures column
+      return `<div class="cols"><div class="col">${content}</div><div class="col image"><figure class="main"><img src="/assets/figures/${img.chapter}/${img.file}" alt="${img.alt}" title="${img.alt}"/> <figcaption>${img.caption}</figcaption></figure></div></div>`; }
   });
 
   eleventyConfig.addShortcode('plot', function(label, colors) {      
       return `<figure class="plot" id="${label}" data-colors="${colors}">
               </figure>`;
   });
-
-
-  // const FOOTNOTE_MAP = []
-
-  // eleventyConfig.addShortcode('ref', function(id, text) {
-  //     const key = this.page.inputPath;
-  //     const footnote = { id, text };
-  //     // console.log(text);
-
-  //     FOOTNOTE_MAP[key] = FOOTNOTE_MAP[key] || {};
-  //     FOOTNOTE_MAP[key][id] = footnote;
-  //     return `<span id="${id}-ref" aria-describedby="footnotes-label" role="doc-noteref" class="reference">
-  //               <span class="ref-no">${id}</span><span class="caption ref-text">${text}</span>
-  //             </span>`;
-  // });
 
 
   //custom collections
@@ -151,13 +131,6 @@ module.exports = function(eleventyConfig) {
       return articles;
     });
 
-
-  // eleventyConfig.addFilter(
-  //   'footnotes', 
-  //   // The first argument is the value the filter is applied to,
-  //   // which is irrelevant here.
-  //   (_, page) => Object.values(FOOTNOTE_MAP[page.inputPath] || {})
-  // )
 
   return {
     dir: {

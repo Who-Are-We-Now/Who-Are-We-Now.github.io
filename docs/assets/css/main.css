@@ -146,6 +146,10 @@ blockquote {
   margin: 1em var(--indent);
 }
 
+article p {
+  max-width: calc(var(--max-width) / 2);
+}
+
 hr {
   border: 0;
   background: 0;
@@ -307,20 +311,18 @@ main {
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.cols div.col, .cols figure.main {
+.cols .col {
   width: 50%;
   flex: none;
-  padding: 0 2rem;
 }
-.cols div.col.on,
-.cols div.col.on-prev,
-.cols div.col.on-next {
-  width: 45%;
+
+.image {
+  position: sticky;
+  top: 0;
+  padding-left: var(--sectionpad);
 }
-.cols div.col.on p,
-.cols div.col.on-prev p,
-.cols div.col.on-next p {
-  font-variation-settings: "wght" 400, "wdth" 80, "SRIF" 100;
+.image img {
+  max-height: 80vh;
 }
 
 table {
@@ -375,12 +377,15 @@ table td:first-child {
 
 .footnote-text {
   line-height: 1.5;
+  font-size: 0.8em;
+  --wdth: 90;
   display: none;
-  position: absolute;
-  z-index: 20;
+  position: fixed;
+  top: 30%;
+  right: var(--sectionpad);
+  left: auto;
+  z-index: 100;
   width: 300px;
-  left: 0px;
-  background: var(--light-grey);
   border: 1px solid var(--default);
   padding: var(--pad);
 }
@@ -415,6 +420,7 @@ figure img {
 figcaption {
   font-family: "Osram Medium";
   font-size: var(--caption-size);
+  text-align: center;
 }
 
 .periphery {
