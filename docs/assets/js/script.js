@@ -1,18 +1,20 @@
 $(function(){
 
-// FOOTNOTE POPUPS
-	$('.reference').each(function() {          
-	 	$(this).on('click', function(){
-	 		let $note = $('.ref-text', this);
-	 		if ($note.hasClass('visible')){
-	 			$note.removeClass('visible');
-	 		} else{
-	 			$('.visible').removeClass('visible');
-	 			$note.addClass('visible');
-	 		}
-	 	});
-	});
 
+// FOOTNOTE POPUPS
+		$('.reference').on('click', function(){
+		 		let id = $(this).attr('id').replace('fnref', '');
+
+		 		let popup = $('#fnitem'+id);
+
+		 		// console.log('#fnitem'+id);
+		 		if (popup.hasClass('visible')){
+		 			popup.removeClass('visible');
+		 		} else{
+		 			$('.visible').removeClass('visible');
+		 			popup.addClass('visible');
+		 		}
+		});
 
 // IMAGE TREATMENT
 	let img = $('.periphery');

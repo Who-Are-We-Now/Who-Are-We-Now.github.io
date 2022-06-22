@@ -363,16 +363,17 @@ table td:first-child {
   display: inline;
   cursor: pointer;
 }
-.reference .ref-no {
+.reference .footnote-ref {
   font-family: "Osram Medium";
   font-size: var(--small-size);
   position: relative;
   bottom: 8px;
 }
-.reference .ref-no:hover {
+.reference .footnote-ref:hover {
   color: var(--orange);
 }
-.reference .ref-text {
+
+.footnote-text {
   line-height: 1.5;
   display: none;
   position: absolute;
@@ -383,7 +384,7 @@ table td:first-child {
   border: 1px solid var(--default);
   padding: var(--pad);
 }
-.reference .ref-text.visible {
+.footnote-text.visible {
   display: block;
 }
 
