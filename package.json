@@ -32,9 +32,5 @@
     "markdown-it-footnote": "^3.0.3",
     "npm-run-all": "^4.1.5",
     "sass": "^1.52.0"
-  },
-  "dependencies": {
-    "@jamshop/eleventy-plugin-typography": "^1.0.0",
-    "eleventy-plugin-typeset": "github:arcades-studio/eleventy-plugin-typeset-again"
   }
 }
