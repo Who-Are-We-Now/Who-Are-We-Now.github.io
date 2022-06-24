@@ -82,7 +82,7 @@ body{
 	font-variation-settings: "wght" var(--wght), "wdth" var(--wdth), "SRIF" var(--SRIF);
 }
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Osram Black', sans-serif;
+	font-family: 'Osram', sans-serif;
 	margin-bottom: var(--pad);
 }
 
@@ -115,7 +115,7 @@ em{
 }
 
 a{
-	color: var(--orange);
+	color: var(--accent);
 }
 
 li {
@@ -130,6 +130,7 @@ blockquote{
 }
 
 article{
+	--wdth: 115;
 	p{
 		max-width: calc(var(--max-width) / 2);
 	}
@@ -183,7 +184,8 @@ nav {
 			font-size: calc(var(--medium-size) / 1.5);
 			padding: 5px;
 			margin-right: 5px;
-			font-family: 'Osram black';
+			font-family: 'Osram';
+			font-weight: 500;
 			cursor: pointer;
 			
 			border: solid 2px;
@@ -219,7 +221,7 @@ nav {
 		li {
 			width: 100vw;
 			border-bottom: 1px solid;
-			font-family: "Osram Regular";
+			font-family: "Osram";
 			font-size: var(--medium-size);			
 			&::before {
 				content:"";
@@ -234,7 +236,8 @@ nav {
 				
 				&:hover,
 				&.is-active {
-					font-family: "Osram Black";
+					font-family: "Osram";
+					font-weight: 900;
 				}
 				
 			}
@@ -260,7 +263,8 @@ nav {
 		
 		h4 {
 			font-size: var(--caption-size);
-			font-family: 'Osram Black';
+			font-family: 'Osram';
+			font-weight: 900;
 		}
 	}
 	a {
@@ -332,20 +336,12 @@ main {
 		width: 50%;
 		flex: none;
 	}
-	// div.col.on,
-	// div.col.on-prev, 
-	// div.col.on-next{
-	// 	width: 45%;
-	// 	p {
-	// 		font-variation-settings: "wght" 400, "wdth" 80, "SRIF" 100;
-	// 	}
-	// }
-	
+
 }
 
 .image{
 	position: sticky;
-	top: 0;
+	top: var(--pad);
 	padding-left: var(--sectionpad);
 
 	img{
@@ -355,7 +351,7 @@ main {
 
 
 table{
-	font-family: 'Osram Regular';
+	font-family: 'Osram';
 	font-size: var(--caption-size);
 	margin: var(--sectionpad) 0;
 	width: 100%;
@@ -406,13 +402,18 @@ table{
 	cursor: pointer;
 	//superscripts
 	.footnote-ref{
-		font-family: 'Osram Medium';
+		font-family: 'Osram';
+		font-weight: 500;
 		font-size: var(--small-size);
 		position: relative;
 		bottom: 8px;
-
+		font-size: 1rem;
+		vertical-align: baseline;
+		border-bottom: 3px solid;
+		top: -0.25em;
+		color: var(--accent);
 		&:hover{
-			color: var(--orange);
+			border-bottom-color: transparent;
 		}
 	}
 }
@@ -486,7 +487,8 @@ figure{
 
 
 figcaption {
-	font-family: 'Osram Medium';
+	font-family: 'Osram';
+	font-weight: 500;
 	font-size: var(--caption-size);
 	text-align: center;
 }
@@ -522,7 +524,7 @@ figcaption {
 	position: relative;
 }
 .plot-title{
-	font-family: 'Osram Regular';
+	font-family: 'Osram';
 	margin-bottom: 1rem;
 	padding-left: 30px;
 	max-width: 25em;
@@ -560,7 +562,7 @@ svg{
 } 
 
 text{
-	font-family: 'Osram Regular', sans-serif;
+	font-family: 'Osram', sans-serif;
 }
 
 .area{
@@ -573,7 +575,7 @@ text{
 }
 
 .label{
-	font-family: 'Osram Regular', sans-serif;
+	font-family: 'Osram', sans-serif;
 	line-height: 1.1;
 	white-space: normal;
 	font-size: var(--caption-size);

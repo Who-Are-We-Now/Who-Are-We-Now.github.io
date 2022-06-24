@@ -2,7 +2,7 @@
 	<nav>
 		<div class="navlink">
 			<div class="home"><a href="/">Who are we now?</a></div>
-			<div class="current-page">
+			<div class="current-page" data-display="hidden">
 				{%- for item in collections.toc -%}
 					{% if item.url == page.url %}
 						{{ item.data.title }}	
