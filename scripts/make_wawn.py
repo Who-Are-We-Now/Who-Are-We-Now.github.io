@@ -70,5 +70,5 @@ if __name__ == '__main__':
         print(" download complete!")
 
         # Format the documents using the bash script
-        os.system("(cd raw_docs; ../format_doc.sh {:02}_{})".format(ch, shortname))
+        os.system("(cd raw_docs; ../format_doc.sh {})".format(shortname))
         print(" doc formatting complete!")
