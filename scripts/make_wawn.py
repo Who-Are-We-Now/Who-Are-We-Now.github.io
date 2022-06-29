@@ -61,6 +61,7 @@ if __name__ == '__main__':
     #     [chapter number, title, drive_id, shortname]
     f = open('chapters.json')
     chapters = json.load(f)
+    os.system("mkdir raw_docs")
     for ch, title, drive_id, shortname in chapters:
         wawn_docx = "raw_docs/{}.docx".format(shortname)
 
@@ -72,3 +73,6 @@ if __name__ == '__main__':
         # Format the documents using the bash script
         os.system("(cd raw_docs; ../format_doc.sh {})".format(shortname))
         print(" doc formatting complete!")
+
+        # Clean up downloaded .docx file, to prevent unnecessary duplication
+        os.system('rm -rf raw_docs/{}.docx'.format(shortname))

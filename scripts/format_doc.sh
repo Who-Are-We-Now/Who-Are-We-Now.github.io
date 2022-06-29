@@ -25,8 +25,8 @@ mkdir ${src_dir}/${1}
 # ...OR without citation setting
 python ../../process_md.py --input 1_${1}.md --output ${src_dir}/${1}/index.md
 
-# genereatee docx file
+# generate .docx file
 # TODO -- need to test with properly formatted file
 
 cd ..
-# rm -rf tmp
+rm -rf tmp
