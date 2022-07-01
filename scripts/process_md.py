@@ -93,29 +93,30 @@ def remove_ref_metadata(line):
 
     return Line(line, False)
 
-for line in f.readlines():
-    write = True
-    line_normalized = unicodedata.normalize("NFKD", line)
-    line = Line(line_normalized, write)
-    
-    line = replace_first_two_hbar(line) 
-    write &= line.write
+if __name__ == '__main__':
+    for line in f.readlines():
+        write = True
+        line_normalized = unicodedata.normalize("NFKD", line)
+        line = Line(line_normalized, write)
 
-    line = replace_em_dash(line)
-    write &= line.write
+        line = replace_first_two_hbar(line)
+        write &= line.write
 
-    line = remove_underline_in_links(line)
-    write &= line.write
+        line = replace_em_dash(line)
+        write &= line.write
 
-    line = remove_paperpile_links(line)
-    write &= line.write
+        line = remove_underline_in_links(line)
+        write &= line.write
 
-    line = remove_ref_metadata(line)
-    write &= line.write
+        line = remove_paperpile_links(line)
+        write &= line.write
 
-    line = remove_bibliography(line) 
-    write &= line.write
-    
-    if write:
-        o.write(line.text)
+        line = remove_ref_metadata(line)
+        write &= line.write
+
+        line = remove_bibliography(line)
+        write &= line.write
+
+        if write:
+            o.write(line.text)
 
