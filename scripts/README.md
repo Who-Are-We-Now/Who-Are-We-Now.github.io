@@ -24,7 +24,7 @@ REAME.md
 ```
 
 # Setting up
-Follow these instructions to set it up. 
+Follow these instructions to set up the wawn build script.
 
 ## Install dependencies
 
