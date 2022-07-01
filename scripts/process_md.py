@@ -93,7 +93,7 @@ def remove_ref_metadata(line):
 
     return Line(line, False)
 
-if __name__ == '__main__':
+if __name__ == '__main__':  
     for line in f.readlines():
         write = True
         line_normalized = unicodedata.normalize("NFKD", line)
@@ -119,4 +119,3 @@ if __name__ == '__main__':
 
         if write:
             o.write(line.text)
-
