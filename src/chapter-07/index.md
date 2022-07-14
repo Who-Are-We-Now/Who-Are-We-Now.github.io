@@ -1,3 +1,10 @@
+---
+part: 2
+chapter: 7
+title: Dimensions of attraction
+layout: chapter
+---
+
 Chapter 7: Dimensions of attraction
 ---
 
@@ -5,7 +12,7 @@ So what do the data tell us? Let’s begin with the basics.
 
 The 2015 U.S. Census estimated that only 3.8% of Americans are LGBT, but for a variety of reasons— likely including concerns about anonymity— this number falls well short of reality. The 2017 Gallup poll found that 4.5% of adult Americans identify as LGBT— 5.1% of women, and 3.9% of men. This “1 in 20” number has been widely cited, and is roughly comparable with the way older Americans respond in our survey. However, when we look across ages, we see a sharp decline in traditional heterosexual norms among the young. While nearly 95% of 65 year olds report being heterosexual, only 76% of 18 year olds do. This is an enormous change, and alarming to some: from 19 out of 20 at the older end to only 3 out of 4 young people!
 
-![](media/image6.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image7.png){width="6.5in" height="2.8333333333333335in"}
 
 This graph and others like it illustrate why it’s so important to break down statistics like these by age, and where possible, to use smaller age bins at the younger end of the scale, where the changes are often most rapid. Especially in highly developed countries like the U.S., the population is heavily skewed toward older people. Averages will thus be dominated by those older people, and won’t reveal how different the numbers are among the young. Yet arguably, the statistics of the young tell us more about the shape of the future.
 
@@ -31,7 +38,7 @@ Some of them aren’t sexually attracted to either men or women; though these nu
 
 While both the overall percentage and the difference between men and women shrink with age, it’s notable that at every age, more women than men report a lack of sexual attraction to anyone. We see a similar pattern when we ask about asexuality, meaning a low or absent sex drive.
 
-![](media/image1.png){width="6.5in" height="2.8333333333333335in"}In this area as in some others, asexual respondents often express different views about whether they see their minority status as a medical abnormality, an identity, or somewhere in between. A 22 year old woman from Illinois wrote of her asexuality, “I’m tired of people saying I’ll grow out of it or thinking there’s something wrong with me.” Contrast this with the way an asexual 27 year old from Florida characterizes *her* asexuality as a dysfunction: “I have hormone issues and thus greatly reduced sex drive.” Of course it could be said that all of us have sexual urges influenced by our hormone levels, and these hormone levels can be inconvenient in any number of ways. We can believe these hormonal settings are normal or abnormal, wish they were different or embrace them, think of them as a malady or as part of our identity. There’s no objectively right answer.
+![](media/image3.png){width="6.5in" height="2.8333333333333335in"}In this area as in some others, asexual respondents often express different views about whether they see their minority status as a medical abnormality, an identity, or somewhere in between. A 22 year old woman from Illinois wrote of her asexuality, “I’m tired of people saying I’ll grow out of it or thinking there’s something wrong with me.” Contrast this with the way an asexual 27 year old from Florida characterizes *her* asexuality as a dysfunction: “I have hormone issues and thus greatly reduced sex drive.” Of course it could be said that all of us have sexual urges influenced by our hormone levels, and these hormone levels can be inconvenient in any number of ways. We can believe these hormonal settings are normal or abnormal, wish they were different or embrace them, think of them as a malady or as part of our identity. There’s no objectively right answer.
 
 Evidently asexuality is less common— or, judging by the previous graph, less acknowledged— among the youngest cohort, even among those who don’t find themselves attracted to anyone. Identifying a *lack* of something may be tricky for a young person, in that it’s hard to distinguish not having the psychological or hormonal “circuitry” for strong sexual attraction from simply not having experienced it yet: “I think I’m asexual, but I don’t even know.”[^1] Or, as a 23 year old woman from Michigan explained,
 
@@ -57,13 +64,13 @@ Like any other identity, asexuality is defined socially, based on the labels and
 
 Interestingly, some young respondents identify as both asexual *and* as bi- or pansexual.[^2] This can be confusing to those of us who think of sexuality in terms of a simple knob, with “gay” at one end, “straight” at the other end, and “bi or pan” somewhere in the middle. In the 1940s, pioneering sexologist Alfred Kinsey and his collaborators came up with just this model, which came to be known as the Kinsey Scale. To this day, it’s often invoked as a counterargument to the idea of attraction being binary, either strictly homosexual or heterosexual (“I’m around kinsey 4 lol,” wrote a 20 year old from Poquoson, Virginia). The Kinsey Scale may be the archetypal “spectrum.”
 
-![](media/image8.jpg){width="4.5969389763779525in" height="4.3317311898512685in"}
+![](media/image4.jpg){width="4.5969389763779525in" height="4.3317311898512685in"}
 
 Although more nuanced than a simple dichotomy, there are many ways in which this model falls short, especially in presuming that everybody can be assigned a number on a one-dimensional scale. Even when gathering their data, Kinsey and collaborators found that they had to define a special off-scale category that they simply called “X”— which today we’d associate with asexuality. The need for this “X” category illustrates a problem with thinking about orientation one-dimensionally: being less attracted to the same sex doesn’t automatically make you more attracted to the opposite sex, or vice versa.
 
 A two-dimensional sexual attraction scale accounts for asexuality more naturally, and doesn’t presume a tradeoff between same-sex and opposite-sex attraction:[^3]
 
-![](media/image2.jpg){width="3.2292989938757657in" height="2.4375in"}
+![](media/image6.jpg){width="3.2292989938757657in" height="2.4375in"}
 
 This two-dimensional model, like any model, is still incomplete (for instance, it presumes that same and opposite sexes can be clearly defined, which as we’ll explore further in Chapters 8-9, isn’t always the case), but at least it allows us to place an asexual “X” on the map— somewhere near the lower left— rather than awkwardly off it. It also reveals the way asexuality and bisexuality can themselves be regarded as a continuum, ranging from the lower left to the upper right. Describing his position near the asexual end of this continuum, a 39 year old from Moorhead, Minnesota wrote,
 
@@ -85,7 +92,7 @@ The frequency with which women, especially, express these feelings when asked an
 
 In addition to sexual attraction, the survey also asks questions about romantic attraction. Although they’re often in alignment, sexual and romantic attraction work differently for some people. The breakdown of romantic attraction by age and gender certainly looks very different from sexual attraction.
 
-![](media/image7.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image8.png){width="6.5in" height="2.8333333333333335in"}
 
 As with lack of sexual attraction, the numbers converge to roughly 2% for older respondents, but in this case, at younger ages a lack of romantic interest is far more prevalent among men— rising above 10% for the youngest men. Men appear to become more interested in romance as they get older, while women become less so.
 
@@ -107,7 +114,7 @@ I should note here that Mechanical Turk allows the experimenter to create and as
 
 So, if we compare heteronormative attraction over these four years, do we observe (a) a pure function of age, or (b) a purely generational change? Or, perhaps, (c) a mixture of the two? For many variables, including heteronormative attraction, the answer turns out to be a surprise: (d), none of the above.
 
-![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
 
 To simplify this comparison, I’ve combined the 2018 and 2019 data into one pool, and the 2020 and 2021 data into another, as well as using coarser age bins. This lets us compare two curves with smaller error bars, rather than four curves with larger ones. We can see that heteronormativity across age ranges is significantly lower in 2020-21 than it was in the previous two years, 2018-19. Incidentally, this suggests another reason the literature tends to overestimate heteonormativity in the US. Since survey data are always historical, their numbers— along with our perceptions— lag reality on the ground. The question is, how fast is that reality changing?
 
@@ -117,7 +124,7 @@ For one thing, it means that any preconceptions we might have about the essentia
 
 To return briefly to the previous chapter’s topic, we can see a similar pattern in the shift away from monogamy between 2018-19 and 2020-21 (though here, younger people may be reaching a lower plateau at about 75%; given the error bars, more years of observation will be needed). The shift across this two year gap would correspond to around 15 years’ worth of change under the generational hypothesis. Much like the decline in heteronormativity, the decline of monogamy (we might call it “Morning Glory’s Prophecy”) can be attributed to rises in a number of alternative models, all of which chip away at the historical norm, with the young leading the way.
 
-![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
 
 These effects highlight the power of modern human sociality as a kind of accelerated evolutionary engine. The generational hypothesis can be understood as an upper limit on the speed of genetic evolution, since once we’re born, we’re stuck with the genes we’ve got.[^7] In traditional societies, most social learning involves younger people learning from their elders during a period of apprenticeship, as we’ve discussed; while this allows humans to evolve skills and accumulate knowledge in ways that far exceed the bounds of our genetic inheritance, it doesn’t allow us to break the generational speed limit. When we become lifelong learners, though, and especially when older people can learn new tricks from the young, generational turnover no longer limits the rate of cultural evolution. Urbanization, cafes, journals and newspapers, TV, the web, social media, and many other features of modern life seem almost tailor-made to boost cultural evolution both within and across age cohorts.
 

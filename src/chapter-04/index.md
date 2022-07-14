@@ -1,208 +1,13 @@
+---
+part: 2
+chapter: 4
+title: Family models
+layout: chapter
+---
+
 Part II: Sex and gender
 =======================
 
-Box: Sex and gender survey
----
-
-Were you born in September or October?
-
-Do you have short hair?
-
-Do you menstruate?
-
-Do you wear colorful clothes?
-
-On paper, do people assume from your name that you are female?
-
-Are you romantically attracted to men?
-
-Are you demiromantic?
-
-Do either of your parents identify as homosexual, gay or lesbian?
-
-Are you intersex?
-
-Do you identify as South Asian / Indian American?
-
-Do you identify as agender?
-
-Do you live in the countryside?
-
-Do you ever wear a bra?
-
-Have you ever been pregnant?
-
-Do you shave your legs?
-
-Are you Buddhist?
-
-Were you born outside the US?
-
-Do you ever wear ties?
-
-Do you live in the city?
-
-Do you wear dresses / skirts?
-
-Do you identify as gender fluid?
-
-Were you born in March or April?
-
-Were you born in November or December?
-
-Do you identify as Native Hawaiian or Other Pacific Islander?
-
-Do you identify as Native American?
-
-Were you born before 1983?
-
-Do you identify as Black / African American?
-
-Are you non-monogamous?
-
-Is the right pronoun for you "they"?
-
-Do you have an ear piercing?
-
-Are you atheist or agnostic?
-
-Do you play shooter video games?
-
-Are you homosexual, gay or lesbian?
-
-Do you work in tech?
-
-Do you ever wear high heels?
-
-Are you demisexual?
-
-Do you identify as trans?
-
-Are you Christian?
-
-Do you wear pants?
-
-Do you identify as White / European American?
-
-Do you live in an urban environment?
-
-Is the right pronoun for you "he"?
-
-Do you have a beard or moustache?
-
-Do you shave your face?
-
-Do you have a penis?
-
-Were you born in May or June?
-
-Do you identify as Latino / Latina or Hispanic American?
-
-Do you have long hair?
-
-Do you identify as Filipino / Filipina?
-
-Are you pansexual?
-
-Is the right pronoun for you something other than he/she/they?
-
-Do you identify as Asian American?
-
-Are you sexually attracted to women?
-
-Were you assigned male at birth?
-
-Do either of your parents identify as heterosexual or straight?
-
-Are you monogamous?
-
-Are you married?
-
-Were you born in the US?
-
-Do you identify as non-binary?
-
-Do you identify as queer?
-
-Are you aromantic?
-
-Do you ever wear boxer shorts?
-
-Do you use the men's bathroom?
-
-Are you bisexual?
-
-Are you Muslim?
-
-Have you had breast reduction surgery?
-
-Do you use the women's bathroom?
-
-Do you ever wear panties?
-
-Were you born in July or August?
-
-Do you identify as female?
-
-Do you ever use colored lipstick?
-
-Do you get pedicures?
-
-Are you asexual?
-
-Were you assigned female at birth?
-
-Have you ever lactated (produced milk)?
-
-Are you right-handed?
-
-Do you get manicures?
-
-Are you romantically attracted to women?
-
-Are you Catholic?
-
-On paper, do people assume from your name that you are male?
-
-Are you polyamorous?
-
-Are you left handed?
-
-Do you have a vagina?
-
-Do you use public urinals?
-
-Is the right pronoun for you "she"?
-
-Do you wax?
-
-Are you heterosexual or straight?
-
-Are you Jewish?
-
-Do you shave your armpits?
-
-Do you identify as male?
-
-Are you Hindu?
-
-Do you ever use makeup?
-
-Have you ever menstruated?
-
-Have you had breast augmentation surgery?
-
-Do you live in the suburbs?
-
-Do you have long nails?
-
-Are you sexually attracted to men?
-
-Do you identify as gender queer?
-
-Do you ever wear stockings?
-
-Were you born in January or February?
 
 Chapter 4: Family models
 ---
@@ -255,7 +60,7 @@ This puts the high rate of infanticide and baby abandonment that so worried Mich
 
 * * *
 
-In traditional “kith and kin” societies, relationships are paramount, individualism plays a more modest role than in modern urban life, and work tends to be less specialized. As we’ve seen, child rearing is a collective effort. Housing and property ownership (when they exist) are often collective too, and are usually controlled by men— patriarchy being perhaps the one Flintstones-Jetsons motif that really does have a long history. Such patterns persist even in the lives of white city-dwelling Westerners today, and are especially evident in the (underrepresented) accounts of the contemporary poor and working class. For instance, self-published English activist and author D. Hunter writes in his 2018 autobiography, *Chav Solidarity*,
+In traditional “kith and kin” societies, where relationships are paramount, individualism plays a more modest role than in modern urban life, and work tends to be less specialized. As we’ve seen, child rearing is a collective effort. Housing and property ownership (when they exist) are often collective too, and are usually controlled by men— patriarchy being perhaps the one Flintstones-Jetsons motif that really does have a long history. Such patterns persist even in the lives of white city-dwelling Westerners today, and are especially evident in the (underrepresented) accounts of the contemporary poor and working class. For instance, self-published English activist and author D. Hunter writes in his 2018 autobiography, *Chav Solidarity*,
 
 > As a seven year old I was shown how to be a lookout during a robbery, and not long after, my cousins taught me how to steal a car. All of the rewards for this were collectivised, except that my grandfather took as much as he wanted. [...] One of my uncles was fiercely respected for the amount of money he brought into our family, but he lived in a one bedroom flat which was furnished with a mattress, a TV and nothing else. I only have a thin recollection of the flat but I’m not convinced it had a bathroom. This was acknowledged, but never challenged, it was raised by others as an example of how we all should be. [...] The money went to uncles and aunts with children instead, so that those kids wouldn’t go short. [...] My grandfather took whatever he wanted from the collective pot, and I’m sure he would say, that as the responsibility for everyone else was with him, it was only right. [...] If one of my cousins was given something, they would share it without a second thought. Nothing was saved for later; nothing was personal property.”
 
@@ -285,31 +90,32 @@ The capsule summary is that today, many people aren’t romantically or sexually
 
 Seen from a certain perspective, these changes can have radical, even posthuman overtones. Science fiction writers like Kim Stanley Robinson have imagined futures in which gender is just one of many fluidly alterable bioengineered variables for our descendants, who may also range from three to ten feet tall, splice in the DNA of other species, and adapt themselves to live anywhere from the dark side of Mercury to the moons of Saturn.[^16] Our lifetimes may become unconstrained by a biological clock; babies may become rare, and may be grown in artificial wombs. Even these versions of posthumanity are conservative compared to “uploading,” in which we all scan our brains and become virtual beings, unmoored from bodies or the constraints of the physical world. What could human or personal identity even mean in a universe like that?
 
-Imagining life in such a world can induce a kind of vertigo, even horror. Then again, our own lives would be equally alien to our ancestors. It helps to remember that we humans are a uniquely culturally constituted species. So much about our lives and bodies is already a product of our cumulative culture and technology— from our lack of fur (due to the invention of clothes) to our short gut (due to cooking with fire) to our ability to drink milk in adulthood (still a work in progress, or if we all end up vegan, an evolutionary spur).[^17] In this sense at least, we’re already highly engineered, and we have ourselves been the unwitting engineers. Profound culturally induced changes in gender and sexuality may, then, just be the next steps on a long road we began walking millions of years ago, when we tamed fire, our brains began growing rapidly, and cultural development began to snowball over generations, radically reshaping not only our bodies but ultimately everything around us.
+Imagining life in such a world can induce a kind of vertigo, even horror. Then again, our own lives would be equally alien to our ancestors. It helps to remember that we humans are a uniquely culturally constituted species. So much about our lives and bodies is already a product of our cumulative culture and technology— from our lack of fur (due to the invention of clothes) to our short gut (due to cooking with fire) to our ability to drink milk in adulthood (still a work in progress, or if we all end up vegan, an evolutionary spur).[^17] In this sense at least, we’re already highly engineered, and we have ourselves been the unwitting engineers. Profound culturally induced changes in gender and sexuality may, then, just be the next steps on a long road we began walking millions of years ago when we tamed fire, our brains began growing rapidly, and cultural development began to snowball over generations, radically reshaping not only our bodies but ultimately everything around us.
 
-[^1]: Michael Ryan, M.D., *The Philosophy of Marriage: In its Social, Moral, and Physical Relations. With an Account of the Diseases of the Genito-Urinary Organs which Impair or Destroy the Reproductive Function, and Induce a Variety of Complaints; with the Physiology of Generation in the Vegetable and Animal Kingdoms; Being Part of a Course of Obstetric Lectures Delivered at The North London School of Medicine, Charlotte Street, Bloomsbury Square*, London: John Churchill, 1837.
+
+[^1]: Micheal Ryan, *The Philosophy of Marriage: In Its Social, Moral, and Physical Relations. With an Account of the Diseases of the Genito-Urinary Organs Which Impair or Destroy the Reproductive Function, and Induce a Variety of Complaints; with the Physiology of Generation in the Vegetable and Animal Kingdoms; Being Part of a Course of Obstetric Lectures Delivered at The North London School of Medicine, Charlotte Street, Bloomsbury Square* (London: John Curchill, 1837), 91–93.
 
 [^2]: [[REF]]
 
 [^3]: [REF]] Secondary sources include [[https://www.oneadvisorypartners.com/blog/the-history-of-women-and-money-in-the-united-states-in-honor-of-womens-history-month]{.underline}](https://www.oneadvisorypartners.com/blog/the-history-of-women-and-money-in-the-united-states-in-honor-of-womens-history-month) [[https://www.theguardian.com/money/us-money-blog/2014/aug/11/women-rights-money-timeline-history](https://www.theguardian.com/money/us-money-blog/2014/aug/11/women-rights-money-timeline-history)
 
-[^4]: Thomas Low Nichols and Mary Sargeant Gove Nichols, *Marriage: Its History, Character, And Results*, New York, 1854.
+[^4]: Thomas Low Nichols and Mary Sargeant Gove Nichols, *Marriage: Its History, Character, and Results* (New York: T.L. Nichols, 1854), 91–92.
 
 [^5]: [[REF]]
 
-[^6]: [https://inequality.org/facts/gender-inequality/#gender-wealth-gaps](https://inequality.org/facts/gender-inequality/#gender-wealth-gaps)
+[^6]: “Gender Economic Inequality,” Inequality.org, n.d., https://inequality.org/facts/gender-inequality/#gender-wealth-gaps.
 
-[^7]: In 2001, only 52% of divorced mothers in the United States received their full child support payments. For women who had children out of wedlock, the figure was about 32%. These data are per Susan Dominus, *The Fathers’ Crusade*, in The New York Times, 8 May 2005.
+[^7]: In 2001, only 52% of divorced mothers in the United States received their full child support payments. For women who had children out of wedlock, the figure was about 32%. These data are per Susan Dominus, “The Fathers’ Crusade,” *The New York Times*, May 8, 2005, https://www.nytimes.com/2005/05/08/magazine/the-fathers-crusade.html.
 
-[^8]: Hrdy, *Mothers and Others*.
+[^8]: Sarah Blaffer Hrdy, *Mothers and Others: The Evolutionary Origins of Mutual Understanding* (Harvard University Press, 2009).
 
-[^9]: Ibid.
+[^9]: Ibid., 99.
 
-[^10]: Fuchs, Rachel Ginnis, and Stephanie McBride-Schreiner. *Foundlings and Abandoned Children*. Oxford University Press, 2014.
+[^10]: Rachel Ginnis Fuchs and Stephanie McBride-Schreiner, “Foundlings and Abandoned Children,” *Oxford Bibliographies Online Datasets* (Oxford University Press, January 13, 2014), https://doi.org/10.1093/obo/9780199791231-0075.
 
 [^11]: [[REF]] Dickens, but note local variation and shifts over time.
 
-[^12]: Sex at Dawn.
+[^12]: Christopher Ryan and Cacilda Jethá, *Sex at Dawn: The Prehistoric Origins of Modern Sexuality* (New York: Harper Collins, 2010).
 
 [^13]: [REF].
 
@@ -317,6 +123,6 @@ Imagining life in such a world can induce a kind of vertigo, even horror. Then a
 
 [^15]: China is now poised to surpass the West in a number of ways, and lacks the “D” as well as the “W,” though significantly, during its “modernization” in the 20th century, it systematically adopted a number of WEIRD social norms and concepts, as did many other countries.
 
-[^16]: [[REF 2312]]
+[^16]: Kim Stanley Robinson, *2312* (London: Orbit, 2012).
 
 [^17]: [[REF]]

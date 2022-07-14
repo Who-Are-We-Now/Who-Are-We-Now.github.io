@@ -1,148 +1,13 @@
-> 
+---
+part: 1
+chapter: 1
+title: Whom to believe?
+layout: chapter
+---
 
 Part I: Handedness
 ==================
 
-Box: Handedness survey[^1]
----
-
-Are you living in your own place?
-
-Was your father left-handed?
-
-Do you live with depression?
-
-Do you identify as Filipino / Filipina?
-
-Are you ambidextrous?
-
-Do you have cerebral palsy?
-
-Do you live with an anxiety disorder?
-
-Is your right hand bigger than your left?
-
-Do you identify as Latino / Latina or Hispanic American?
-
-Was your father right-handed?
-
-When you use a computer mouse or trackpad, do you tend to use your right hand?
-
-Do you identify as male?
-
-Do you work in the arts?
-
-Are you making enough money?
-
-Do you identify as Native American?
-
-When you type, do you usually use the right shift key?
-
-Do you identify as White / European American?
-
-Do you live with bipolar disorder?
-
-When you clasp your hands, is your right thumb on top?
-
-When you cross your arms, is your left forearm on top?
-
-Are you alcoholic?
-
-When you wink, does your left eye close?
-
-When you clasp your hands, is your left thumb on top?
-
-Were you born in May or June?
-
-Do you identify as Black / African American?
-
-Do you identify as Native Hawaiian or Other Pacific Islander?
-
-Were you born in January or February?
-
-Are you left-handed?
-
-Did you have trouble with handwriting as a child?
-
-Do you work in tech?
-
-Do you play a musical instrument?
-
-Do you have a left hand?
-
-Is your left hand bigger than your right?
-
-When you cross your arms, is your right forearm on top?
-
-Are you right-handed?
-
-Was your mother born in the US?
-
-Do you identify as South Asian / Indian American?
-
-Do you normally hold scissors in your right hand?
-
-Do you identify as female?
-
-Were you born in July or August?
-
-Were you born in September or October?
-
-Do you identify as Asian American?
-
-Can you write equally well with your left and right hands?
-
-Do you normally hold scissors in your left hand?
-
-Were you born in the US?
-
-Are you looking for a job?
-
-Were you born before 1983?
-
-Was your mother left-handed?
-
-Are you a strong verbal communicator?
-
-Do you live with schizophrenia?
-
-When you type, do you usually use the left shift key?
-
-Is English your first language?
-
-Were you made to change your dominant hand as a child?
-
-Do you write with your left hand?
-
-Are you currently employed?
-
-Are you on the autism spectrum?
-
-When you use a computer mouse or trackpad, do you tend to use your left hand?
-
-Do you write with your right hand?
-
-Are you good at drawing?
-
-Were you born in March or April?
-
-Was your father born in the US?
-
-When you wink, does your right eye close?
-
-Were you born outside the US?
-
-Were you born in November or December?
-
-Do you have a right hand?
-
-Have you ever had a bone fracture?
-
-Was your mother right-handed?
-
-Do you have a heart disease?
-
-Do you live with Parkinson's disease?
 
 Chapter 1: Whom to believe?
 ---
@@ -186,7 +51,7 @@ Unsurprisingly, a large majority of people— about 86%— answer “yes” to r
 
 These people belong to an “excluded middle.” By answering as they have, they’ve opted out of our usual multiple-choice, either/or assumption about left- and right-handedness. One in 46 is not such a small number, either. If our sample is representative of the US, this works out to about 7.2 million Americans. That’s more than the combined population of LA and Chicago.
 
-![](media/image2.png){width="1.875in" height="2.2395833333333335in"}
+![](media/image1.png){width="1.875in" height="2.2395833333333335in"}
 
 The fact that we can see this excluded middle in our statistics shows us that yes/no questions are not as binary as they seem. Or rather, each individual question *is* binary, and forces each respondent to “round up or down” with every answer. However, when we look at the aggregated answers of multiple yes/no questions over many subjects, we can make out the excluded middle in the *pattern* of yeses and nos. This is a bit like the old printing and graphics technique known as “halftoning” or “dithering,” which allows a black and white printer or screen to render images in shades of gray— even if each pixel can only be black or white. We’ll shortly explore how we can produce a nuanced “halftoned” image of the human landscape using only the unpromising ingredients of binary (and redundant-seeming) yes/no questions.
 
@@ -210,7 +75,7 @@ Injuries leading to outcomes like these are in fact not so uncommon. A recent pa
 
 Although some hand or arm problems are congenital, most injuries happen at some moment in a person’s life, and affect things from that time forward. This makes it interesting to look beyond overall percentages, and start to break down people’s responses by age using graphs like the one below.
 
-![](media/image5.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
 
 We’ll be using age breakdowns like these a lot, so a word of explanation is in order. The graphs are generated by dividing responses into age brackets or “bins,” which are shown as shaded regions alternating between light gray and light yellow. Here, the bins are ages 18-21, 21-25, 25-30, 30-40, 40-50, and 50-80.[^11] For each quantity described in the legend, straight solid lines connect values from the center of one bin to the next showing how these quantities vary with age (hence the left edge of the graph is at the midpoint of the first bin, 19.5, and the right edge is at the midpoint of the last, 65). The black “Strictly right-handed” line shows the percentage of people who both answered “yes” to “Are you right-handed?” and “no” to “Are you left-handed?”; the gold “Strictly left-handed” line is the converse. Putting multiple quantities on the same graph this way can be useful for understanding patterns in the data.
 
@@ -226,7 +91,7 @@ On the whole, our survey data are consistent with the big studies— showing 9.6
 
 Looking at strict *right*-handedness adds some further color.
 
-![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image5.png){width="6.5in" height="2.8333333333333335in"}
 
 Here, it’s *young* men and women who are all but indistinguishable; but as they age, fewer and fewer men report being strictly right-handed. By age 65, only about 75% are, as compared to about 83% of women. Those 90% confidence intervals show us that this effect is probably quite significant.
 
@@ -236,7 +101,7 @@ The apparent result is that regardless of initial handedness, with every passing
 
 The evidence mounts when we look at the “excluded middle.” With declines in both strict left- and strict right-handedness, it follows that an increasing number of people are answering the handedness questions ambiguously. This is true; that curve is in fact very similar to the rate at which people answer “yes” to “Are you ambidextrous?,” and consists largely of the same population (though “ambidextrous” seems to be a somewhat stronger statement, as it’s used a tad less often, at every age).
 
-![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
 
 When people say they’re ambidextrous, it’s often accompanied by an account of injury, as in “I have severe deficiencies with my right arm I've had 9 surgeries so I became ambidextrous”[^16] or “ambidextrous in some things due to having a severely broken right hand wrist, in a cast/pins for 6 months”[^17]. So, that likely accounts for the increasing numbers with age.
 

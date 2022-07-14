@@ -1,3 +1,10 @@
+---
+part: 0
+chapter: -1
+title: Preface
+layout: chapter
+---
+
 Preface
 =======
 
@@ -21,7 +28,7 @@ Not everyone is happy with these changes. One of my more traditionally minded su
 
 This same struggle to define and delimit humanity in some elusive “natural” state animates a long-simmering debate about the Olympics. The entire premise of such competitions is fraught with contradiction, in that they harness human ingenuity and our capability for self-modification to select for and continually expand the limits of what bodies can do. Somewhat arbitrarily, caffeine and high altitude training are allowed, but blood doping and steroids aren’t. Meanwhile, the Paralympic games, originally a gesture toward greater human inclusivity, have turned the tables. Paralympians with prosthetics are now beating Olympians at running, and as technology improves, they’ll doubtless do so in other events too. Where to draw the line? Decisions to allow or prohibit specific technologies will come to look increasingly absurd— as will decisions to allow or prohibit people, or to classify them “fairly.” For instance, in order to allow women to meaningfully compete as runners, their events have been segregated from men’s; yet doing so all but guarantees that people with intersex characteristics will rise to the top of certain women’s events. This puts committees in the position of policing gender boundaries, a project this book will argue is not only uncomfortable but actually impossible. Similar controversies have started to break out on a much more local scale over trans kids competing in gendered school sports programs. At some point, we’ll need to admit to the futility of trying to police categories like female and male, natural and augmented. We’re *all* augmented, both physically and intellectually.
 
-[[46-945533.webp Lennart-Nilsson-Foetus-26-weeks-1976.jpg]]
+[[Lennart-Nilsson-Foetus-26-weeks-1976.jpg]]
 
 On optimistic days, I imagine natural systems, together with blended human and machine intelligence, converging into something smart, intentional, and planet-wide. I don’t think of AI and human intelligence in opposition, or of one as subservient to the other in some kind of Medieval Chain of Being; rather, I think that all intelligence on Earth is part of a larger whole. I hope that we can think and act soon on a planetary scale, because the existential threats we now face are all planetary in scale too— and largely of our own making: climate collapse, pollution, pandemics, droughts and crop failures, desperate mass migrations. We’ve gotten into this pickle thanks to the advanced technologies civilization has developed over thousands of years, enabling us to explode in numbers, burn fuels, and consume resources far in excess of what can be sustained. It’s not just human bodies that are burning and consuming too much, but cows, factories, jet engines, and crops— a multispecies, cyborg lichen whose reach has, for the moment, exceeded its grasp. Major changes will be needed. Our challenge is that while our technologies may be collective, our actions, our will, and the ways we identify are still not collective enough.
 

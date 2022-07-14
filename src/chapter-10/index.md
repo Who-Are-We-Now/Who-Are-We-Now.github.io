@@ -1,3 +1,10 @@
+---
+part: 2
+chapter: 10
+title: Pronoun wars
+layout: chapter
+---
+
 Chapter]{.underline} 10[: Pronoun wars
 ---
 
@@ -77,7 +84,7 @@ All of this raises profound questions that have become highly charged in today�
 
 There are a number of roughly analogous gender terms for what we’d call “ambidextrous” in the context of handedness. “Non-binary” is the most common, but other variations in common use include “gender fluid” and “gender queer.” As with ambidexterity, we’re not defining the terms in the survey, so we should think of them for now simply as communities people identify with that suggest something nontraditional about a person’s gender.
 
-![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
 
 As we can see in the graph, there’s overlap between these populations, but it’s far from complete, since like gender neutral pronouns, these terms all have their partisans. Hence the total— meaning, people who answer “yes” to any or all of the three questions “Are you non-binary?,” “Are you gender fluid?,” or “Are you gender queer?”— is larger than any of these individually, but smaller than the sum, ranging from 5% to 8% depending on age.
 
@@ -85,7 +92,7 @@ In the breakdown by age, we see the expected rises in nontraditional or minority
 
 The mystery deepens if we break down the non-binary population into three distinct sub-populations: non-binary women (for our purposes, those who answer “yes” to “Do you identify as female?” and “no” to “Do you identify as male?”), non-binary men (“yes” to “Do you identify as male?,” “no” to “Do you identify as female?”), and non-binary people who answer “yes” to neither or both of “Do you identify as female?” and “Do you identify as male?”
 
-![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
 
 We can see that the curious U-shape of the non-binary curve is actually a sum of three very different components. First, let’s consider the component drawn in black: people who are both non-binary and respond ambiguously to the questions about their sex (“yes” to both or neither of “Do you identify as male?” and “Do you identify as female?”). Like exclusive users of “they,” this curve is high among the young, and low among the older population. For people over 50, the sex binary seems to reign absolute: that is, even among older non-binary people, *everyone* answers “yes” to exactly one of “Do you identify as male?” or “Do you identify as female?” As we look at younger people, though, we see an increasing number who are both non-binary and answer “yes” to both or neither male/female. Among 20 year olds, this applies to about 1 in 60 people. The “both” and “neither” populations appear to be roughly equivalent in other respects. As a 27 year old non-binary person from Spokane, Washington put it,
 

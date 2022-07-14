@@ -1,15 +1,22 @@
+---
+part: 2
+chapter: 5
+title: Nuclear meltdown
+layout: chapter
+---
+
 Chapter 5: Nuclear meltdown
 ---
 
 How many of us are committed to the traditional Nuclear Family today, and how is this changing? We might begin by looking at its most traditional “output”: the number of children we’re having.[^1]
 
-![](media/image7.png){width="6.2387817147856515in" height="2.859944225721785in"}
+![](media/image1.png){width="6.2387817147856515in" height="2.859944225721785in"}
 
 When we graph this as a function of age, we see an expected gradual rise from near zero as a young adult to a plateau around menopause for women, at age 45 or so. The solid line is the average, the dotted line is the median, and the four shaded regions enclose 38.3%, 68.2%, 95.4%, and 99.7% of the answers at every age (the 99.7% range goes off the chart, and is noisy, but plateaus somewhere between 8 and 12 children).[^2]
 
 It’s helpful to break this down by the respondent’s sex assigned at birth, since the people actually *having* the children need to have uteruses; we’ll also stick to the inner 38.3% shaded region to make the graph easier to read.[^3]
 
-![](media/image2.png){width="6.040937226596675in" height="2.7155446194225723in"}
+![](media/image3.png){width="6.040937226596675in" height="2.7155446194225723in"}
 
 Notice how women report having significantly more children than men, at *all* ages. On the face of it, this seems impossible, since every child must have a biological mother and father. Our lived reality, though, is that when a mother gives birth, she knows she’s had a child, and she can be certain that the baby is hers. That’s never been true for men; if anything, their answers to the question graphed, “How many children do you have?,” slightly *overcounts* the number they believe to be their biological children, while the question for potential mothers— “How many children have you personally given birth to?”— leaves no such room for ambiguity. Men may have one night stands with unexpected consequences, or split up with their partners soon after conception, or commit rape without using a condom. Or they may donate anonymously to a sperm bank, allowing a single mother somewhere to conceive. We know, from Centers for Disease Control (CDC) data,[^4] that about 40% of births in the US happen outside marriage, but this persistent gap tells us something more interesting: that a significant number of births don’t involve the biological father at all. And many men have kids they don’t know about! This might come as a surprise, but there’s no reason to believe it’s a new phenomenon. Nor is it specific to any one demographic.
 
@@ -19,13 +26,13 @@ Setting aside men’s undercounting of their offspring, 1.7 or so children per w
 
 So, children are in decline. What about marriage?
 
-![](media/image5.png){width="6.5in" height="2.5048075240594927in"}
+![](media/image8.png){width="6.5in" height="2.5048075240594927in"}
 
 While it remains a mainstream institution, the historical notion[^5] that marriage is “normal,” and that unmarried middle aged adults are unusual, is belied by the data. “Peak marriage” for women— which is around age 42— is still just 60%. It only crosses 50% to become a majority in the mid-30s.
 
 We can see that young men tend to marry just a few years later, reflecting the traditional small age gap between an older husband and younger wife (about 2.5 years on average, in the US[^6]). This age gap becomes larger for people marrying later in life, though, per the still oft-quoted rule of thumb holding that “a wife should be half the age of her husband with seven years added.”[^7] Combined with the fact that women tend to live longer, this results in a dramatic divergence in the rate of marriage among the older population; only about 20% of 80 year old women are married. That’s because, by age 80, nearly 40% of women are widows. Incidentally, although older surviving men are scarcer (hence the larger error bars), it may be that an increasing proportion are married precisely because being married increases their odds of survival to an advanced age![^8]
 
-![](media/image6.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
 
 Why do women live longer than men? This still isn’t perfectly understood, but we have some ideas. Unlike the Y chromosome, which we can live without, the X chromosome has some critical stuff on it. Men generally have only one copy, while women have two; this redundancy may confer health benefits. There are significant differences between men’s and women’s immune systems too, which could play a role.[^9] You might also remember, from way back in Chapter 1, that men are more accident prone than women; this may be at least partly due to testosterone-induced risk-taking behavior.
 
@@ -33,7 +40,7 @@ However, the best explanation may not be mechanistic, but evolutionary: grandmot
 
 But let’s return to marriage.
 
-![](media/image8.png){width="6.5in" height="2.5in"}
+![](media/image5.png){width="6.5in" height="2.5in"}
 
 When we break down marriage data based the responses to other survey questions, we find that many minority identities and behaviors— such as not being heterosexual, being non-monogamous, or using “they” pronouns— decrease the odds of marriage significantly, across all ages. Marriage, in other words, is a traditional practice, and often goes along with being traditional in other ways too. And as those traditions are upended, fewer people are getting married.
 
@@ -41,7 +48,7 @@ When we break down marriage data based the responses to other survey questions, 
 
 So was Morning Glory right about the looming breakdown of the Nuclear Family, and the rise of polyamory? There are three questions on the survey that bear on this directly: “Are you monogamous?,” “Are you non-monogamous?,” and “Are you polyamorous?.” These terms weren’t always familiar to every respondent, especially “polyamorous,” which should be unsurprising, since it had so recently been coined by a Neopagan witch to describe a practice that was, at the time, far outside the mainstream.
 
-![](media/image1.png){width="6.5in" height="2.471153762029746in"}
+![](media/image4.png){width="6.5in" height="2.471153762029746in"}
 
 This makes it all the more remarkable that three decades later, polyamory is a term embraced by around 5% of American respondents, or 1 in 20, across a wide range of ages.[^12] That’s about as common as naturally blond hair!
 
@@ -63,7 +70,7 @@ Although non-monogamy is a bit less frequent among the unjaded youth, a far grea
 
 This becomes less true of older people, though. Hence, while 70-80% of polyamorous people of all ages report being non-monogamous, the fraction of non-monogamous people who are polyamorous goes from around 50% among young people down to about 30% among 65 year olds.
 
-![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image7.png){width="6.5in" height="2.8333333333333335in"}
 
 Given that the stigma associated with non-monogamy appears to be higher among older people, one likely factor in play is the unwillingness or inability of many older couples to be transparent with each other about their needs. Of course this can lead to non-consensual non-monogamy (read: affairs), but also to potential or desire on the part of one partner that the other will never know, as for the 31 year old woman from Jacksonville, North Carolina who wrote, “While I am married, and we are monogamous, I am open to being in a triad, but only with another man. I wouldn’t admit this to my husband though.” Obviously an admission like this can be frightening, and can have very real negative consequences. On the other hand, it’s hard not to wonder how many couples could be having a better time (“It is a perk for both of us!”) if they overcame their reticence to communicate.
 
@@ -75,7 +82,7 @@ This is also apparent in another statistic: the 20-30% or so of people of all ag
 
 This can all be quite confusing. If we naïvely followed the logic of double negatives, then based on the finding that about 6% of young people are *non*-monogamous, we’d conclude that 94% are *monogamous*, but we’d be wrong. Only about 70% of 19 year olds report being monogamous. This number rises above 85% by age 65. It’s useful to explore the counterintuitive difference between “being non-monogamous” and “not being monogamous.” Consider all four possibilities: (A) those who answer “no” to both “monogamous” and “non-monogamous,” (B) those who answer “yes” to “monogamous” but “no” to “non-monogamous,” (C) those who answer “no” to “monogamous” but “yes” to “non-monogamous,” and (D) those who answer “yes” to both.
 
-> ![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
+> ![](media/image6.png){width="6.5in" height="2.8333333333333335in"}
 
 Since these are the only four possible responses to two yes/no questions, they’ll add up to 100%, so in this graph, we show only the three minority combinations, (A), (C), and (D). The majority at all ages, despite the moral panic of our frustrated “monagoumas” respondent from Boise, is still the conventional (B) “yes” to “monogamous” and “no” to “non-monogamous”; for the most part, these are people in monogamous, pair-bonded relationships. The next most frequent response is (A) “no” to “monogamous” and “no” to “non-monogamous,” as typified by a 41 year old respondent from Elk Grove Village, Illinois: “I’m faithful to who I’m with at the time, but I’m not with anyone now. So I answered no to both.” As one might expect, this number declines with age, from near 25% at 19 to only about 7% by age 65, as more people end up partnered over time. Over the same period, the number of (C) “not monogamous” *and* “non-monogamous” people rises from 5% to 7%, in keeping with what we’ve already seen. Notice that the largely unpartnered group (A) and the multiply partnered group (C) end up tied by age 65, despite (A) being five times likelier at age 19.
 

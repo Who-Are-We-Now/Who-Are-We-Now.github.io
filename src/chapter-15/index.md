@@ -1,3 +1,10 @@
+---
+part: 2
+chapter: 15
+title: Postgender
+layout: chapter
+---
+
 Chapter 15: Postgender
 ---
 
@@ -41,7 +48,7 @@ Ugly as this characterization is, it might seem like it could at least have affo
 
 It was a no-win situation.
 
-![](media/image3.jpg){width="2.7924103237095363in" height="4.5734470691163605in"}
+![](media/image2.jpg){width="2.7924103237095363in" height="4.5734470691163605in"}
 
 [[Out and proud lesbian prison couple from *The criminal woman*.]]
 
@@ -93,7 +100,7 @@ The radical sex abolition politics envisioned by Shulamith Firestone in 1970 cal
 
 In many ways, our move online, in which computers increasingly mediate our every interaction with the world and with each other through bits and bytes, finishes the job of making gender irrelevant, or turning it into an opt-in identity decoupled from the form of one’s genitals. We can see powerful evidence of this when we look at responses to the questions “Are you female?,” “Are you male?,” “Do you have a vagina?,” and “Do you have a penis?” Even when we limit ourselves to respondents who answer “yes” to only one of the first two questions, an increasing number of young people don’t answer the other two questions in the “expected” way. That is, there are an increasing number of women with penises and/or without vaginas, and men with vaginas and/or without penises; these numbers follow the same pattern as “Are you trans?,” but are even higher across all ages, peaking at 4.5% among 20-23 year olds.
 
-![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
 
 Romantic and sexual relationships are increasingly happening online, too, potentially beginning to decouple even this aspect of life from physical bodies. While our noses and mouths have disappeared behind protective masks when we need to venture out into the “real world,” our digital faces have been undergoing a virtual makeover. Avatars, digital makeup, and neural nets can re-render us completely— our gender, voice, age, race, and virtually anything else.
 
@@ -105,7 +112,7 @@ While accounts of “Snapchat dysmorphia” tend to emphasize hyper-feminization
 
 We shouldn’t think of this phenomenon only in the negative terms of dysmorphia, though. For many young people, an embrace of fluidity and rejection of either/or categories can be liberatory. Wherever older respondents might harbor assumptions about mutually exclusive answers on the survey, we find that growing numbers of younger respondents violate those assumptions. For instance, nearly 3% of of 19 year olds identify as both or neither male and female, and more than 8% answer “yes” to more than one of the questions “Are you heterosexual?,” “Are you homosexual, gay or lesbian?” and “Are you bisexual?” When these are just profile settings that can be toggled on a dating or social media app, there’s no need to box yourself in.
 
-![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
 
 How far will this go? At this point, it’s unclear. Neural nets can transform our digital selves in any conceivable way— far beyond anything surgery can approximate. These new Deepfake-like techniques aren’t limited, the way Photoshop was in the old days, to smoothing a bit here or slimming a bit there. The language we’re speaking can be altered, we can become skilled singers, we can be rendered as cartoons, we can look like elves or pixies. Or nonhuman entities. The old adage, “On the Internet, nobody knows you’re a dog”[^33] was coined by New Yorker cartoonist Peter Steiner in 1993, in an era when social interaction online consisted of a handful of nerds at universities typing text into chat windows. Things have come a long way in the three decades since. While the actual “internet of animals”[^34] still hasn’t taken off, it’s now commonplace for humans to present as other species online— though cats are more popular than dogs. Online, Daphna Joel’s vision of “gender abolition” seems almost quaint.
 

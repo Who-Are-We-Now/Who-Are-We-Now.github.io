@@ -1,10 +1,11 @@
 ---
-chapter: Introduction
-title: Anonymous Identity
-layout: intro
+part: 0
+chapter: 0
+title: Introduction: Anonymous identity
+layout: chapter
 ---
 
-[[9781788731577-4f24c93871d376efaf059ac12bc3811c.jpg]]
+[[xenofeminist_manifesto.jpg]]
 
 > Ours is a world in vertigo. [...] We are all alienated – but have we ever been otherwise? It is through, and not despite, our alienated condition that we can free ourselves [...] nothing is so sacred that it cannot be reengineered and transformed so as to widen our aperture of freedom, extending to gender and the human. To say that nothing is sacred, that nothing is transcendent or protected from the will to know, to tinker and to hack, is to say that nothing is supernatural.
 

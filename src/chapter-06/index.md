@@ -1,3 +1,10 @@
+---
+part: 2
+chapter: 6
+title: The true mission of sex
+layout: chapter
+---
+
 Chapter 6: The true mission of sex
 ---
 

@@ -1,3 +1,10 @@
+---
+part: 2
+chapter: 18
+title: Checking our numbers
+layout: chapter
+---
+
 Chapter 1]{.underline}8[: Checking our numbers
 ---
 
@@ -5,13 +12,13 @@ We’ve seen that people change over time, and that both their beliefs and the r
 
 In Chapter 5, we saw that Americans at all ages have fewer children today than it would take to replace the population. This is especially true in the city, where the average birth rate drops precipitously low. Partly, this is because cities skew toward younger people, and especially younger women. There are likely a number of factors in play here; one is the American tradition in which couples move to the suburbs to have kids. Since, in heterosexual partnerships, the woman is typically younger, hence the effect on the female urban age distribution is especially pronounced.
 
-![](media/image13.png){width="5.416666666666667in" height="2.493589238845144in"}
+![](media/image11.png){width="5.416666666666667in" height="2.493589238845144in"}
 
-![](media/image5.png){width="5.4575317147856515in" height="2.5in"}
+![](media/image13.png){width="5.4575317147856515in" height="2.5in"}
 
 However, even if we look only at the number of children born to post-menopausal women (I’ve picked ages 44-64), the difference in fertility is striking. Below 100 square meters per person, women average fewer than one child. Below about 1,000 square meters per person, the threshold above which most people think of themselves as living in the suburbs, the figure is 1.5 or fewer. Only at the most rural extreme, around 200,000 square meters per person, does the number of children per female, normally called the “total fertility rate” or TFR, approach replacement rate, estimated by the UN Population Division to be about 2.1 in the developed world.
 
-![](media/image8.png){width="5.4495188101487315in" height="2.4895833333333335in"}
+![](media/image9.png){width="5.4495188101487315in" height="2.4895833333333335in"}
 
 There’s an obvious and striking conclusion here: cities aren’t even remotely demographically self-sustaining. They’re population sinks. Not only do they need the material resources of the countryside to survive; they also need a continual influx of young people from elsewhere. Before exploring this further, let’s delve a bit deeper into the theory behind population growth and decline.
 
@@ -75,7 +82,7 @@ To wrap our heads around this population growth and put it in historical context
 
 To even make sense of this, we’ll need a logarithmic population axis. When we look at the data this way, an exponential increase looks like a straight line, where the slope of the line is the growth rate.
 
-![](media/image2.png){width="5.858172572178478in" height="2.4479166666666665in"}
+![](media/image10.png){width="5.858172572178478in" height="2.4479166666666665in"}
 
 The spike at the end is still there, but now we can see that what looked like a flat line over the 10,000+ years during which humans were practicing traditional agriculture was already more or less steady exponential growth. Despite being invisible in the earlier plot because the numbers are so much smaller than today’s population, during those 10,000 years, the population grew about 70-fold. Evidently, agriculture has been a significant positive-check-eliminating technology.[^7] It gives us enough excess calories for the population to grow faster than hunting and gathering, but it’s not exactly a bonanza. As Malthus notes, driving the plough by hand and eating the produce from your traditional family farm won’t put a lot of meat on your calves.
 
@@ -117,7 +124,7 @@ The pharmaceutical and agricultural developments of the twentieth century have a
 
 Malthus understood this. He was afraid that with the removal of positive checks, our numbers would explode until we exceed the Earth’s carrying capacity, at which point we’d once again see immiseration and death, but now on an unprecedented, apocalyptic scale. The baby boom led to a revival of these concerns, most famously in a 1972 report, *The Limits to Growth*, commissioned by an interdisciplinary group of intellectuals styling themselves the “Club of Rome”.[^12] This widely read report used the newly available technique of computer modeling to try to quantify Malthus’s intuition under a range of scenarios, taking into account not only population growth and arable land area, but growth in *per capita* industrial output, pollution, non-renewable resource depletion, and a number of other variables. Although in the ensuing 50 years the model has been heavily critiqued— even ridiculed— its premises and methods are reasonable. It makes the key observation, too, that straining Earth’s carrying capacity degrades the ecosystem, which in turn decreases carrying capacity, making any ensuing die-off especially grim.
 
-![](media/image10.png){width="1.525640857392826in" height="0.9895833333333334in"}![](media/image10.png){width="2.620994094488189in" height="1.0416666666666667in"}![](media/image7.png){width="2.200320428696413in" height="1.2333639545056867in"}
+![](media/image7.png){width="1.525640857392826in" height="0.9895833333333334in"}![](media/image7.png){width="2.620994094488189in" height="1.0416666666666667in"}![](media/image5.png){width="2.200320428696413in" height="1.2333639545056867in"}
 
 Remarkably— remember, this is 1972— *The Limits to Growth* specifically calls out global warming as a cause for concern, noting that based on 14 years of carbon dioxide measurements at the observatory on Mauna Loa, CO~2~ concentrations would reach 380 parts per million by the year 2000, “an increase of nearly 30 percent of the probable value in 1860”. The authors add,
 
@@ -131,7 +138,7 @@ In a 2008 essay, *Cassandra’s Curse*, Ugo Bardi, a professor of physical chemi
 
 Despite many attempts to discredit the report,[^15] its “World Model Standard Run”, which assumes “no major change” in “physical, economic, or social relationships”, is still roughly tracking reality 50 years on.[^16]
 
-![](media/image12.png){width="3.627095363079615in" height="4.503205380577428in"}
+![](media/image2.png){width="3.627095363079615in" height="4.503205380577428in"}
 
 * * *
 
@@ -151,7 +158,7 @@ The late Swedish public health expert Hans Rosling (1948-2017) put it even more 
 
 When the UN runs population size simulations based on historical data for the more economically developed regions of the world, they conclude that as of now, population in these places has already peaked and will likely not increase further. It seems that nearly all remaining worldwide population increases will come from the less economically developed parts of the world, and the rate at which *their* fertility declines will primarily be a function of how quickly they develop economically.
 
-![](media/image11.png){width="6.5in" height="4.875in"}
+![](media/image4.png){width="6.5in" height="4.875in"}
 
 Why is this happening? Malthus assumed that the inextinguishable “passion between the sexes” automatically led to serial pregnancies and an unending parade of offspring. At the time, he wasn’t far off. Birth control just wasn’t that great in 1798. Reusable condoms existed, typically made from chemically treated linen or animal gut (these would be supplanted by thick rubber sheaths in the 19th century). They could be bought at chemist shops, barbershops, and theaters, though they weren’t cheap. In his memoirs, the infamous libertine Giacomo Casanova (1725-1798) describes blowing up his condom before use to inspect for holes.[^19] This was very much a gentleman’s game. For a typical sex worker, such a condom might have cost several months’ pay.[^20]
 
@@ -193,7 +200,7 @@ While reproductive choice isn’t perfect in the US, it remains greater than in 
 
 In the developed world, not only does poverty result in larger numbers of children, but also, large numbers of children further impoverish people. As Zelizer points out, this isn’t only because kids fail to bring money into the household: “They are also expensive.” And they’re getting more so every year, as any parent who has needed to pay a child’s educational expenses can attest. This can lead to inter-generational cycles of poverty. Or to turn this on its head, having *fewer* children can mean *more* time and resources per child, as well as for the parents.
 
-![](media/image9.png){width="5.661859142607174in" height="2.903517060367454in"}
+![](media/image8.png){width="5.661859142607174in" height="2.903517060367454in"}
 
 It’s tempting to assume that this explains the well documented inverse correlation between a country’s wealth and its fertility. But this isn’t the whole story. If kids cost their parents so much money, how could we have been raising so many more of them back when everybody was so much poorer?[^24] Were we impoverished *because of* our high fertility?
 
@@ -227,7 +234,7 @@ problem of scales. predator/prey dynamics vs sperm competing for egg. top down i
 
 Based on all of these patterns, we’d expect to find lower fertility in the city than in the countryside, and as we’ve already seen, this is indeed the case. When we do a breakdown by age, we can see that not only do women in the countryside have children at a faster pace, but also that they start having children younger. Remember that to calculate a rate of population growth, we need to take into account not only how many children women have on average by menopause, but also the generation time, which we arbitrarily fixed at 30 years. Since urban mothers tend to have children later in life, though, their typical generation time is longer. This slows urban population growth still further.
 
-![](media/image4.png){width="5.505609142607174in" height="2.4895833333333335in"}
+![](media/image12.png){width="5.505609142607174in" height="2.4895833333333335in"}
 
 Even in the American countryside, the fertility rate is far from that of the old days— or the developing world. The average only exceeds two for women well beyond menopause, illustrating how the average number of children per potential mother in the countryside (and, indeed, everywhere in the country) has been in decline for decades. The generation who have just reached menopause had children at a rate well below replacement, both in the city and in the countryside. Hence people with high TFRs in sparsely populated ZIP codes are a small minority, and are “living in the past” in several senses: their cultural norms belong to an earlier generation, they themselves are typically older, and as a result their average fertility rate is typical of an earlier generation.
 
