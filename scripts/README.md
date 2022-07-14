@@ -24,7 +24,7 @@ REAME.md
 ```
 
 # Setting up
-Follow these instructions to set it up. 
+Follow these instructions to set up the wawn build script.
 
 ## Install dependencies
 
@@ -37,7 +37,7 @@ pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-
 _I believe that's it for now. Give it a try, and contact me if it doesn't work for some reason and we can debug it together, as I haven't tried reproducing these steps on another system yet._
 
 ## Download auth token
-To use the `make_wawn.py` book build script, download this auth file from the (wawn google drive)[https://drive.google.com/file/d/1C3bGZjqLHTvEZ31-EWr1rfOrlE_MT16Q/view?usp=sharing].
+To use the `make_wawn.py` book build script, download this auth file from the [wawn google drive](https://drive.google.com/file/d/1C3bGZjqLHTvEZ31-EWr1rfOrlE_MT16Q/view?usp=sharing).
 
 Note where you've saved the file, e.g., in this directory, and then update the `GOOGLE_APPLICATION_CREDENTIALS` environment variable.
 
