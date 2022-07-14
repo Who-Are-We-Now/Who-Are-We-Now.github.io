@@ -19,6 +19,7 @@ sed -e 's!\\\[\\@\([^}]*\)\\\]!\[@\1]!g;s@\\@@g;s/^###\ />\ /g' 0_${1}.md > 1_${
 # python ../../process_md.py --input 3_${1}.md --output ../index_${1}.md
 
 src_dir='../../../src'
+book_dir='../../../book'
 scripts_dir='../../'
 
 mkdir -p ${src_dir}/${1}
@@ -28,6 +29,10 @@ python ../../process_md.py --input 1_${1}.md --chapter ${2} --output ${src_dir}/
 
 # generate .docx file
 # TODO -- need to test with properly formatted file
+
+python ../../process_md.py --input 1_${1}.md --chapter ${2} --output ${book_dir}/${1}.md --chapters_file ${scripts_dir}/chapters.json --book True
+pandoc --lua-filter=${scripts_dir}/stripmeta.lua -o ${book_dir}/${1}.docx --reference-doc=${scripts_dir}/custom-reference.docx ${book_dir}/${1}.md 
+rm ${book_dir}/${1}.md
 
 cd ..
 rm -rf tmp

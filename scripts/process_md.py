@@ -9,6 +9,7 @@ parser.add_argument('--input', type=str)
 parser.add_argument('--output', type=str)
 parser.add_argument('--chapter', type=float)
 parser.add_argument('--chapters_file', type=str)
+parser.add_argument('--book', type=bool, default=False)
 
 args = parser.parse_args()
 
@@ -69,7 +70,7 @@ def replace_em_dash(line):
 
 def remove_underline_in_links(line):
     line = line.text
-    line = re.sub(r'\[(\b.*)\]\{.underline}', r'\1', line)
+    line = re.sub(r'\[(\b[^\[]*)\]\{.underline\}', r'\1', line)
     return Line(line, True)
 
 def remove_paperpile_links(line):
@@ -132,6 +133,17 @@ def remove_ref_metadata(line):
 
     return Line(line, False)
 
+# For book edition, removes tags (like image tags)
+def remove_web_tags(line):
+    line = line.text
+    # Search for image tags, skip line if present
+    regexp = re.compile(r'\[\[.*\]\]\n')
+    if regexp.search(line):
+        # Skip line
+        return Line(line, False)
+    else:
+        return Line(line, True)
+
 write_frontmatter(o)
 
 for line in f.readlines():
@@ -159,6 +171,11 @@ for line in f.readlines():
 
     line = skip_section(line)
     write &= line.write
+
+    if args.book:
+        line = remove_web_tags(line)
+        write &= line.write
+
 
     if write:
         o.write(line.text)
