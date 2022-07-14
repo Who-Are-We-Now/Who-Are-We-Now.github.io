@@ -12,7 +12,7 @@ The reclaiming of the umbrella term “queer” in recent years is partly a resp
 
 Consistent with this, we can see sharp rises in queer identification among the young even between 2018-19 and 2020-21. We can also see the way it has become strongly associated with younger women— under the age of 30, about two thirds of queer people are women, about a quarter are men, and about 10% identify as both or neither, whereas above middle age roughly equal numbers of queer people are women and men, with a negligible number of people (queer or not) identifying as both or neither.
 
-![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
 
 ![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
 
@@ -20,7 +20,7 @@ By the end of the 19th century, “queer” had become a slur referring specific
 
 The survey shows us how the meaning of “queer” has shifted in recent decades. While three quarters of queer people over the age of 50 identify as “homosexual, gay or lesbian,”[^4] this figure drops to around half for younger people. At the same time, older lesbians and gay people are somewhat *less* likely to identify as queer; that’s not so much because they don’t believe the word was intended to apply to them, but because many still find the term offensive, hence reject it. As a 59 year old man from Jacksonville, Florida put it, “I identify as homosexual or gay, but not queer.”
 
-![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
 
 We can see more evidence of the way “queer” has become both broader and less offensive over time if we look at the same pattern with respect to bisexuality. Among the young, nearly 70% of queer people are bisexual, while less than 30% of people older than 55 are. Conversely, while 40% of the 19 year old bisexual population consider themselves queer, only about 10% of 65 year old bisexuals do.
 
@@ -102,7 +102,7 @@ These attitudes have cast a long shadow. I remember, shortly after I moved to th
 
 [^5]: [[Bergler, Homosexuality.]]
 
-[^6]: This is part of the reason there are now only 21 lesbian bars in the United States, out of roughly 1,000 bars catering to gay men and LGBTQ+ people more generally. During the general downturn of the COVID pandemic, lesbian and Black-owned gay bars were hit hardest, due to the greater economic precarity of both their owners and their patrons. See [https://www.lesbianbarproject.com/the-21-bars-home]{.underline}](https://www.lesbianbarproject.com/the-21-bars-home) and [[https://www.nbcnews.com/feature/nbc-out/year-pandemic-america-s-remaining-lesbian-bars-are-barely-hanging-n1262936](https://www.nbcnews.com/feature/nbc-out/year-pandemic-america-s-remaining-lesbian-bars-are-barely-hanging-n1262936).
+[^6]: This is part of the reason there are now only 21 lesbian bars in the United States, out of roughly 1,000 bars catering to gay men and LGBTQ+ people more generally. During the general downturn of the COVID pandemic, lesbian and Black-owned gay bars were hit hardest, due to the greater economic precarity of both their owners and their patrons. See [https://www.lesbianbarproject.com/the-21-bars-home](https://www.lesbianbarproject.com/the-21-bars-home) and [https://www.nbcnews.com/feature/nbc-out/year-pandemic-america-s-remaining-lesbian-bars-are-barely-hanging-n1262936](https://www.nbcnews.com/feature/nbc-out/year-pandemic-america-s-remaining-lesbian-bars-are-barely-hanging-n1262936).
 
 [^7]: Nowadays it’s a common refrain that these neighborhoods “aren’t what they once were.” Partly, as the stigma of being LGBTQ+ decreases (and more social life moves online), there’s less pressure to move to these special places. Relatedly, it becomes hard to counteract the dilution in numbers caused by an onslaught of straight people attracted to the night life in these neighborhoods.
 

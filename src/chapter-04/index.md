@@ -97,7 +97,7 @@ Imagining life in such a world can induce a kind of vertigo, even horror. Then a
 
 [^2]: [[REF]]
 
-[^3]: [REF]] Secondary sources include [[https://www.oneadvisorypartners.com/blog/the-history-of-women-and-money-in-the-united-states-in-honor-of-womens-history-month]{.underline}](https://www.oneadvisorypartners.com/blog/the-history-of-women-and-money-in-the-united-states-in-honor-of-womens-history-month) [[https://www.theguardian.com/money/us-money-blog/2014/aug/11/women-rights-money-timeline-history](https://www.theguardian.com/money/us-money-blog/2014/aug/11/women-rights-money-timeline-history)
+[^3]: [[REF]] Secondary sources include [https://www.oneadvisorypartners.com/blog/the-history-of-women-and-money-in-the-united-states-in-honor-of-womens-history-month](https://www.oneadvisorypartners.com/blog/the-history-of-women-and-money-in-the-united-states-in-honor-of-womens-history-month) [https://www.theguardian.com/money/us-money-blog/2014/aug/11/women-rights-money-timeline-history](https://www.theguardian.com/money/us-money-blog/2014/aug/11/women-rights-money-timeline-history)
 
 [^4]: Thomas Low Nichols and Mary Sargeant Gove Nichols, *Marriage: Its History, Character, and Results* (New York: T.L. Nichols, 1854), 91–92.
 

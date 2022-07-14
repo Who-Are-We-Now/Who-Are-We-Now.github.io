@@ -48,7 +48,7 @@ Cesare Lombroso (1835-1909), physician, anthropologist, criminologist, and argua
 
 Lombroso worked in prisons and asylums, which prompted him to concentrate on mental disorders, and hence to focus especially on the measurement of the head and facial features. For clearly, animals with bigger heads relative to their bodies tend to be among the more intelligent; also, certain congenital problems like microcephaly (in which the brain and the head are underdeveloped) usually result in intellectual disability. Might the signs of other cognitive impairments— or even gifts, signs of genius— also be detectable through careful physical measurement of the head? What about a predisposition to criminal behavior? So, Lombroso came to champion physiognomy, the pseudoscientific belief we’ll explore further in Chapter [[15]] that a person’s physical features reveal their essential nature— and their value to society.
 
-![](media/image6.jpg){width="6.5in" height="4.194444444444445in"}
+![](media/image9.jpg){width="6.5in" height="4.194444444444445in"}
 
 [From Orson Squire Fowler and Lorenzo Niles Fowler, *The Illustrated Self-Instructor in Phrenology and Physiology: With One Hundred Engravings, and a Chart of the Character* (Fowlers and Wells, 1853), 42., and “idiot” was at this moment in history considered a technical term.]
 
@@ -56,7 +56,7 @@ I know, I’m making this chain of reasoning sound a bit farfetched. Perhaps it�
 
 > “[I]nspiration came to me when [...] I applied to the clinical examination of cases of mental alienation the study of the skull, with measurements and weights, by means of the esthesiometer and craniometer. [...] I, therefore, began to study criminals in the Italian prisons, and, amongst others, I made the acquaintance of the famous brigand Vilella.[^11] This man possessed such extraordinary agility, that he had been known to scale steep mountain heights bearing a sheep on his shoulders. His cynical effrontery was such that he openly boasted of his crimes. On his death one cold grey November morning, I was deputed to make the *post-mortem*, and on laying open the skull I found on the occipital part, exactly on the spot where a spine is found in the normal skull, a distinct depression which I named *median occipital fossa*, because of its situation precisely in the middle of the occiput as in inferior animals, especially rodents. This depression, as in the case of animals, was correlated with the hypertrophy of the *vermis*, known in birds as the middle cerebellum.
 
-![](media/image1.png){width="3.209935476815398in" height="4.16329615048119in"}
+![](media/image7.png){width="3.209935476815398in" height="4.16329615048119in"}
 
 > This was not merely an idea, but a revelation. At the sight of that skull, I seemed to see all of a sudden, lighted up as a vast plain under a flaming sky, the problem of the nature of the criminal—an atavistic being who reproduces in his person the ferocious instincts of primitive humanity and the inferior animals. Thus were explained anatomically the enormous jaws, high cheek-bones, prominent superciliary arches, solitary lines in the palms, extreme size of the orbits, handle-shaped or sessile ears found in criminals, savages, and apes, insensibility to pain, extremely acute sight, tattooing, excessive idleness, love of orgies, and the irresistible craving for evil for its own sake, the desire not only to extinguish life in the victim, but to mutilate the corpse, tear its flesh, and drink its blood.”
 
@@ -82,7 +82,7 @@ Thus inspired, it wasn’t such a big step for Lombroso to venture beyond “sci
 
 > “Twenty-eight per cent. of criminals have handle-shaped ears standing out from the face as in the chimpanzee: in other cases they are placed at different levels. Frequently too, we find misshapen, flattened ears, devoid of helix, tragus, and anti-tragus, and with a protuberance on the upper part of the posterior margin (Darwin’s tubercle), a relic of the pointed ear characteristic of apes.”
 
-![](media/image4.png){width="1.7632206911636046in" height="2.8733978565179354in"}![](media/image8.png){width="2.758928258967629in" height="2.875in"}![](media/image9.jpg){width="1.755667104111986in" height="2.4943908573928257in"}
+![](media/image5.png){width="1.7632206911636046in" height="2.8733978565179354in"}![](media/image2.png){width="2.758928258967629in" height="2.875in"}![](media/image8.jpg){width="1.755667104111986in" height="2.4943908573928257in"}
 
 [Left: Descent of Man; Middle: a monkey; Right: Gina Lombroso.]
 
@@ -112,15 +112,15 @@ Before we wrap up with handedness, though, we should look at real data. Since th
 
 If so, the effect is very weak, as we can see by graphing the numbers of strictly left- and right-handed women and men who are strictly same-sex attracted[^22] (this framing avoids, as much as possible, conflating the analysis with questions of self-identity, which as we’ll see later is more complicated). The left-handed and right-handed curves fall within each other’s error bars across all ages, showing no significant difference in the rate of strict same-sex attraction by handedness.
 
-![](media/image5.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
 
-![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image6.png){width="6.5in" height="2.8333333333333335in"}
 
 Nor is there any statistically significant association between handedness and identifying in adulthood as a man, if assigned female at birth, or as a woman, if assigned male at birth[^23] (though for the latter group especially, for reasons we’ll discuss in Chapters 8 and 9, the numbers are very small, since we’re now looking at minorities of minorities of minorities, resulting in very large error bars).
 
-![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
 
-![](media/image7.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
 
 In a recurring pattern, the fact that influential 19th and 20th century thinkers usually didn’t have the thousands of datapoints required to actually test their hypotheses, as we do, didn’t prevent them from making some highly confident (yet utterly incorrect) claims.
 

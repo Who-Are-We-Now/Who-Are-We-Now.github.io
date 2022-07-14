@@ -48,7 +48,7 @@ Ugly as this characterization is, it might seem like it could at least have affo
 
 It was a no-win situation.
 
-![](media/image2.jpg){width="2.7924103237095363in" height="4.5734470691163605in"}
+![](media/image3.jpg){width="2.7924103237095363in" height="4.5734470691163605in"}
 
 [[Out and proud lesbian prison couple from *The criminal woman*.]]
 
@@ -100,7 +100,7 @@ The radical sex abolition politics envisioned by Shulamith Firestone in 1970 cal
 
 In many ways, our move online, in which computers increasingly mediate our every interaction with the world and with each other through bits and bytes, finishes the job of making gender irrelevant, or turning it into an opt-in identity decoupled from the form of one’s genitals. We can see powerful evidence of this when we look at responses to the questions “Are you female?,” “Are you male?,” “Do you have a vagina?,” and “Do you have a penis?” Even when we limit ourselves to respondents who answer “yes” to only one of the first two questions, an increasing number of young people don’t answer the other two questions in the “expected” way. That is, there are an increasing number of women with penises and/or without vaginas, and men with vaginas and/or without penises; these numbers follow the same pattern as “Are you trans?,” but are even higher across all ages, peaking at 4.5% among 20-23 year olds.
 
-![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
 
 Romantic and sexual relationships are increasingly happening online, too, potentially beginning to decouple even this aspect of life from physical bodies. While our noses and mouths have disappeared behind protective masks when we need to venture out into the “real world,” our digital faces have been undergoing a virtual makeover. Avatars, digital makeup, and neural nets can re-render us completely— our gender, voice, age, race, and virtually anything else.
 
@@ -112,7 +112,7 @@ While accounts of “Snapchat dysmorphia” tend to emphasize hyper-feminization
 
 We shouldn’t think of this phenomenon only in the negative terms of dysmorphia, though. For many young people, an embrace of fluidity and rejection of either/or categories can be liberatory. Wherever older respondents might harbor assumptions about mutually exclusive answers on the survey, we find that growing numbers of younger respondents violate those assumptions. For instance, nearly 3% of of 19 year olds identify as both or neither male and female, and more than 8% answer “yes” to more than one of the questions “Are you heterosexual?,” “Are you homosexual, gay or lesbian?” and “Are you bisexual?” When these are just profile settings that can be toggled on a dating or social media app, there’s no need to box yourself in.
 
-![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
 
 How far will this go? At this point, it’s unclear. Neural nets can transform our digital selves in any conceivable way— far beyond anything surgery can approximate. These new Deepfake-like techniques aren’t limited, the way Photoshop was in the old days, to smoothing a bit here or slimming a bit there. The language we’re speaking can be altered, we can become skilled singers, we can be rendered as cartoons, we can look like elves or pixies. Or nonhuman entities. The old adage, “On the Internet, nobody knows you’re a dog”[^33] was coined by New Yorker cartoonist Peter Steiner in 1993, in an era when social interaction online consisted of a handful of nerds at universities typing text into chat windows. Things have come a long way in the three decades since. While the actual “internet of animals”[^34] still hasn’t taken off, it’s now commonplace for humans to present as other species online— though cats are more popular than dogs. Online, Daphna Joel’s vision of “gender abolition” seems almost quaint.
 
@@ -124,7 +124,7 @@ Does this mean we’ve already been uploaded?
 
 [^1]: [https://twitter.com/abianne/status/605503223575781376](https://twitter.com/abianne/status/605503223575781376?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E605503223575781376%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fabcnews.go.com%2FLifestyle%2Ftarget-moves-gender-neutral-store-signage%2Fstory%3Fid%3D32982682)
 
-[^2]: [Target Moves Toward Gender-Neutral Store Signage - ABC News]{.underline}](https://abcnews.go.com/Lifestyle/target-moves-gender-neutral-store-signage/story?id=32982682) (2015), [[Target experiments with gender neutrality in its stores - CSMonitor.com]{.underline}](https://www.csmonitor.com/USA/Society/2016/0209/Target-experiments-with-gender-neutrality-in-its-stores) (2016), [[Target to Install Gender-Neutral Bathrooms in All of Its Stores]{.underline}](https://www.advocate.com/transgender/2016/8/18/target-install-gender-neutral-bathrooms-all-its-stores) (2016), [[Target Debuts An All-Gender Product Line For Kids](https://www.fastcompany.com/90132191/target-debuts-an-all-gender-kids-product-line) (2017).
+[^2]: [Target Moves Toward Gender-Neutral Store Signage - ABC News](https://abcnews.go.com/Lifestyle/target-moves-gender-neutral-store-signage/story?id=32982682) (2015), [Target experiments with gender neutrality in its stores - CSMonitor.com](https://www.csmonitor.com/USA/Society/2016/0209/Target-experiments-with-gender-neutrality-in-its-stores) (2016), [Target to Install Gender-Neutral Bathrooms in All of Its Stores](https://www.advocate.com/transgender/2016/8/18/target-install-gender-neutral-bathrooms-all-its-stores) (2016), [Target Debuts An All-Gender Product Line For Kids](https://www.fastcompany.com/90132191/target-debuts-an-all-gender-kids-product-line) (2017).
 
 [^3]: [Yes, Target, I Do Want My Daughter To Conform To Her Gender - TheBlaze](https://www.theblaze.com/contributions/yes-i-do-want-my-daughter-to-conform-to-her-gender), 2015.
 

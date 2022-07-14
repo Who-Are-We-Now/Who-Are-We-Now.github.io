@@ -5,7 +5,7 @@ title: The return of Count Sandor
 layout: chapter
 ---
 
-Chapter]{.underline} 13[: The return of Count Sandor
+Chapter 13: The return of Count Sandor
 ---
 
 Many believe the trans community is tiny. This became obvious when I ran a small side survey asking respondents for their estimates of some of the percentages the survey measures, including the percentage of trans people. In trying to keep things simple, I foolishly used a number control on the answer form that didn’t allow people to enter answers between 0 and 1%. 1% was the most common answer overall, and a number of respondents added comments like:
@@ -18,7 +18,7 @@ Like many of the identities we’ve been discussing, the real answer is very muc
 
 Indeed they do. As elsewhere, our intuitive estimates tend to systematically undershoot for two reasons: first, because we form our models of the world when we’re young and are often slow to update them; and second, because if we look around at people our own age, we don’t see the whole picture. Big national polls, like those run by the Census, may be thrown off by anonymity concerns. Many studies also estimate averages without considering changes as a function of age and time. In responses to the question “Are you trans?,” we can see that both of these effects are powerful.
 
-![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
 
 This is another of those cases where we see an effect a lot more radical than just a shift to the right by two years from 2018-19 to 2020-21. Sliding one curve to fit on top of the other would require a shift of somewhere between 7 and 15 years. This tells us that social contagion is a major factor here— and not just among the young, but at all ages.
 
@@ -34,7 +34,7 @@ Consider the implications: out of the 1.75% or so of acknowledged intersex birth
 
 ![](media/image7.png){width="6.5in" height="2.8333333333333335in"}
 
-![](media/image6.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
 
 We can explore the overlap between the trans and intersex communities using the survey data, but since one or both are very small minorities at certain ages, we need to bucket by age coarsely, and even so our error bars will be large. Still, the pattern revealed is interesting and statistically significant. (Recall that the shaded regions show 90% confidence intervals.)
 
@@ -50,29 +50,29 @@ It’s likely that more than one thing is going on here. First, we know that onl
 
 Being trans means something very different to a 20 year old and a 60 year old. The great majority of trans 60 year olds think of themselves as either men who were assigned female at birth, or women who were assigned male at birth. On the other hand, a large and increasing proportion of trans 20 year olds think of themselves as people who don’t identify with their sex assigned at birth— a broader category, since it includes the growing number of those with non-binary or fluid gender identities, or who simply reject gender altogether.
 
-![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image5.png){width="6.5in" height="2.8333333333333335in"}
 
 We can see powerful evidence of this in the overlap between trans and non-binary identities. Beyond age 60, this overlap is nil; the survey turned up no older trans non-binary people, or non-binary trans people. For 19 year olds, though, 80% of non-binary people consider themselves trans, because— by the modern definition most young people use— being non-binary makes one *automatically* trans, by virtue of not identifying with sex assigned at birth (which, at least today, is always binary). Non-binary people make up just under half of the younger trans population.
 
-![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image6.png){width="6.5in" height="2.8333333333333335in"}
 
 The overlap between users of “they” and the trans population follows a very similar pattern. Vanishingly few older trans people use “they,” while about 30% of 19 year old trans people do; conversely, only about a third of older “they” users are trans, while almost two thirds of 19 year old ones are.
 
-![](media/image5.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
 
 As one would expect, the overlap between “they” users and non-binary people is very high at the younger end, but curiously, by age 65 this overlap drops to zero. When older people use “they” or identify with non-binariness, they seem to be less consciously part of a coherent social movement in which these traits go together.
 
 Before delving into the breakdown of binary sex and gender identification among the young, let’s compare the numbers of trans people assigned female at birth versus male at birth.
 
-![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
 
 A similar pattern shows up if we ignore the answer to the question “Are you trans?,” and just consider those whose answers to the questions “Are you female?” and “Are you male?” are unambiguously opposite their birth sex assignment. The numbers are only about half as large the trans population, because this excludes the (younger) cohort of non-binary people and those who answer “yes” or “no” to both male and female— but the trends are identical.
 
-![](media/image9.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image8.png){width="6.5in" height="2.8333333333333335in"}
 
 What we’re seeing in these curves is both remarkable and familiar. Among older people who don’t identify with their birth sex assignment (whether they identify as trans or not), male assignment at birth overwhelmingly predominates, while among younger people female assignment at birth much likelier. This pattern should look familiar: it’s the same one we saw earlier for intersexuality.
 
-![](media/image8.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image9.png){width="6.5in" height="2.8333333333333335in"}
 
 When we compare the birth sex assignment ratios for trans and intersex people directly, we see that they look pretty much identical above age 35: by age 65, assignment is around 80% male at birth, while at age 35, sex assignment at birth is closer to 60% female. At the youngest ages, though, the curves diverge. Virtually *all* intersex people are assigned female at birth, for the reasons we discussed in the previous chapter. Young trans people also tend to be assigned female at birth, but only by a 3:2 majority.
 
@@ -154,9 +154,9 @@ Although this is a broad movement, it, too, is especially embraced by young peop
 
 [^3]: [[REF]]
 
-[^4]: [REF]] [[https://en.wikipedia.org/w/index.php?title=Transgender&oldid=958722332](https://en.wikipedia.org/w/index.php?title=Transgender&oldid=958722332)
+[^4]: [[REF]] [https://en.wikipedia.org/w/index.php?title=Transgender&oldid=958722332](https://en.wikipedia.org/w/index.php?title=Transgender&oldid=958722332)
 
-[^5]: [REF]] [[https://en.wikipedia.org/w/index.php?title=Transgender&oldid=958722332]{.underline}](https://en.wikipedia.org/w/index.php?title=Transgender&oldid=958722332) and [[Study](https://www.ncbi.nlm.nih.gov/pubmed/28075632).
+[^5]: [[REF]] [https://en.wikipedia.org/w/index.php?title=Transgender&oldid=958722332](https://en.wikipedia.org/w/index.php?title=Transgender&oldid=958722332) and [Study](https://www.ncbi.nlm.nih.gov/pubmed/28075632).
 
 [^6]: John Colapinto, *As Nature Made Him*.
 
@@ -200,7 +200,7 @@ Although this is a broad movement, it, too, is especially embraced by young peop
 
 [^26]: WEIRD societies place a strong value on personal consistency, which is perhaps why we consider it so embarrassing for our identities and beliefs to be influenced by others as adults. We’d prefer, perhaps, to somehow always be the influencers, and for the ideas we spread to have sprung into our minds out of nowhere.
 
-[^27]: [REF]] [[https://quoteinvestigator.com/2017/09/25/progress/#:~:text=As%20the%20great%20Max%20Planck,replaced%20by%20a%20new%20generation](https://quoteinvestigator.com/2017/09/25/progress/#:~:text=As%20the%20great%20Max%20Planck,replaced%20by%20a%20new%20generation).
+[^27]: [[REF]] [https://quoteinvestigator.com/2017/09/25/progress/#:~:text=As%20the%20great%20Max%20Planck,replaced%20by%20a%20new%20generation](https://quoteinvestigator.com/2017/09/25/progress/#:~:text=As%20the%20great%20Max%20Planck,replaced%20by%20a%20new%20generation).
 
 [^28]: A 47 year old woman from Bridgeport, Connecticut.
 

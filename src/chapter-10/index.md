@@ -5,12 +5,12 @@ title: Pronoun wars
 layout: chapter
 ---
 
-Chapter]{.underline} 10[: Pronoun wars
+Chapter 10: Pronoun wars
 ---
 
 In our analysis of handedness, we saw an often overlooked “excluded middle”— a sizable population who are neither strictly left- nor strictly right-handed. The survey questions about sex and gender follow the same methodology as the handedness questions, and similarly allow “both” or “neither” responses to the questions “Do you identify as female?” and “Do you identify as male?” In the graph below, these ambiguous responses are represented by the “Both or neither female/male” curve.
 
-![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
 
 Unsurprisingly, we find an excluded middle here too. As with handedness and sexual orientation, we’re entering a territory where biology, medicine, environment, language, and culture all intersect in complex ways. For handedness, though, the signs of stigma and discrimination are largely encoded in linguistic clues from the past, whereas sex, gender, and the stigmas of their excluded middles are a red-hot topic today. This volcano is active, with the eruption of major debates in the media about non-binariness and trans rights seemingly every week. The cultural landscape is being reshaped before our eyes.
 
@@ -84,7 +84,7 @@ All of this raises profound questions that have become highly charged in today�
 
 There are a number of roughly analogous gender terms for what we’d call “ambidextrous” in the context of handedness. “Non-binary” is the most common, but other variations in common use include “gender fluid” and “gender queer.” As with ambidexterity, we’re not defining the terms in the survey, so we should think of them for now simply as communities people identify with that suggest something nontraditional about a person’s gender.
 
-![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
 
 As we can see in the graph, there’s overlap between these populations, but it’s far from complete, since like gender neutral pronouns, these terms all have their partisans. Hence the total— meaning, people who answer “yes” to any or all of the three questions “Are you non-binary?,” “Are you gender fluid?,” or “Are you gender queer?”— is larger than any of these individually, but smaller than the sum, ranging from 5% to 8% depending on age.
 
