@@ -36,6 +36,7 @@ refs = "#refs"
 in_ref = False
 skip_counter = 0
 in_bib = False
+in_skip = False
 
 # Outputs metadata as front matter at the top of the markdown file, 
 # using the 'front_matter' entry of the chapters.json file
@@ -44,7 +45,7 @@ def write_frontmatter(o):
     o.write('---\n')
     for k in front_matter:
         o.write("{}: {}\n".format(k, front_matter[k]))
-    o.write('---\n')
+    o.write('---\n\n')
 
 # Returns true if the line needs to be printed
 def replace_first_two_hbar(line):
@@ -87,6 +88,21 @@ def remove_bibliography(line):
         in_bib = False
         return Line(line, False)
     elif in_bib:
+        return Line(line, False)
+    else:
+        return Line(line, True)
+
+def skip_section(line):
+    line = line.text
+    global in_skip
+
+    if "{%skip_start%}" in line:
+        in_skip = True
+        return Line(line, False)
+    elif "{%skip_end%}" in line: 
+        in_skip = False
+        return Line(line, False)
+    elif in_skip:
         return Line(line, False)
     else:
         return Line(line, True)
@@ -139,6 +155,9 @@ for line in f.readlines():
     write &= line.write
 
     line = remove_bibliography(line)
+    write &= line.write
+
+    line = skip_section(line)
     write &= line.write
 
     if write:
