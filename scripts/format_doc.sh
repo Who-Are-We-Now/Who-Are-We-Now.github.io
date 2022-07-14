@@ -19,11 +19,12 @@ sed -e 's!\\\[\\@\([^}]*\)\\\]!\[@\1]!g;s@\\@@g;s/^###\ />\ /g' 0_${1}.md > 1_${
 # python ../../process_md.py --input 3_${1}.md --output ../index_${1}.md
 
 src_dir='../../../src'
+scripts_dir='../../'
 
-mkdir ${src_dir}/${1}
+mkdir -p ${src_dir}/${1}
 
 # ...OR without citation setting
-python ../../process_md.py --input 1_${1}.md --output ${src_dir}/${1}/index.md
+python ../../process_md.py --input 1_${1}.md --chapter ${2} --output ${src_dir}/${1}/index.md --chapters_file ${scripts_dir}/chapters.json
 
 # generate .docx file
 # TODO -- need to test with properly formatted file

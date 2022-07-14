@@ -2,10 +2,14 @@ import unicodedata
 import re
 from collections import namedtuple
 import argparse
+import json
 
 parser = argparse.ArgumentParser(description="Format wawn md filese")
 parser.add_argument('--input', type=str)
 parser.add_argument('--output', type=str)
+parser.add_argument('--chapter', type=float)
+parser.add_argument('--chapters_file', type=str)
+
 args = parser.parse_args()
 
 Line = namedtuple('Line', ['text', 'write'])
@@ -13,6 +17,16 @@ Line = namedtuple('Line', ['text', 'write'])
 f = open(args.input, 'r')
 # TODO: add file naming, with dates, etc. once it's added to the codebase
 o = open(args.output, 'w')
+
+chs_f = open(args.chapters_file, 'r')
+chapters = json.load(chs_f)
+chapter_metadata = None
+
+for entry in chapters:
+    if float(entry['chapter']) == args.chapter:
+        chapter_metadata = entry
+        break
+
 count = 0 
 
 hbar = "-{5,}"
@@ -22,6 +36,15 @@ refs = "#refs"
 in_ref = False
 skip_counter = 0
 in_bib = False
+
+# Outputs metadata as front matter at the top of the markdown file, 
+# using the 'front_matter' entry of the chapters.json file
+def write_frontmatter(o):
+    front_matter = chapter_metadata['front_matter']
+    o.write('---\n')
+    for k in front_matter:
+        o.write("{}: {}\n".format(k, front_matter[k]))
+    o.write('---\n')
 
 # Returns true if the line needs to be printed
 def replace_first_two_hbar(line):
@@ -93,29 +116,32 @@ def remove_ref_metadata(line):
 
     return Line(line, False)
 
-if __name__ == '__main__':  
-    for line in f.readlines():
-        write = True
-        line_normalized = unicodedata.normalize("NFKD", line)
-        line = Line(line_normalized, write)
+write_frontmatter(o)
 
-        line = replace_first_two_hbar(line)
-        write &= line.write
+for line in f.readlines():
+    write = True
+    line_normalized = unicodedata.normalize("NFKD", line)
+    line = Line(line_normalized, write)
 
-        line = replace_em_dash(line)
-        write &= line.write
+    line = replace_first_two_hbar(line)
+    write &= line.write
 
-        line = remove_underline_in_links(line)
-        write &= line.write
+    line = replace_em_dash(line)
+    write &= line.write
 
-        line = remove_paperpile_links(line)
-        write &= line.write
+    line = remove_underline_in_links(line)
+    write &= line.write
 
-        line = remove_ref_metadata(line)
-        write &= line.write
+    line = remove_paperpile_links(line)
+    write &= line.write
 
-        line = remove_bibliography(line)
-        write &= line.write
+    line = remove_ref_metadata(line)
+    write &= line.write
 
-        if write:
-            o.write(line.text)
+    line = remove_bibliography(line)
+    write &= line.write
+
+    if write:
+        o.write(line.text)
+
+o.close()

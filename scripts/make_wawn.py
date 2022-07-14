@@ -61,17 +61,22 @@ if __name__ == '__main__':
     #     [chapter number, title, drive_id, shortname]
     f = open('chapters.json')
     chapters = json.load(f)
-    os.system("mkdir raw_docs")
-    for ch, title, drive_id, shortname in chapters:
+    os.system("mkdir -p raw_docs")
+    for chapter in chapters:
+        ch_num = chapter['chapter']
+        shortname = chapter['shortname']
+        title = chapter['title']
+        drive_id = chapter['drive_id']
+
         wawn_docx = "raw_docs/{}.docx".format(shortname)
 
         # Download chapter
-        print("Donwloading chapter {:02} '{}'".format(ch, title))
+        print("Donwloading chapter {:02} '{}'".format(ch_num, title))
         download_docx(wawn_docx, drive_id)
         print(" download complete!")
 
         # Format the documents using the bash script
-        os.system("(cd raw_docs; ../format_doc.sh {})".format(shortname))
+        os.system("(cd raw_docs; ../format_doc.sh {} {})".format(shortname, ch_num))
         print(" doc formatting complete!")
 
         # Clean up downloaded .docx file, to prevent unnecessary duplication
