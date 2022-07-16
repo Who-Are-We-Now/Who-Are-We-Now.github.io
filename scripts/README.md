@@ -1,3 +1,11 @@
+# Markdown commands
+The `make_wawn.py` script builds the entire book as `.md` and `.docx` files from the Google Docs files. There are a few commands you can specify inline in the Google Docs:
+
+**Remove bibliography**
+Because Paperpile automatically adds a bibliography to the end of the document, place `{%bibliography_start%}` and `{%bibliography_end%}` around it to remove it.
+
+**Skip a block of text**
+Wrap a block of text with `{%skip_start%}` and `{%skip_end%}` to make the block of text disappear. This can be useful in case there's something in the manuscript we wish not to see in the final output.
 
 # Building the book
 To build the book, which generates all the markdown files per chapter (and soon all `.docx` files), you must simply run the `make_wawn.py` file within this directory (`/scripts`):
