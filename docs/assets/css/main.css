@@ -327,6 +327,7 @@ main {
 
 .chapter-intro {
   font-family: "Osram Regular";
+  text-transform: capitalize;
 }
 
 /* Article layout ----------------*/

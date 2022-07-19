@@ -2,11 +2,11 @@
 part: 0
 chapter: -1
 title: Preface
-layout: chapter
+layout: preface
 ---
 
 Preface
-
+==================
 
 [[Dick and Jane A1R2W5kvoEL.jpg]]
 

@@ -263,6 +263,7 @@ nav {
 			.chapter-intro {
 				display: inline-block;
 				width: 30px;
+				
 			}
 		}
 		// li.part::marker {
@@ -344,6 +345,7 @@ main {
 
 .chapter-intro {
 	font-family: 'Osram Regular';
+	text-transform: capitalize;
 }
 
 /* Article layout ----------------*/

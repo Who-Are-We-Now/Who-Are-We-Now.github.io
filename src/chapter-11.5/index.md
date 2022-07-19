@@ -1,11 +1,11 @@
 ---
 part: 2
 chapter: 11.5
-title: Interlude: Ycleptance
-layout: chapter
+title: Ycleptance
+layout: interlude
 ---
 
-Interlude: Ycleptance
+Interlude Ycleptance
 ---
 
 > Yclept is an Elizabethan word, one form of the past participle of to clepe, meaning to name, to call, or to style. [...] Ycleptance means the condition or experience of being classified, branded, labeled, or typecast. It has its phyletic basis in likeness and unlikeness between individual and group attributes. Human beings have named and typecast one another since before recorded time. The terms range from the haphazard informality of nicknames that recognize personal idiosyncrasies, to the highly organized formality of scientific classifications or medical diagnoses that prognosticate our futures. The categories of ycleptance are many and diverse: sex, age, family, clan, language, race, region, religion, politics, wealth, occupation, health, physique, looks, temperament, and so on. We all live typecast under the imprimatur of our fellow human beings. We are either stigmatized or idolized by the brand names or lables [sic] under which we are yclept. They shape our destinies.[^1]

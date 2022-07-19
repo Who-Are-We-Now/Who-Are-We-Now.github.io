@@ -12,15 +12,15 @@
 		</div>
 		<ul class="toc" id="toc">
 			{%- for item in collections.toc -%}
-				{% if item.data.layout == "intro"%}
+				{% if item.data.layout == "introduction" or item.data.layout =="interlude"%}
 				<li>
 					<a href="{{ item.url | url }}" class="{% if item.url == page.url %}is-active{% endif %}"> 
-						<span class="chapter-intro">{{item.data.chapter}}</span><br>
+						<span class="chapter-intro">{{item.data.layout}}</span><br>
 						{{ item.data.title }}					
 					</a>
 				</li>
-				{% elsif item.data.layout == "interlude"%}
-				<li class="chapter">
+				{% elsif item.data.layout == "preface" %}
+				<li>
 					<a href="{{ item.url | url }}" class="{% if item.url == page.url %}is-active{% endif %}"> 
 						{{ item.data.title }}		
 					</a>

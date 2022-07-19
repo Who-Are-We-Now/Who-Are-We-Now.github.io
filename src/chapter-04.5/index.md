@@ -1,8 +1,8 @@
 ---
 part: 2
 chapter: 4.5
-title: Interlude: Planetary consciousness
-layout: chapter
+title: Planetary consciousness
+layout: interlude 
 ---
 
 Interlude: Planetary consciousness
