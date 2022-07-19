@@ -115,6 +115,7 @@ module.exports = function(eleventyConfig) {
       return `<div class="cols"><div class="col">${content}</div><div class="col image"><figure class="main"><img src="/assets/figures/${img.chapter}/${img.file}" alt="${img.alt}" title="${img.alt}"/> <figcaption>${img.caption}</figcaption></figure></div></div>`; }
   });
 
+  
   eleventyConfig.addShortcode('plot', function(label, colors) {      
       return `<figure class="plot" id="${label}" data-colors="${colors}">
               </figure>`;
@@ -130,7 +131,6 @@ module.exports = function(eleventyConfig) {
         });
       return articles;
     });
-
 
   return {
     dir: {

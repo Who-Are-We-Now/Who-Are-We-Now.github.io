@@ -14,6 +14,7 @@
   --violet: rgb(215 50 150);
   --bin1: rgb(110 110 110 / 10%);
   --bin2: rgb(220 220 220 / 10%);
+  --accent: rgb(207 102 52);
 }
 
 /*define fonts*/
@@ -26,17 +27,17 @@
   src: url(../fonts/Belarius_var-Oblique.ttf);
 }
 @font-face {
-  font-family: "Osram";
+  font-family: "Osram Regular";
   font-weight: 400;
   src: url(../fonts/OsramBeta-Regular.otf);
 }
 @font-face {
-  font-family: "Osram";
+  font-family: "Osram Medium";
   src: url(../fonts/OsramBeta-Medium.otf);
   font-weight: 500;
 }
 @font-face {
-  font-family: "Osram";
+  font-family: "Osram Black";
   src: url(../fonts/OsramBeta-Black.otf);
   font-weight: 900;
 }
@@ -45,11 +46,20 @@
 ----------------------------------------------------------------
 # Use Imports
 # Element Defaults
-  ## Typography
+	## Typography
+	## PLOT STYLES
+	## STRUCTURES & LAYOUTS 
+		### Navigation 
+		### Part Intros
+		### Chapters
+		### Interlude
+	## REFERENCE & FOOTNOTE STYLES 
+	## FIGURE STYLE
+	## SPLOT STYLES 
+# Section Agnostic Overrides
   ## Structure
-  ## Nav
   ## Elements
-# Section Specific Overrides
+# SECTION SPECIFIC OVERIDES
   ## Structure
   ## Elements
 # Responsive Layout
@@ -68,8 +78,9 @@
 :root {
   /* font-sizes */
   --base-size: 18px;
-  --large-size: 80px;
+  --xlarge-size: 80px;
   --heading-size: 48px;
+  --large-size: 32px;
   --medium-size: 24px;
   --caption-size: 14px;
   --small-size: 11px;
@@ -111,7 +122,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Osram", sans-serif;
+  font-family: "Osram Black", sans-serif;
   margin-bottom: var(--pad);
 }
 
@@ -134,7 +145,7 @@ p:first-child, hr + p, blockquote + p {
 }
 
 a {
-  color: var(--accent);
+  color: var(--orange);
 }
 
 li {
@@ -147,13 +158,6 @@ blockquote {
   margin: 1em var(--indent);
 }
 
-article {
-  --wdth: 115;
-}
-article p {
-  max-width: calc(var(--max-width) / 2);
-}
-
 hr {
   border: 0;
   background: 0;
@@ -164,6 +168,10 @@ hr:before {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+
+footer {
+  font-size: var(--caption-size);
 }
 
 /*--------------------------------------*/
@@ -195,8 +203,7 @@ nav div.current-page {
   font-size: calc(var(--medium-size) / 1.5);
   padding: 5px;
   margin-right: 5px;
-  font-family: "Osram";
-  font-weight: 500;
+  font-family: "Osram black";
   cursor: pointer;
   border: solid 2px;
   background-color: var(--white);
@@ -229,41 +236,46 @@ nav ul.toc.display {
 nav ul.toc li {
   width: 100vw;
   border-bottom: 1px solid;
-  font-family: "Osram";
+  font-family: "Osram Black";
   font-size: var(--medium-size);
+  transition: all ease-in 0.2s;
 }
 nav ul.toc li::before {
   content: "";
   display: inline-block;
 }
+nav ul.toc li:hover {
+  background-color: var(--default);
+}
+nav ul.toc li:hover a {
+  color: var(--white);
+}
 nav ul.toc li a {
   display: inline-block;
-  padding: 10px 0;
+  padding: 16px 0 20px 0;
   padding-left: 2rem;
-  transition: all ease-in 0.5s;
-}
-nav ul.toc li a:hover, nav ul.toc li a.is-active {
-  font-family: "Osram";
-  font-weight: 900;
+  line-height: 2rem;
+  color: var(--default);
+  font-size: var(--large-size);
+  text-decoration: none;
 }
 nav ul.toc li.part {
   display: list-item;
+}
+nav ul.toc li.part .chapter-intro {
+  display: inline-block;
+  width: 30px;
 }
 nav ul.toc li.chapter {
   list-style-type: none;
   font-variation-settings: "wght" var(--wght);
 }
 nav ul.toc li.chapter a {
-  padding-left: 4rem;
+  padding-left: 70px;
 }
 nav ul.toc h4 {
   font-size: var(--caption-size);
-  font-family: "Osram";
-  font-weight: 900;
-}
-nav a {
-  color: var(--default);
-  text-decoration: none;
+  font-family: "Osram Black";
 }
 
 main {
@@ -287,7 +299,7 @@ main {
   text-decoration: none;
 }
 .part-cover h1 {
-  font-size: var(--large-size);
+  font-size: var(--xlarge-size);
 }
 .part-cover h2 {
   font-size: var(--heading-size);
@@ -309,7 +321,12 @@ main {
 }
 
 .chapter-number {
+  font-family: "Osram Regular";
   width: var(--indent);
+}
+
+.chapter-intro {
+  font-family: "Osram Regular";
 }
 
 /* Article layout ----------------*/
@@ -318,22 +335,14 @@ main {
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.cols .col {
+.cols div.col, .cols figure.main {
   width: 50%;
   flex: none;
-}
-
-.image {
-  position: sticky;
-  top: var(--pad);
-  padding-left: var(--sectionpad);
-}
-.image img {
-  max-height: 80vh;
+  padding: 0 2rem;
 }
 
 table {
-  font-family: "Osram";
+  font-family: "Osram Regular";
   font-size: var(--caption-size);
   margin: var(--sectionpad) 0;
   width: 100%;
@@ -372,37 +381,27 @@ table td:first-child {
   display: inline;
   cursor: pointer;
 }
-.reference .footnote-ref {
-  font-family: "Osram";
-  font-weight: 500;
+.reference .ref-no {
+  font-family: "Osram Medium";
   font-size: var(--small-size);
   position: relative;
   bottom: 8px;
-  font-size: 1rem;
-  vertical-align: baseline;
-  border-bottom: 3px solid;
-  top: -0.25em;
-  color: var(--accent);
 }
-.reference .footnote-ref:hover {
-  border-bottom-color: transparent;
+.reference .ref-no:hover {
+  color: var(--orange);
 }
-
-.footnote-text {
+.reference .ref-text {
   line-height: 1.5;
-  font-size: 0.8em;
-  --wdth: 90;
   display: none;
-  position: fixed;
-  top: 30%;
-  right: var(--sectionpad);
-  left: auto;
-  z-index: 100;
+  position: absolute;
+  z-index: 20;
   width: 300px;
+  left: 0px;
+  background: var(--light-grey);
   border: 1px solid var(--default);
   padding: var(--pad);
 }
-.footnote-text.visible {
+.reference .ref-text.visible {
   display: block;
 }
 
@@ -414,7 +413,7 @@ table td:first-child {
 
 .footnotes-list footer {
   column-count: 2;
-  column-gap: calc(2 * var(--pad));
+  column-gap: calc( 2 * var(--pad));
 }
 .footnotes-list li .footnote-no {
   display: inline-block;
@@ -426,15 +425,37 @@ table td:first-child {
 /*--------------------------------------*/
 /* FIGURE STYLES -----------------------*/
 /*--------------------------------------*/
+figure.main {
+  width: 50%;
+  padding: 0 7rem;
+  opacity: 0;
+  transition: all ease-in 0.1s;
+}
+figure.main.display {
+  opacity: 1;
+}
+figure.main img {
+  margin: 0 auto;
+}
+figure.main.small img {
+  width: 30%;
+}
+figure.main.medium img {
+  width: 40%;
+}
+figure.main.large img {
+  width: 50%;
+}
 figure img {
   max-width: 100%;
 }
+figure.plot {
+  width: 50%;
+}
 
 figcaption {
-  font-family: "Osram";
-  font-weight: 500;
+  font-family: "Osram Medium";
   font-size: var(--caption-size);
-  text-align: center;
 }
 
 .periphery {
@@ -457,7 +478,7 @@ figcaption {
 }
 
 .plot-title {
-  font-family: "Osram";
+  font-family: "Osram Regular";
   margin-bottom: 1rem;
   padding-left: 30px;
   max-width: 25em;
@@ -497,7 +518,7 @@ svg {
 }
 
 text {
-  font-family: "Osram", sans-serif;
+  font-family: "Osram Regular", sans-serif;
 }
 
 .area {
@@ -511,7 +532,7 @@ text {
 }
 
 .label {
-  font-family: "Osram", sans-serif;
+  font-family: "Osram Regular", sans-serif;
   line-height: 1.1;
   white-space: normal;
   font-size: var(--caption-size);
@@ -591,8 +612,87 @@ text {
 /*--------------------------------------*/
 /* SECTION SPECIFIC OVERIDES   ---------*/
 /*--------------------------------------*/
-body#home .current-page::before {
-  content: "Table of Contents";
+body#home {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+body#home header {
+  order: 2;
+}
+body#home header, body#home nav {
+  position: relative;
+}
+body#home nav .navlink {
+  display: none;
+}
+body#home nav ul.toc {
+  display: block;
+  position: relative;
+  height: auto;
+  padding: 0;
+}
+body#home footer {
+  order: 3;
+}
+body#home main {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--accent);
+  color: var(--white);
+  order: 1;
+}
+body#home main a {
+  color: var(--white);
+  text-decoration: none;
+}
+body#home main a.title {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body#home main a.title h1 {
+  font-size: 162px;
+  line-height: 136px;
+  width: 70%;
+}
+body#home main a.title h3 {
+  font-family: "Belarius Variable";
+  font-size: 36px;
+  margin-bottom: -20px;
+}
+body#home main .bg img {
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+body#home main .bg img:first-child {
+  top: -5vh;
+  left: -5vw;
+  width: 40vw;
+}
+body#home main .bg img:nth-child(2) {
+  top: -5vh;
+  left: 50vw;
+  width: 40vw;
+  transform: rotate(90deg);
+}
+body#home main .bg img:nth-child(3) {
+  top: 10vh;
+  left: 50vw;
+  width: 25vw;
+}
+body#home main .bg img:nth-child(4) {
+  top: 40vh;
+  left: 60vw;
+  width: 55vw;
+}
+body#home main .bg img:nth-child(5) {
+  top: 60vh;
+  left: -10vw;
+  width: 55vw;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -10,25 +10,33 @@
 				{%- endfor -%}
 			</div>
 		</div>
-		<ul class="toc">
+		<ul class="toc" id="toc">
 			{%- for item in collections.toc -%}
-				{% if item.data.layout == "intro" or item.data.layout == "interlude"%}
+				{% if item.data.layout == "intro"%}
 				<li>
 					<a href="{{ item.url | url }}" class="{% if item.url == page.url %}is-active{% endif %}"> 
+						<span class="chapter-intro">{{item.data.chapter}}</span><br>
 						{{ item.data.title }}					
+					</a>
+				</li>
+				{% elsif item.data.layout == "interlude"%}
+				<li class="chapter">
+					<a href="{{ item.url | url }}" class="{% if item.url == page.url %}is-active{% endif %}"> 
+						{{ item.data.title }}		
 					</a>
 				</li>
 				{% elsif item.data.layout == "chapter"%}
 				<li class="chapter">
 					<a href="{{ item.url | url }}" class="{% if item.url == page.url %}is-active{% endif %}"> 
-						<!-- <h4>Chapter {{ item.data.chapter }}</h4> -->
+						<span class="chapter-intro">{{item.data.chapter}}</span><br>
 						{{ item.data.title }}
 					</a>
 				</li>
 				{% elsif item.data.layout == "section"%}
 				<li class="part">
 					<a href="{{ item.url | url }}" class="{% if item.url == page.url %}is-active{% endif %}"> 
-						Part {{ item.data.part }}						
+						<span class="chapter-intro">{{ item.data.part }}. </span>
+						{{ item.data.title }}					
 					</a>
 				</li>
 				{% endif %}

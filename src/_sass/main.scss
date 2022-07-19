@@ -1,15 +1,23 @@
-// sass --watch main.scss:../../docs/assets/css/main.css
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Use Imports
 # Element Defaults
-  ## Typography
+	## Typography
+	## PLOT STYLES
+	## STRUCTURES & LAYOUTS 
+		### Navigation 
+		### Part Intros
+		### Chapters
+		### Interlude
+	## REFERENCE & FOOTNOTE STYLES 
+	## FIGURE STYLE
+	## SPLOT STYLES 
+# Section Agnostic Overrides
   ## Structure
-  ## Nav
   ## Elements
-# Section Specific Overrides
+# SECTION SPECIFIC OVERIDES
   ## Structure
   ## Elements
 # Responsive Layout
@@ -34,8 +42,9 @@
 :root{
 	/* font-sizes */
 	--base-size: 18px; 
-	--large-size: 80px;
+	--xlarge-size: 80px;
 	--heading-size: 48px;
+	--large-size: 32px;
 	--medium-size: 24px;
 	--caption-size: 14px;
 	--small-size: 11px;
@@ -82,7 +91,7 @@ body{
 	font-variation-settings: "wght" var(--wght), "wdth" var(--wdth), "SRIF" var(--SRIF);
 }
 h1,h2,h3,h4,h5,h6{
-	font-family: 'Osram', sans-serif;
+	font-family: 'Osram Black', sans-serif;
 	margin-bottom: var(--pad);
 }
 
@@ -105,17 +114,12 @@ p:first-child, hr+p, blockquote+p{
 	text-indent: 0;
 }
 
-// don't indent after columns
-// div+p{
-// 	text-indent: 0;
-// }
-
 em{
 	@extend .belarius-oblique;
 }
 
 a{
-	color: var(--accent);
+	color: var(--orange);
 }
 
 li {
@@ -130,10 +134,7 @@ blockquote{
 }
 
 article{
-	--wdth: 115;
-	p{
-		max-width: calc(var(--max-width) / 2);
-	}
+	
 }
 
 hr{
@@ -150,7 +151,9 @@ hr{
 }
 
 
-
+footer {
+	font-size: var(--caption-size);
+}
 
 /*--------------------------------------*/
 /* STRUCTURES & LAYOUTS ----------------*/
@@ -171,6 +174,7 @@ header {
 	background-color: var(--white);
 }
 nav {
+	
 	.navlink {
 		position: fixed;
 		top: 10px;
@@ -178,25 +182,24 @@ nav {
 		z-index: 100;
 	}
 
-		div.home,
-		div.current-page {
-			display: inline-block;
-			font-size: calc(var(--medium-size) / 1.5);
-			padding: 5px;
-			margin-right: 5px;
-			font-family: 'Osram';
-			font-weight: 500;
-			cursor: pointer;
-			
-			border: solid 2px;
-			background-color: var(--white);
-			&:hover,
-			a:hover {
-				background-color: var(--default);
-				border-color: var(--default);
-				color: var(--white);
-			}
+	div.home,
+	div.current-page {
+		display: inline-block;
+		font-size: calc(var(--medium-size) / 1.5);
+		padding: 5px;
+		margin-right: 5px;
+		font-family: 'Osram black';
+		cursor: pointer;
+		
+		border: solid 2px;
+		background-color: var(--white);
+		&:hover,
+		a:hover {
+			background-color: var(--default);
+			border-color: var(--default);
+			color: var(--white);
 		}
+	}
 
 	ul.toc {
 		position:fixed;
@@ -221,24 +224,34 @@ nav {
 		li {
 			width: 100vw;
 			border-bottom: 1px solid;
-			font-family: "Osram";
-			font-size: var(--medium-size);			
+			font-family: "Osram Black";
+			font-size: var(--medium-size);
+			transition: all ease-in .2s;			
 			&::before {
 				content:"";
 				display: inline-block;
 			}
+			&:hover {
+				background-color: var(--default);
+				a {
+					color: var(--white);
+				}
+			}
 			
 			a {
+
 				display: inline-block;
-				padding: 10px 0;
+				padding: 16px 0 20px 0;
 				padding-left: 2rem;
-				transition: all ease-in .5s;
+				line-height: 2rem;
+				color: var(--default);
+				font-size: var(--large-size);
+				text-decoration: none;
 				
-				&:hover,
-				&.is-active {
-					font-family: "Osram";
-					font-weight: 900;
-				}
+				// &:hover,
+				// &.is-active {
+					
+				// }
 				
 			}
 			// font-variation-settings: "wght" var(--wght-medium);
@@ -247,6 +260,10 @@ nav {
 		li.part {
 			display: list-item;
 			// list-style-type: upper-roman;
+			.chapter-intro {
+				display: inline-block;
+				width: 30px;
+			}
 		}
 		// li.part::marker {
 		// 	display: inline-block;
@@ -257,19 +274,16 @@ nav {
 			list-style-type: none;
 			font-variation-settings: "wght" var(--wght); 
 			a {
-				padding-left: 4rem;
+				// padding-left: 4.5rem;
+				padding-left: 70px;
 			}
+		
 		}
 		
 		h4 {
 			font-size: var(--caption-size);
-			font-family: 'Osram';
-			font-weight: 900;
+			font-family: 'Osram Black';
 		}
-	}
-	a {
-		color: var(--default);
-		text-decoration: none;
 	}
 }
 
@@ -282,6 +296,7 @@ main {
 	transition: all ease-in .2s;
 }
 
+
 /* Part Intros ----------------*/
 
 .section{
@@ -291,16 +306,18 @@ main {
 }
 .part-cover{
 	height: 100vh;
+
 	a{
 		color: var(--white);
 		text-decoration: none;
 	}
 	h1{
-		font-size: var(--large-size);
+		font-size: var(--xlarge-size);
 	}
 	h2{
 		font-size: var(--heading-size);
 	}
+	
 }
 
 .questions{
@@ -321,9 +338,13 @@ main {
 	}
 }
 .chapter-number{
+	font-family: 'Osram Regular';
 	width: var(--indent);
 }
 
+.chapter-intro {
+	font-family: 'Osram Regular';
+}
 
 /* Article layout ----------------*/
 
@@ -331,27 +352,35 @@ main {
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
-
-	.col{
+	div.col, figure.main {
 		width: 50%;
 		flex: none;
+		padding: 0 2rem;
 	}
 
+	// div.col.on,
+	// div.col.on-prev, 
+	// div.col.on-next{
+	// 	width: 45%;
+	// 	p {
+	// 		font-variation-settings: "wght" 400, "wdth" 80, "SRIF" 100;
+	// 	}
+	// }
+
+
+	
 }
-
-.image{
-	position: sticky;
-	top: var(--pad);
-	padding-left: var(--sectionpad);
-
-	img{
-		max-height: 80vh;
-	}
+.col:first-child{
+	// flex: 2;
+	// margin-right: var(--sectionpad);
 }
-
-
+// .col{
+// 	width: 50%;
+//     flex: none;
+//     padding: 0 2rem;
+// }
 table{
-	font-family: 'Osram';
+	font-family: 'Osram Regular';
 	font-size: var(--caption-size);
 	margin: var(--sectionpad) 0;
 	width: 100%;
@@ -400,41 +429,32 @@ table{
 .reference{
 	display: inline;
 	cursor: pointer;
-	//superscripts
-	.footnote-ref{
-		font-family: 'Osram';
-		font-weight: 500;
+	.ref-no{
+		font-family: 'Osram Medium';
 		font-size: var(--small-size);
 		position: relative;
 		bottom: 8px;
-		font-size: 1rem;
-		vertical-align: baseline;
-		border-bottom: 3px solid;
-		top: -0.25em;
-		color: var(--accent);
+
 		&:hover{
-			border-bottom-color: transparent;
+			color: var(--orange);
 		}
 	}
-}
+	.ref-text{
+		line-height: 1.5;
 
-.footnote-text{
-	line-height: 1.5;
-	font-size: .8em;
-	--wdth: 90;
-	display: none;
-	position: fixed;
-	top: 30%;
-	right: var(--sectionpad);
-	left: auto;
-	z-index: 100;
-	width: 300px;
-
-	border: 1px solid var(--default);
-	padding: var(--pad);
-	&.visible{
-		display: block;
+		display: none;
+		position: absolute;
+		z-index: 20;
+		width: 300px;
+		left: 0px;
+		background: var(--light-grey);
+		border: 1px solid var(--default);
+		padding: var(--pad);
+		&.visible{
+			display: block;
+		}
 	}
+
 }
 
 .caption{
@@ -479,18 +499,47 @@ figure{
 		// left: calc(50% + var(--sectionpad));
 		// padding: var(--sectionpad) 0;
 		// max-width: calc(50% - var(--sectionpad)*2);
+		width: 50%;
+		// position: sticky;
+		// top: 15vh;
+		// margin-bottom: 20rem;
+		// border: solid 1px;
+		padding: 0 7rem;
+		opacity: 0;
+		transition: all ease-in .1s;
+
+		&.display {
+			opacity: 1;
+		}
+
+		& img {
+			margin: 0 auto;
+		}
+		&.small img{
+			width: 30%;
+		}
+
+		&.medium img{
+			width: 40%;
+		}
+		&.large img{
+			width: 50%;
+		}
 	}
 	img{
 		max-width: 100%;
 	}
+	
+	&.plot {
+		width: 50%;
+	}
+
 }
 
 
 figcaption {
-	font-family: 'Osram';
-	font-weight: 500;
+	font-family: 'Osram Medium';
 	font-size: var(--caption-size);
-	text-align: center;
 }
 
 .periphery {
@@ -524,7 +573,7 @@ figcaption {
 	position: relative;
 }
 .plot-title{
-	font-family: 'Osram';
+	font-family: 'Osram Regular';
 	margin-bottom: 1rem;
 	padding-left: 30px;
 	max-width: 25em;
@@ -562,7 +611,7 @@ svg{
 } 
 
 text{
-	font-family: 'Osram', sans-serif;
+	font-family: 'Osram Regular', sans-serif;
 }
 
 .area{
@@ -575,7 +624,7 @@ text{
 }
 
 .label{
-	font-family: 'Osram', sans-serif;
+	font-family: 'Osram Regular', sans-serif;
 	line-height: 1.1;
 	white-space: normal;
 	font-size: var(--caption-size);
@@ -669,10 +718,120 @@ text{
 /*--------------------------------------*/
 
 body#home {
-	.current-page {
-		&::before {
-			content:"Table of Contents";
-		}
-		
+
+	display: flex;
+	flex-direction: column;
+	
+	padding: 0;
+
+	header {
+		order: 2;
 	}
+	header, nav {
+		position:relative;
+	}
+	nav {
+		.navlink {
+			display: none;
+		}
+		// div.home {
+		// 	background-color: transparent;
+		// 	border: solid 2px var(--white);
+
+		// 	&::before {
+		// 		content: "Table of Contents";
+		// 		color: var(--white);
+		// 	}
+		// }
+		ul.toc {
+			display: block;
+			position: relative;
+			height: auto;
+			padding: 0;
+		}
+	}
+	
+	footer {
+		order: 3;
+	}
+
+	
+	// nav div.current-page  {
+
+	// }
+
+	main {
+		display: flex;
+		flex-direction: column;
+		width: 100vw;
+		height: 100vh;
+		background-color: var(--accent);
+		color: var(--white);
+
+		order: 1;
+
+		a {
+			color: var(--white);
+			text-decoration: none;
+		}
+
+		a.title {
+			position: absolute;
+
+			z-index: 10;
+			top: 50%;
+			transform: translateY(-50%);
+		
+			h1 {
+				font-size: 162px;
+				line-height: 136px;
+				width: 70%;
+				
+			}
+			h3 {
+				font-family: 'Belarius Variable';
+				font-size: 36px;
+				margin-bottom: -20px;
+			}
+		}
+
+		.bg {
+			img {
+				position:absolute;
+				mix-blend-mode: multiply;
+				// max-width: 30vw;
+				&:first-child {
+					top: -5vh;
+					left: -5vw;
+					width: 40vw;
+				}
+				&:nth-child(2) {
+					top: -5vh;
+					left: 50vw;
+					width: 40vw;
+					transform: rotate(90deg);
+				}
+				&:nth-child(3) {
+					top: 10vh;
+					left: 50vw;
+					width: 25vw;
+				}
+				&:nth-child(4) {
+					top: 40vh;
+					left: 60vw;
+					width: 55vw;
+				}
+				&:nth-child(5) {
+					top: 60vh;
+					left: -10vw;
+					width: 55vw;
+				}
+			}
+		}
+
+	}
+	footer {
+
+	}
+
 }

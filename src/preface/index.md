@@ -1,5 +1,5 @@
 ---
-chapter: -1
+chapter:
 title: Preface
 layout: intro
 ---
