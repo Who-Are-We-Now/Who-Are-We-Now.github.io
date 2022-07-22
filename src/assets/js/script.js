@@ -123,6 +123,11 @@ $(function(){
 // GLOBAL: navigation toggle
 	  $('.current-page').click(function() {
 		$('ul.toc').toggleClass('display');
+		if ($('ul.toc').hasClass('display')) {
+			$('.navlink').addClass('no-border');
+		} else {
+			$('.navlink').removeClass('no-border');
+		}
 	  });
 // HOME: image treatment
 

@@ -111,7 +111,7 @@ body {
 /*--------------------------------------*/
 /* TYPOGRAPHY --------------------------*/
 /*--------------------------------------*/
-.belarius, .questions, blockquote, p {
+.belarius, .questions, blockquote + h4, blockquote, p {
   font-family: "Belarius Variable";
   font-variation-settings: "wght" var(--wght), "wdth" var(--wdth), "SRIF" var(--SRIF);
 }
@@ -139,6 +139,9 @@ p {
   text-indent: var(--indent);
   line-height: 1.6;
 }
+h1 + p, h2 + p {
+  text-indent: 0;
+}
 
 p:first-child, hr + p, blockquote + p {
   text-indent: 0;
@@ -153,13 +156,26 @@ li {
 }
 
 blockquote {
-  --wdth: 80;
-  --wght: 400;
+  --wdth: 160;
+  --wght: 600;
   margin: 1em var(--indent);
+}
+blockquote + h4 {
+  /*citation*/
+  position: relative;
+  --wdth: 160;
+  --wght: 100;
+  margin: -1em var(--indent) 0;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  top: -0.7em;
 }
 
 article {
   width: 60%;
+}
+article h1, article h2 {
+  display: none;
 }
 
 hr {
@@ -189,16 +205,18 @@ main, footer, section {
 nav .navlink {
   position: fixed;
   z-index: 100;
-  width: 100%;
+  width: calc(100% - 40px);
   top: 0;
-  left: 0;
+  left: 20px;
   transform: translateY(0);
   transition: transform 0.2s ease-in-out;
-  width: 100%;
-  padding: 10px 2rem;
+  padding: 10px 0;
   background-color: var(--white);
-  border-bottom: solid 2px;
+  border-bottom: solid 1px;
   z-index: 100;
+}
+nav .navlink.no-border {
+  border-bottom: none;
 }
 nav .navlink.nav-up {
   transform: translateY(-100%);
@@ -211,7 +229,7 @@ nav div.current-page {
   margin-right: 5px;
   font-family: "Osram black";
   cursor: pointer;
-  border: solid 2px;
+  border: solid 1px;
   background-color: var(--white);
 }
 nav div.home a,
@@ -238,12 +256,11 @@ nav ul.toc {
   padding: 60px 0;
   min-height: 100vh;
   z-index: 50;
-  display: none;
+  transform: translateY(-100%);
   background-color: var(--white);
-  transition: display ease-in 0.5s;
 }
 nav ul.toc.display {
-  display: block;
+  transform: translateY(0);
 }
 nav ul.toc li {
   width: 100vw;
@@ -325,11 +342,19 @@ main {
 }
 
 /* Chapters ----------------*/
-.chapter-header {
-  padding: var(--sectionpad) 0;
+.chapter-next {
+  border-top: solid 1px;
+  margin: 0 -40px;
+  width: calc( 100% + 80px);
+  padding: calc(var(--sectionpad)/2) 0 var(--sectionpad) 0;
 }
-.chapter-header h1 {
+
+[class*=chapter-] h1, [class*=chapter-] a {
   display: flex;
+}
+[class*=chapter-] a {
+  color: var(--default);
+  text-decoration: none;
 }
 
 .chapter-number {

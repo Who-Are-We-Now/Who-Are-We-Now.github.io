@@ -12,7 +12,19 @@ tags: article
 <article>
 	{{content}}
 	<div id="footnote-popup" class="footnote-text"></div>
+	{% assign nextPost = collections.toc | getNextCollectionItem: page %}
+
 </article>
+<section class="chapter-next">
+{% if nextPost %}
+	<h1>
+		<a href="{{ nextPost.url }}">
+			<span class="chapter-number">{{nextPost.data.chapter}}</span>
+			<span class="chapter-title">{{nextPost.data.title}}</span>
+		</a>
+	</h1>
+{% endif %}
+</section>
 
 <!-- script that draws plots into containers -->
 <script src="/assets/js/plot.js"></script>

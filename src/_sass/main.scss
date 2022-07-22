@@ -108,6 +108,11 @@ p{
 	position: relative;
 	text-indent: var(--indent);
 	line-height: 1.6;
+
+	h1 + &, 
+	h2 + & {
+		text-indent: 0;
+	} 
 }
 
 p:first-child, hr+p, blockquote+p{
@@ -128,13 +133,26 @@ li {
 
 blockquote{
 	@extend .belarius;
-	--wdth: 80;
-	--wght: 400;
+	--wdth: 160;
+	--wght: 600;
 	margin: 1em var(--indent);
+	& + h4 { /*citation*/
+		@extend .belarius;
+		position:relative;
+		--wdth: 160;
+		--wght: 100;
+		margin: -1em var(--indent) 0;
+		margin-block-start: 0em;
+		margin-block-end: 0em;
+		top: -.7em;
+	}
 }
 
 article{
 	width: 60%;
+	h1, h2 {
+		display: none;
+	}
 }
 
 hr{
@@ -173,20 +191,21 @@ nav {
 	.navlink {
 		position: fixed;
 		z-index: 100;
-		width: 100%;
+		width: calc(100% - 40px);
 		top:0;
-		left:0;
+		left: 20px;
 		transform: translateY(0);
 		transition: transform 0.2s ease-in-out;
+		padding: 10px 0;
+		background-color: var(--white);
+		border-bottom: solid 1px;
+		z-index: 100;
+		&.no-border {
+			border-bottom: none;
+		}
 		&.nav-up {
 			transform: translateY(-100%);
 		}
-	
-		width: 100%;
-		padding: 10px 2rem;
-		background-color: var(--white);
-		border-bottom: solid 2px;
-		z-index: 100;
 	}
 
 	div.home,
@@ -198,7 +217,7 @@ nav {
 		font-family: 'Osram black';
 		cursor: pointer;
 		
-		border: solid 2px;
+		border: solid 1px;
 		background-color: var(--white);
 
 		a {
@@ -225,13 +244,15 @@ nav {
 		min-height: 100vh;
 		// transform: translateY(-100vh);
 		z-index: 50;
-		display: none;
+		// display: none;
+		transform: translateY(-100%);
 		background-color: var(--white);
 
-		transition: display ease-in .5s;
+		// transition: all ease-in .1s;
 		&.display {
 			// transform: translateY(0vh);
-			display:block;
+			// display:block;
+			transform: translateY(0);
 		}
 
 		li {
@@ -345,12 +366,31 @@ main {
 
 /* Chapters ----------------*/
 
-.chapter-header{
-	padding: var(--sectionpad) 0;
-	h1{
+// .chapter-header,
+// .chapter-next{ 
+// 	padding: var(--sectionpad) 0;
+// }
+
+.chapter-next {
+	border-top: solid 1px;
+	margin: 0 -40px;
+	width: calc( 100% + 80px); 
+	padding: calc(var(--sectionpad)/2) 0 var(--sectionpad) 0;
+}
+
+[class*='chapter-']{
+
+	h1, a{
 		display: flex;
 	}
-}
+	a {
+		color: var(--default);
+		text-decoration: none;
+	}
+
+} 
+
+
 .chapter-number{
 	font-family: 'Osram Regular';
 	width: var(--indent);
