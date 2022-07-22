@@ -8,7 +8,7 @@
             "part": 0,
             "chapter": -2,
             "title": "(Executive summary and About the author)",
-            "layout": "chapter"
+            "layout": "summary"
         }
     },
     {
@@ -25,14 +25,14 @@
     },
     {
         "chapter": 0,
-        "title": "Introduction: Anonymous identity",
+        "title": "Anonymous identity",
         "drive_id": "1NDe09O-BON1xtYS4CfdYvwtsye21bREqe4DWcYvYQxQ",
         "shortname": "introduction",
         "front_matter": {
             "part": 0,
             "chapter": 0,
-            "title": "Introduction: Anonymous identity",
-            "layout": "chapter"
+            "title": "Anonymous identity",
+            "layout": "introduction"
         }
     },
     {
@@ -85,14 +85,14 @@
     },
     {
         "chapter": 4.5,
-        "title": "Interlude: Planetary consciousness",
+        "title": "Planetary consciousness",
         "drive_id": "1bt0-7XAcBFR5MZBQ3ZG27vmiYuWHxZHuB4xt1HeFPRc",
         "shortname": "chapter-04.5",
         "front_matter": {
             "part": 2,
             "chapter": 4.5,
-            "title": "Interlude: Planetary consciousness",
-            "layout": "chapter"
+            "title": "Planetary consciousness",
+            "layout": "interlude"
         }
     },
     {
@@ -181,14 +181,14 @@
     },
     {
         "chapter": 11.5,
-        "title": "Interlude: Ycleptance",
+        "title": "Ycleptance",
         "drive_id": "1lFO50yh-y3-dw-8sQH3htKZTn_jDFjZdeXKzUpzD7JM",
         "shortname": "chapter-11.5",
         "front_matter": {
             "part": 2,
             "chapter": 11.5,
-            "title": "Interlude: Ycleptance",
-            "layout": "chapter"
+            "title": "Ycleptance",
+            "layout": "interlude"
         }
     },
     {

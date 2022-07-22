@@ -1,11 +1,64 @@
 
 $(function(){
+
+//SMOOTH SCROLLING
+		$(document).on('click', 'a[href^="#"]', function (event) {
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $($.attr(this, 'href')).offset().top
+			}, 500);
+		});
+// Hide Header on on scroll down
+		var didScroll;
+		var lastScrollTop = 0;
+		var delta = 5;
+		var navbarHeight = $('.navlink').outerHeight();
+
+		$(window).scroll(function(event){
+			didScroll = true;
+		});
+
+		setInterval(function() {
+			if (didScroll) {
+				hasScrolled();
+				didScroll = false;
+			}
+		}, 250);
+
+		function hasScrolled() {
+			var st = $(this).scrollTop();
+			
+			// Make sure they scroll more than delta
+			if(Math.abs(lastScrollTop - st) <= delta)
+				return;
+			
+			// If they scrolled down and are past the navbar, add class .nav-up.
+			// This is necessary so you never see what is "behind" the navbar.
+			if (st > lastScrollTop && st > navbarHeight){
+				// Scroll Down
+				$('.navlink').removeClass('nav-down').addClass('nav-up');
+			} else {
+				// Scroll Up
+				if(st + $(window).height() < $(document).height()) {
+					$('.navlink').removeClass('nav-up').addClass('nav-down');
+				}
+			}
+			
+			lastScrollTop = st;
+		}
+// FOOTNOTE POPUPS
 		const popup = $('#footnote-popup');
 
-// FOOTNOTE POPUPS
-		$('.reference').on('click', function(){
+		$('.reference').on('click', function(e){
+			
 		 		let id = $(this).attr('id').replace('fnref', '');
-
+				// let id_x = this.getBoundingClientRect().top;
+				// let id_y = this.getBoundingClientRect().left;
+				var offset = $(this).offset();
+				var id_x = offset.top;
+				var id_y = offset.left;
+			
 		 		let copy = $('#fn'+id);
 		 		$('.footnote-backref', copy).remove();
 
@@ -18,8 +71,21 @@ $(function(){
 		 		} else{
 		 			// $('.visible').removeClass('visible');
 		 			popup.addClass('visible');
+					popup.css({
+						'top': id_x + 'px',
+						'left': id_y + 20 + 'px'
+					});
 		 		}
 		});
+		
+		$('*').click(function(e) {
+			if ($(e.target).hasClass('footnote-ref')) {
+		
+			} else {
+				popup.removeClass('visible');
+			}
+		});
+		
 
 // IMAGE TREATMENT
 	// let img = $('.periphery');

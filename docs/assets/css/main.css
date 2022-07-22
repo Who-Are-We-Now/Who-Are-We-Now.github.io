@@ -158,6 +158,10 @@ blockquote {
   margin: 1em var(--indent);
 }
 
+article {
+  width: 60%;
+}
+
 hr {
   border: 0;
   background: 0;
@@ -177,25 +181,27 @@ footer {
 /*--------------------------------------*/
 /* STRUCTURES & LAYOUTS ----------------*/
 /*--------------------------------------*/
-header, main, footer, section {
+main, footer, section {
   padding: var(--sectionpad) 0;
 }
 
 /* Navigation ----------------*/
-header {
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  padding: 0;
-  background-color: var(--white);
-}
-
 nav .navlink {
   position: fixed;
-  top: 10px;
-  left: 2rem;
   z-index: 100;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(0);
+  transition: transform 0.2s ease-in-out;
+  width: 100%;
+  padding: 10px 2rem;
+  background-color: var(--white);
+  border-bottom: solid 2px;
+  z-index: 100;
+}
+nav .navlink.nav-up {
+  transform: translateY(-100%);
 }
 nav div.home,
 nav div.current-page {
@@ -207,6 +213,11 @@ nav div.current-page {
   cursor: pointer;
   border: solid 2px;
   background-color: var(--white);
+}
+nav div.home a,
+nav div.current-page a {
+  color: var(--default);
+  text-decoration: none;
 }
 nav div.home:hover,
 nav div.home a:hover,
@@ -226,6 +237,7 @@ nav ul.toc {
   overflow: auto;
   padding: 60px 0;
   min-height: 100vh;
+  z-index: 50;
   display: none;
   background-color: var(--white);
   transition: display ease-in 0.5s;
@@ -379,30 +391,36 @@ table td:first-child {
 /* REFERENCE & FOOTNOTE STYLES ---------*/
 /*--------------------------------------*/
 .reference {
-  display: inline;
+  display: inline-block;
   cursor: pointer;
+  text-indent: 0;
+  margin: 0 3px;
 }
-.reference .ref-no {
-  font-family: "Osram Medium";
-  font-size: var(--small-size);
-  position: relative;
-  bottom: 8px;
-}
-.reference .ref-no:hover {
+.reference:hover {
   color: var(--orange);
 }
-.reference .ref-text {
+.reference .footnote-ref {
+  font-family: "Osram Black";
+  font-size: var(--caption-size);
+  position: relative;
+  line-height: 0;
+  border-bottom: 3px solid;
+  padding-bottom: 3px;
+}
+
+.footnote-text {
   line-height: 1.5;
-  display: none;
   position: absolute;
   z-index: 20;
   width: 300px;
-  left: 0px;
-  background: var(--light-grey);
+  font-size: var(--caption-size);
+  background: var(--white);
   border: 1px solid var(--default);
   padding: var(--pad);
+  transition: all ease-in 0.25s;
+  display: none;
 }
-.reference .ref-text.visible {
+.footnote-text.visible {
   display: block;
 }
 
@@ -421,6 +439,11 @@ table td:first-child {
   width: var(--indent);
   text-align: right;
   padding-right: 1em;
+}
+
+.footnotes-sep,
+section.footnotes {
+  display: none;
 }
 
 /*--------------------------------------*/
