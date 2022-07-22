@@ -414,7 +414,7 @@ table td:first-child {
 
 .footnotes-list footer {
   column-count: 2;
-  column-gap: calc(2 * var(--pad));
+  column-gap: calc( 2 * var(--pad));
 }
 .footnotes-list li .footnote-no {
   display: inline-block;
