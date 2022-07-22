@@ -111,7 +111,8 @@ body {
 /*--------------------------------------*/
 /* TYPOGRAPHY --------------------------*/
 /*--------------------------------------*/
-.belarius, .questions, blockquote + h4, blockquote, p {
+.belarius, body#home div.summery article h1,
+body#home div.summery article h2, .questions, blockquote + h4, blockquote, p {
   font-family: "Belarius Variable";
   font-variation-settings: "wght" var(--wght), "wdth" var(--wdth), "SRIF" var(--SRIF);
 }
@@ -750,6 +751,16 @@ body#home div.summery article a {
 }
 body#home div.summery article a:hover {
   color: var(--default);
+}
+body#home div.summery article h1,
+body#home div.summery article h2 {
+  display: block;
+  font-size: var(--base-size);
+  position: relative;
+  text-indent: var(--indent);
+  line-height: 1.6;
+  margin-block-start: 0.75em;
+  margin-block-end: 0em;
 }
 body#home div.summery-bg {
   position: fixed;

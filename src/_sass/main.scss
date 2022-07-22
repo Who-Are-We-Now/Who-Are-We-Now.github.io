@@ -103,7 +103,7 @@ h2{
 	font-size: var(--hsize);
 }
 
-p{	
+p {	
 	@extend .belarius;
 	position: relative;
 	text-indent: var(--indent);
@@ -898,6 +898,26 @@ body#home {
 					color: var(--default);
 				}
 			}
+			h1, 
+			h2 {
+				display: block;
+				@extend .belarius;
+				font-size: var(--base-size);
+				position: relative;
+				text-indent: var(--indent);
+				line-height: 1.6;
+				margin-block-start: .75em;
+				margin-block-end: 0em;
+			}
+			// .chapter-header h1 {
+			// 	font-family: "Osram Black";
+			// 	font-size: var(--large-size);
+			// 	&.chapter-intro {
+			// 		font-family: "Osram Medium";
+			// 	}
+ 			// }
+		
+				
 		}
 	}
 	div.summery-bg {
