@@ -5,13 +5,6 @@ title: Whom to believe?
 layout: chapter
 ---
 
-Part I: Handedness
-==================
-
-
-Chapter 1: Whom to believe?
----
-
 While language and anonymous societies give us humans our superpowers, they can also limit our thinking. Those limitations can be hard to see, because social discourse— “the conversation,” as many people have taken to calling it— defines the building blocks of thought itself.
 
 First, by identifying with abstract, discrete symbols like “Palestinian” or “Israeli,” “straight,” or “gay,” we can impose arbitrary thresholds or cutoffs on properties that usually come in many shades of “yes and.” We may struggle to notice when people don’t fall neatly into our categories. The result can be uncomfortable for those in the middle, artificially collapsing a continuous and multidimensional human landscape into opposing camps: tribalism. The consequences can be severe, even deadly, especially when those camps are very unequal in size or privilege.
@@ -28,12 +21,9 @@ My sense, on running the first handedness surveys, was that the experiment had p
 
 Part of what made the survey fun and quick to take was its format. It consisted almost entirely of short yes/no questions, with no assumptions made and no definitions given. Finding out what someone’s handedness is and which hand they write with required asking not one or two, but four yes/no questions:
 
-Are you left-handed?
-
+>Are you left-handed?
 Are you right-handed?
-
 Do you write with your left hand?
-
 Do you write with your right hand?
 
 (In practice, these would turn up in random order.) At first glance, this rather simpleminded approach might seem like a head-scratcher if the goal is to get at nuances. As one respondent put it, “A very binary test for nonbinary concepts.”[^4] Answering seemingly unnecessary questions could be annoying for some people, too— in the words of a man from Morrison, Illinois, “This could really be condensed into a short set of multiple choice questions.” Yes, and no.

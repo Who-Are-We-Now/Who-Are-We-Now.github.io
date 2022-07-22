@@ -11,17 +11,14 @@ All text content is organized semantically in folders within the `src` folder. T
 
 ```
 preface
+│ └ index.md  
 introduction
-part-1
-  └ chapter-01
-  │  ├ index.md
-  │  ├ plots.json
-  │  └ figures
-  │
-  └ chapter-02
-  └ chapter-03
-part-2
-  └ chapter-04
+│ └ index.md  
+chapter-01
+│ └ index.md  
+chapter-02
+│ └ index.md 
+chapter-03
 ...
 ```
 
@@ -29,22 +26,28 @@ Each chapter has a `index.md` file containing the content for that chapter as we
 
 ```yaml
 ---
+part: 1
 chapter: 1
 title: Whom to believe?
 layout: chapter
 ---
 ```
+#### Part
+`part`: The numberical part number
 
 #### Chapter
-
 `chapter`: The numerical chapter number
 
 #### Title
 `title`: The title of the Chapter
 
 #### Layout
-`layout`: This will always be set to `chapter`
-(Layouts are determined in the `_layous` folder, using the `liquid` template language.)
+`layout`: The layout
+- `chapter`: Chapters
+- `interlude`: Interlude
+- `section`: Part Introduction
+
+Layouts are determined in the `_layous` folder, using the `liquid` template language.
 
 
 ## Figures
