@@ -446,7 +446,7 @@ table td:first-child {
 
 .footnotes-list footer {
   column-count: 2;
-  column-gap: calc(2 * var(--pad));
+  column-gap: calc( 2 * var(--pad));
 }
 .footnotes-list li .footnote-no {
   display: inline-block;
@@ -669,6 +669,7 @@ body#home nav ul.toc {
   position: relative;
   height: auto;
   padding: 0;
+  transform: translateY(0);
 }
 body#home footer {
   order: 3;

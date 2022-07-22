@@ -242,7 +242,6 @@ nav {
 		overflow: auto;
 		padding:  60px 0;
 		min-height: 100vh;
-		// transform: translateY(-100vh);
 		z-index: 50;
 		// display: none;
 		transform: translateY(-100%);
@@ -250,7 +249,6 @@ nav {
 
 		// transition: all ease-in .1s;
 		&.display {
-			// transform: translateY(0vh);
 			// display:block;
 			transform: translateY(0);
 		}
@@ -803,6 +801,7 @@ body#home {
 			position: relative;
 			height: auto;
 			padding: 0;
+			transform: translateY(0);
 		}
 	}
 	
