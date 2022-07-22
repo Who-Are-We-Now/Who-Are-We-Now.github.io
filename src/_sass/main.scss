@@ -224,12 +224,15 @@ nav {
 			color: var(--default);
 			text-decoration: none;
 		}
-		&:hover,
-		a:hover {
+		&:hover {
 			background-color: var(--default);
 			border-color: var(--default);
 			color: var(--white);
+			a:hover {
+				color: var(--white);
+			}		
 		}
+		
 	}
 
 	ul.toc {
@@ -246,19 +249,17 @@ nav {
 		// display: none;
 		transform: translateY(-100%);
 		background-color: var(--white);
-
+		
 		// transition: all ease-in .1s;
 		&.display {
 			// display:block;
 			transform: translateY(0);
 		}
 		a {
-			font-family: "Osram Black";
 			display: inline-block;
-			padding-left: 2rem;
+			
 			line-height: 1.0;
 			color: var(--default);
-			font-size: var(--large-size);
 			text-decoration: none;
 		}
 		.marker a, .marker{
@@ -267,12 +268,13 @@ nav {
 		}
 		li {
 			width: 100vw;
-			padding: 15px 0 20px 0;
+			padding: 15px 0 20px 2rem;
 			border-bottom: 1px solid;
-			font-size: var(--medium-size);
+			font-family: "Osram Black";
+			font-size: var(--large-size);
 			transition: all ease-in .2s;		
 
-			&:hover {
+			&:not(.part):hover {
 				background-color: var(--default);
 				a {
 					color: var(--white);
@@ -282,11 +284,11 @@ nav {
 		}
 
 
-		li.chapter, li.toc-interlude {
+		li.chapter, 
+		li.toc-interlude {
 
 			a {
-				// padding-left: 4.5rem;
-				padding-left: 70px;
+				padding-left: 3rem;
 			}
 		
 		}
@@ -349,9 +351,34 @@ main {
 
 .chapter-next {
 	border-top: solid 1px;
-	margin: 0 -40px;
+	margin: var(--sectionpad) -40px 0;
 	width: calc( 100% + 80px); 
 	padding: calc(var(--sectionpad)/2) 0 var(--sectionpad) 0;
+	
+	// margin: var(--sectionpad) calc(-4rem - 20px) 0 ;
+	// width: 100vw;
+	// padding: 0 calc(2rem + 10px) var(--sectionpad);
+
+	.border {
+		background-color:var(--default);
+		height: 1px;
+		margin-bottom: calc(var(--sectionpad)/2);
+	}
+
+	h1 {
+		padding-left: 2rem;
+	}
+	&.interlude {
+		a {
+			display: block;
+		}
+	}
+	// &:hover {
+	// 	background-color: var(--default);
+	// 	a {
+	// 		color: var(--white);
+	// 	}
+	// }
 }
 
 [class*='chapter-']{
@@ -359,6 +386,7 @@ main {
 	h1, a{
 		display: flex;
 	}
+
 	a {
 		color: var(--default);
 		text-decoration: none;
@@ -375,6 +403,8 @@ main {
 .chapter-intro{
 	font-family: 'Osram Regular';
 	text-transform: capitalize;
+	margin-bottom: 0;
+	display: block;
 }
 
 
@@ -431,7 +461,8 @@ table{
 }
 
 /* Interlude ----------------*/
-.interlude{
+
+body.interlude{
 	background: var(--default);
 	color: var(--white);
 	nav {
@@ -445,6 +476,7 @@ table{
 		}
 	}
 }
+
 
 
 /*--------------------------------------*/
@@ -895,4 +927,30 @@ body#home {
 
 	}
 
+}
+
+body.interlude {
+	nav {
+		div.home, 
+		div.current-page {
+			background-color: var(--default);
+			color: var(--white);
+			a {
+				color:var(--white);
+				
+			}
+			&:hover {
+				background-color: var(--white);
+				color: var(--default);
+				a {
+					color: var(--default);
+				}
+				
+			}
+			
+		}
+	}
+	[class*=chapter-] a {
+		color:var(--white);
+	}
 }

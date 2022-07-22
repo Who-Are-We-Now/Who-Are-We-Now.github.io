@@ -238,11 +238,13 @@ nav div.current-page a {
   text-decoration: none;
 }
 nav div.home:hover,
-nav div.home a:hover,
-nav div.current-page:hover,
-nav div.current-page a:hover {
+nav div.current-page:hover {
   background-color: var(--default);
   border-color: var(--default);
+  color: var(--white);
+}
+nav div.home:hover a:hover,
+nav div.current-page:hover a:hover {
   color: var(--white);
 }
 nav ul.toc {
@@ -263,12 +265,9 @@ nav ul.toc.display {
   transform: translateY(0);
 }
 nav ul.toc a {
-  font-family: "Osram Black";
   display: inline-block;
-  padding-left: 2rem;
   line-height: 1;
   color: var(--default);
-  font-size: var(--large-size);
   text-decoration: none;
 }
 nav ul.toc .marker a, nav ul.toc .marker {
@@ -277,19 +276,21 @@ nav ul.toc .marker a, nav ul.toc .marker {
 }
 nav ul.toc li {
   width: 100vw;
-  padding: 15px 0 20px 0;
+  padding: 15px 0 20px 2rem;
   border-bottom: 1px solid;
-  font-size: var(--medium-size);
+  font-family: "Osram Black";
+  font-size: var(--large-size);
   transition: all ease-in 0.2s;
 }
-nav ul.toc li:hover {
+nav ul.toc li:not(.part):hover {
   background-color: var(--default);
 }
-nav ul.toc li:hover a {
+nav ul.toc li:not(.part):hover a {
   color: var(--white);
 }
-nav ul.toc li.chapter a, nav ul.toc li.toc-interlude a {
-  padding-left: 70px;
+nav ul.toc li.chapter a,
+nav ul.toc li.toc-interlude a {
+  padding-left: 3rem;
 }
 nav ul.toc h4 {
   font-size: var(--caption-size);
@@ -333,9 +334,20 @@ main {
 /* Chapters ----------------*/
 .chapter-next {
   border-top: solid 1px;
-  margin: 0 -40px;
+  margin: var(--sectionpad) -40px 0;
   width: calc( 100% + 80px);
   padding: calc(var(--sectionpad)/2) 0 var(--sectionpad) 0;
+}
+.chapter-next .border {
+  background-color: var(--default);
+  height: 1px;
+  margin-bottom: calc(var(--sectionpad)/2);
+}
+.chapter-next h1 {
+  padding-left: 2rem;
+}
+.chapter-next.interlude a {
+  display: block;
 }
 
 [class*=chapter-] h1, [class*=chapter-] a {
@@ -354,6 +366,8 @@ main {
 .chapter-intro {
   font-family: "Osram Regular";
   text-transform: capitalize;
+  margin-bottom: 0;
+  display: block;
 }
 
 /* Article layout ----------------*/
@@ -388,16 +402,16 @@ table td:first-child {
 }
 
 /* Interlude ----------------*/
-.interlude {
+body.interlude {
   background: var(--default);
   color: var(--white);
 }
-.interlude nav .navlink,
-.interlude nav ul.toc {
+body.interlude nav .navlink,
+body.interlude nav ul.toc {
   background: var(--default);
   color: var(--white);
 }
-.interlude nav a {
+body.interlude nav a {
   color: var(--white);
 }
 
@@ -740,6 +754,27 @@ body#home main .bg img:nth-child(5) {
   top: 60vh;
   left: -10vw;
   width: 55vw;
+}
+body.interlude nav div.home,
+body.interlude nav div.current-page {
+  background-color: var(--default);
+  color: var(--white);
+}
+body.interlude nav div.home a,
+body.interlude nav div.current-page a {
+  color: var(--white);
+}
+body.interlude nav div.home:hover,
+body.interlude nav div.current-page:hover {
+  background-color: var(--white);
+  color: var(--default);
+}
+body.interlude nav div.home:hover a,
+body.interlude nav div.current-page:hover a {
+  color: var(--default);
+}
+body.interlude [class*=chapter-] a {
+  color: var(--white);
 }
 
 /*# sourceMappingURL=main.css.map */

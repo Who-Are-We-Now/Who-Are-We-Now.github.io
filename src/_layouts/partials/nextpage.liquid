@@ -1,0 +1,17 @@
+{% assign nextPost = collections.toc | getNextCollectionItem: page %}	
+{% if nextPost %}
+	<section class="chapter-next {{nextPost.data.layout}}">
+		<!-- <div class="border"></div> -->
+		<h1>
+			<a href="{{ nextPost.url }}">
+	{% if nextPost.data.layout == "introduction" or nextPost.data.layout == "interlude"%}
+		<span class="chapter-intro">{{nextPost.data.layout}}</span>
+	{% endif %}
+	{% if nextPost.data.layout == "chapter" %}
+			<span class="chapter-number">{{nextPost.data.chapter}}</span>
+	{% endif %}
+			<span class="chapter-title">{{nextPost.data.title}}</span>
+			</a>
+		</h1>
+	</section>
+{% endif %}
