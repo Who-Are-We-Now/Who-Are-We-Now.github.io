@@ -199,7 +199,7 @@ nav {
 		padding: 10px 0;
 		background-color: var(--white);
 		border-bottom: solid 1px;
-		z-index: 100;
+		z-index: 20;
 		&.no-border {
 			border-bottom: none;
 		}
@@ -207,9 +207,11 @@ nav {
 			transform: translateY(-100%);
 		}
 	}
+	
 
 	div.home,
-	div.current-page {
+	div.current-page,
+	div.info {
 		display: inline-block;
 		font-size: calc(var(--medium-size) / 1.5);
 		padding: 5px;
@@ -233,6 +235,16 @@ nav {
 			}		
 		}
 		
+	}
+
+	div.info {
+		display: none;
+		position: fixed;
+		top: 10px;
+		right: 0px;
+		width: 30px;
+		text-align: center;
+		border-radius: 50%;
 	}
 
 	ul.toc {
@@ -817,17 +829,35 @@ body#home {
 	}
 	nav {
 		.navlink {
+			// display: none;
+			background-color: transparent;
+			border: none;
+		}
+		
+		div.home {
 			display: none;
 		}
-		// div.home {
-		// 	background-color: transparent;
-		// 	border: solid 2px var(--white);
+		div.current-page,
+		div.info  {
+			background-color: transparent;
+			border: solid 1px var(--white);
+			color: var(--white);
+			a {
+				color: var(--white);
+			}
+		
+		}
+		div.current-page {
+			&::before {
+				content: "Table of Contents";
+				color: var(--white);
+			}
+		}
 
-		// 	&::before {
-		// 		content: "Table of Contents";
-		// 		color: var(--white);
-		// 	}
-		// }
+		div.info {
+			display: block;
+		}
+	
 		ul.toc {
 			display: block;
 			position: relative;
@@ -841,10 +871,48 @@ body#home {
 		order: 3;
 	}
 
+	div.summery {
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 60vw;
+		height: 100vh;
+		background-color: var(--white);
+		color: var(--default);
+		padding: calc(var(--sectionpad)/2) var(--sectionpad);
+		transform:translateX(100%);
+		transition: transform ease-in .25s;
+		z-index: 100;
+		overflow-y: scroll;
+		&.visible {
+			transform:translateX(0%);
+		}
+		&.visible + div.summery-bg {
+			display: block;
+		}
+		article {
+			width: 100%;
+			a {
+				color: var(--orange);
+				&:hover {
+					color: var(--default);
+				}
+			}
+		}
+	}
+	div.summery-bg {
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: var(--default);
+		opacity: .7;
+		z-index: 50;
+		display: none;
+	}
 	
-	// nav div.current-page  {
-
-	// }
+	
 
 	main {
 		display: flex;

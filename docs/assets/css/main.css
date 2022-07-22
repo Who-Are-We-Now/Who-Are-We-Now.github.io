@@ -213,7 +213,7 @@ nav .navlink {
   padding: 10px 0;
   background-color: var(--white);
   border-bottom: solid 1px;
-  z-index: 100;
+  z-index: 20;
 }
 nav .navlink.no-border {
   border-bottom: none;
@@ -222,7 +222,8 @@ nav .navlink.nav-up {
   transform: translateY(-100%);
 }
 nav div.home,
-nav div.current-page {
+nav div.current-page,
+nav div.info {
   display: inline-block;
   font-size: calc(var(--medium-size) / 1.5);
   padding: 5px;
@@ -233,19 +234,31 @@ nav div.current-page {
   background-color: var(--white);
 }
 nav div.home a,
-nav div.current-page a {
+nav div.current-page a,
+nav div.info a {
   color: var(--default);
   text-decoration: none;
 }
 nav div.home:hover,
-nav div.current-page:hover {
+nav div.current-page:hover,
+nav div.info:hover {
   background-color: var(--default);
   border-color: var(--default);
   color: var(--white);
 }
 nav div.home:hover a:hover,
-nav div.current-page:hover a:hover {
+nav div.current-page:hover a:hover,
+nav div.info:hover a:hover {
   color: var(--white);
+}
+nav div.info {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 0px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
 }
 nav ul.toc {
   position: fixed;
@@ -676,7 +689,28 @@ body#home header, body#home nav {
   position: relative;
 }
 body#home nav .navlink {
+  background-color: transparent;
+  border: none;
+}
+body#home nav div.home {
   display: none;
+}
+body#home nav div.current-page,
+body#home nav div.info {
+  background-color: transparent;
+  border: solid 1px var(--white);
+  color: var(--white);
+}
+body#home nav div.current-page a,
+body#home nav div.info a {
+  color: var(--white);
+}
+body#home nav div.current-page::before {
+  content: "Table of Contents";
+  color: var(--white);
+}
+body#home nav div.info {
+  display: block;
 }
 body#home nav ul.toc {
   display: block;
@@ -687,6 +721,46 @@ body#home nav ul.toc {
 }
 body#home footer {
   order: 3;
+}
+body#home div.summery {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  height: 100vh;
+  background-color: var(--white);
+  color: var(--default);
+  padding: calc(var(--sectionpad)/2) var(--sectionpad);
+  transform: translateX(100%);
+  transition: transform ease-in 0.25s;
+  z-index: 100;
+  overflow-y: scroll;
+}
+body#home div.summery.visible {
+  transform: translateX(0%);
+}
+body#home div.summery.visible + div.summery-bg {
+  display: block;
+}
+body#home div.summery article {
+  width: 100%;
+}
+body#home div.summery article a {
+  color: var(--orange);
+}
+body#home div.summery article a:hover {
+  color: var(--default);
+}
+body#home div.summery-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--default);
+  opacity: 0.7;
+  z-index: 50;
+  display: none;
 }
 body#home main {
   display: flex;
