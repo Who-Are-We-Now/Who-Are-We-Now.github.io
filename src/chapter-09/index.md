@@ -12,7 +12,7 @@ The reclaiming of the umbrella term “queer” in recent years is partly a resp
 
 Consistent with this, we can see sharp rises in queer identification among the young even between 2018-19 and 2020-21. We can also see the way it has become strongly associated with younger women— under the age of 30, about two thirds of queer people are women, about a quarter are men, and about 10% identify as both or neither, whereas above middle age roughly equal numbers of queer people are women and men, with a negligible number of people (queer or not) identifying as both or neither.
 
-![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
 
 ![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
 
@@ -24,7 +24,7 @@ The survey shows us how the meaning of “queer” has shifted in recent decades
 
 We can see more evidence of the way “queer” has become both broader and less offensive over time if we look at the same pattern with respect to bisexuality. Among the young, nearly 70% of queer people are bisexual, while less than 30% of people older than 55 are. Conversely, while 40% of the 19 year old bisexual population consider themselves queer, only about 10% of 65 year old bisexuals do.
 
-![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
 
 There’s more going on here than a mere shift in language. Most older lesbian, gay, and bisexual people seem to have less *use* for the flexibility implied by the term “queer,” because more of them comprise the “hard core” who are— and perhaps always were— unable or unwilling to conform to the heterosexual majority even at a time when the social pressure to do so was far more intense than it is today.
 

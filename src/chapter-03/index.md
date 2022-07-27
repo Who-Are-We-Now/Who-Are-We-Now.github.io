@@ -50,13 +50,13 @@ Lombroso worked in prisons and asylums, which prompted him to concentrate on men
 
 ![](media/image9.jpg){width="6.5in" height="4.194444444444445in"}
 
-[From Orson Squire Fowler and Lorenzo Niles Fowler, *The Illustrated Self-Instructor in Phrenology and Physiology: With One Hundred Engravings, and a Chart of the Character* (Fowlers and Wells, 1853), 42., and “idiot” was at this moment in history considered a technical term.]
+[From Fowler and Fowler, *The Illustrated Self-Instructor in Phrenology and Physiology: With One Hundred Engravings, and a Chart of the Character*, 42, 1853., and “idiot” was at this moment in history considered a technical term.]
 
 I know, I’m making this chain of reasoning sound a bit farfetched. Perhaps it’s best to let Lombroso tell the story in his own words. Luckily, we have a colorful first person account, written shortly before he died, in a 1911 book published by his daughter Gina introducing “scientific criminology” to an eager American audience:
 
 > “[I]nspiration came to me when [...] I applied to the clinical examination of cases of mental alienation the study of the skull, with measurements and weights, by means of the esthesiometer and craniometer. [...] I, therefore, began to study criminals in the Italian prisons, and, amongst others, I made the acquaintance of the famous brigand Vilella.[^11] This man possessed such extraordinary agility, that he had been known to scale steep mountain heights bearing a sheep on his shoulders. His cynical effrontery was such that he openly boasted of his crimes. On his death one cold grey November morning, I was deputed to make the *post-mortem*, and on laying open the skull I found on the occipital part, exactly on the spot where a spine is found in the normal skull, a distinct depression which I named *median occipital fossa*, because of its situation precisely in the middle of the occiput as in inferior animals, especially rodents. This depression, as in the case of animals, was correlated with the hypertrophy of the *vermis*, known in birds as the middle cerebellum.
 
-![](media/image7.png){width="3.209935476815398in" height="4.16329615048119in"}
+![](media/image3.png){width="3.209935476815398in" height="4.16329615048119in"}
 
 > This was not merely an idea, but a revelation. At the sight of that skull, I seemed to see all of a sudden, lighted up as a vast plain under a flaming sky, the problem of the nature of the criminal—an atavistic being who reproduces in his person the ferocious instincts of primitive humanity and the inferior animals. Thus were explained anatomically the enormous jaws, high cheek-bones, prominent superciliary arches, solitary lines in the palms, extreme size of the orbits, handle-shaped or sessile ears found in criminals, savages, and apes, insensibility to pain, extremely acute sight, tattooing, excessive idleness, love of orgies, and the irresistible craving for evil for its own sake, the desire not only to extinguish life in the victim, but to mutilate the corpse, tear its flesh, and drink its blood.”
 
@@ -82,7 +82,7 @@ Thus inspired, it wasn’t such a big step for Lombroso to venture beyond “sci
 
 > “Twenty-eight per cent. of criminals have handle-shaped ears standing out from the face as in the chimpanzee: in other cases they are placed at different levels. Frequently too, we find misshapen, flattened ears, devoid of helix, tragus, and anti-tragus, and with a protuberance on the upper part of the posterior margin (Darwin’s tubercle), a relic of the pointed ear characteristic of apes.”
 
-![](media/image5.png){width="1.7632206911636046in" height="2.8733978565179354in"}![](media/image2.png){width="2.758928258967629in" height="2.875in"}![](media/image8.jpg){width="1.755667104111986in" height="2.4943908573928257in"}
+![](media/image5.png){width="1.7632206911636046in" height="2.8733978565179354in"}![](media/image7.png){width="2.758928258967629in" height="2.875in"}![](media/image8.jpg){width="1.755667104111986in" height="2.4943908573928257in"}
 
 [Left: Descent of Man; Middle: a monkey; Right: Gina Lombroso.]
 
@@ -114,13 +114,13 @@ If so, the effect is very weak, as we can see by graphing the numbers of strictl
 
 ![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
 
-![](media/image6.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
 
 Nor is there any statistically significant association between handedness and identifying in adulthood as a man, if assigned female at birth, or as a woman, if assigned male at birth[^23] (though for the latter group especially, for reasons we’ll discuss in Chapters 8 and 9, the numbers are very small, since we’re now looking at minorities of minorities of minorities, resulting in very large error bars).
 
-![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image6.png){width="6.5in" height="2.8333333333333335in"}
 
-![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
 
 In a recurring pattern, the fact that influential 19th and 20th century thinkers usually didn’t have the thousands of datapoints required to actually test their hypotheses, as we do, didn’t prevent them from making some highly confident (yet utterly incorrect) claims.
 
@@ -156,7 +156,7 @@ Wiktionary. “左,” January 19, 2021.
 
 [^1]: A 35 year old from Terre Haute, Indiana.
 
-[^2]: “Social Stigma,” Wikipedia, April 15, 2020, https://en.wikipedia.org/w/index.php?title=Social_stigma&oldid=951165629.
+[^2]: “Social Stigma,” 2020, https://en.wikipedia.org/w/index.php?title=Social_stigma&oldid=951165629.
 
 [^3]: A 28 year old from Evansville, Indiana.
 
@@ -164,37 +164,37 @@ Wiktionary. “左,” January 19, 2021.
 
 [^5]: A 38 year old from Lanham, Maryland.
 
-[^6]: Wolf Gruner, “The Forgotten Mass Destruction of Jewish Homes during ‘Kristallnacht,’” *New Frame*, November 19, 2019, https://www.newframe.com/the-forgotten-mass-destruction-of-jewish-homes-during-kristallnacht/.
+[^6]: Gruner, “The Forgotten Mass Destruction of Jewish Homes during ‘Kristallnacht,’” 2019.
 
-[^7]: “右,” Wiktionary, December 9, 2020, https://en.wiktionary.org/w/index.php?title=%E5%8F%B3&oldid=61280998.
+[^7]: “右,” 2020, https://en.wiktionary.org/w/index.php?title=%E5%8F%B3&oldid=61280998.
 
-[^8]: “左,” Wiktionary, January 19, 2021, https://en.wiktionary.org/w/index.php?title=%E5%B7%A6&oldid=61604472.
+[^8]: “左,” 2021, https://en.wiktionary.org/w/index.php?title=%E5%B7%A6&oldid=61604472.
 
-[^9]: Valentin Anders, “Etimología de Izquierda,” Etimologías de Chile, accessed July 1, 2022, http://etimologias.dechile.net/?izquierda.
+[^9]: Anders, “Etimología de Izquierda,” http://etimologias.dechile.net/?izquierda.
 
 [^10]: Per the introduction by Mary Gibson and Nicole Hahn Rafter of their 2006 translation of Lombroso’s *Criminal Man*.
 
-[^11]: Gina Lombroso referred to Vilella, rather hyperbolically, as “an Italian Jack the Ripper, who by atrocious crimes had spread terror in the Province of Lombardy.” As far as we know, he was in fact a laborer from Calabria who had been imprisoned for the theft of two kid goats and five ricotta cheeses. Fabrizio Assandri, “Il Cranio Del ‘brigante’ Villella Può Restare Al Museo Lombroso,” *La Stampa*, May 17, 2017, https://www.lastampa.it/torino/2017/05/17/news/il-cranio-del-brigante-villella-puo-restare-al-museo-lombroso-1.34601404/.
+[^11]: Gina Lombroso referred to Vilella, rather hyperbolically, as “an Italian Jack the Ripper, who by atrocious crimes had spread terror in the Province of Lombardy.” As far as we know, he was in fact a laborer from Calabria who had been imprisoned for the theft of two kid goats and five ricotta cheeses. Assandri, “Il Cranio Del ‘brigante’ Villella Può Restare Al Museo Lombroso,” 2017.
 
-[^12]: Cesare Lombroso, *L’uomo delinquente* (Milano: Hoepli, 1876).
+[^12]: Lombroso, *L’uomo delinquente*, 1876.
 
-[^13]: Charles Darwin, *The Descent of Man, and Selection in Relation to Sex* (D. Appleton, 1871).
+[^13]: Darwin, *The Descent of Man, and Selection in Relation to Sex*, 1871.
 
 [^14]: His reticence to point out this obvious conclusion had been borne of anxiety over a religious backlash, which did occur and is still ongoing.
 
 [^15]: While Bronowski was less explicitly racist, his perspectives on vanished civilizations are similarly animated by the sense of progress from a state of savagery and primitivism toward a European Enlightenment featuring Bach and Leibniz. Despite the grandeur of Machu Picchu, for instance, Bronowski’s disdain for the Inca is evident as he castigates them for being too primitive to have built arches.
 
-[^16]: More modern anthropometric research tells us that about 10.4% of the Spanish adult population, 40% of adults in India, and 58% of Swedish school children exhibit this feature. “Darwin’s Tubercle,” Wikipedia, July 6, 2022, https://en.wikipedia.org/w/index.php?title=Darwin%27s_tubercle&oldid=1096806503.
+[^16]: More modern anthropometric research tells us that about 10.4% of the Spanish adult population, 40% of adults in India, and 58% of Swedish school children exhibit this feature. “Darwin’s Tubercle,” 2022, https://en.wikipedia.org/w/index.php?title=Darwin%27s_tubercle&oldid=1096806503.
 
-[^17]: Lombroso, Gina, and Cesare, *Criminal Man, according to the Classification of Cesare Lombroso, Briefly Summarised by His Daughter Gina Lombroso Ferrero* (New York: G.P. Putnam’s Sons, 1911).
+[^17]: Lombroso, Gina, and Cesare, *Criminal Man, according to the Classification of Cesare Lombroso, Briefly Summarised by His Daughter Gina Lombroso Ferrero*, 1911.
 
 [^18]: The observation here that the right brain is “wired” mainly to the left side of the body, and the left brain to the right, is correct.
 
-[^19]: Daniel R. Shafer, *Man and Woman; Or, Creative Science and Sexual Philosophy* (St. Lois: J.H. Chambers & Co., 1882). How Fowler arrived at his many weird conclusions is anyone’s guess; they were easily disproved by noticing that people with a single testicle or ovary were perfectly capable of having children of any sex.
+[^19]: Shafer, *Man and Woman; Or, Creative Science and Sexual Philosophy*, 1882. How Fowler arrived at his many weird conclusions is anyone’s guess; they were easily disproved by noticing that people with a single testicle or ovary were perfectly capable of having children of any sex.
 
-[^20]: *Die sprache des traumes: Eine darstellung der symbolik und deutung des traumes in ihren bezeihungen zur kranken und gesunden seele, für ärzte und psychologen* (J.F. Bergmann, 1911), 466.
+[^20]: *Die sprache des traumes: Eine darstellung der symbolik und deutung des traumes in ihren bezeihungen zur kranken und gesunden seele, für ärzte und psychologen*, 466, 1911.
 
-[^21]: Wilhelm Fliess, *Der Ablauf des Lebens: Grundlegung zur exakten Biologie* (Franz Deuticke, 1906). Translation mine.
+[^21]: Fliess, *Der Ablauf des Lebens: Grundlegung zur exakten Biologie*, 1906. Translation mine.
 
 [^22]: Strict same-sex attraction is defined as either sexual or romantic attraction to the same sex, and no attraction of either kind to the opposite sex; it’s only defined for people who answer “yes” to only one of “Are you a man?” or “Are you a woman?”
 

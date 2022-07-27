@@ -18,7 +18,7 @@ The Reimer story is of course a single anecdote, not real data. The four patient
 
 By the 1990s, narratives about sex determination were shifting, and Money’s theories were falling out of favor. This had a profound effect on the way doctors tilted the field toward declaring intersex babies girls or boys. We can see evidence of that shift when we break down intersexuality by whether respondents were assigned female at birth or male at birth. The pattern that emerges is striking.
 
-![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
 
 ![](media/image3.png){width="6.5in" height="2.8333333333333335in"}Among respondents between 21 and 24 years old who know they’re intersex (so, Millennials, born shortly before the year 2000), it’s 19 times more likely they were assigned female at birth. On the other hand, among respondents between 56 and 74 years old who know they’re intersex (Baby Boomers, born 1945-1963), it’s 8.6 times more likely that they were assigned *male* at birth! The error bars of these curves are fairly large, making the exact ratios uncertain, but the dramatic reversal from majority male to majority female assignment is unmistakable.
 
@@ -56,7 +56,7 @@ Perhaps the percentage isn’t so important, as long as we recognize that it isn
 
 Medical practice is well ahead of government regulation with regard to sex assignment surgery for infants, but laws have started to change too. In recent years, a tiny handful of countries[^10]— spurred by intersex activists— have made it illegal for medically unnecessary surgeries to be done at birth, or more broadly, non-consensually. In this view, consent is necessary for such surgeries to be regarded as gender confirmation as opposed to genital mutilation. And newborns can’t give consent. This is consistent with the most basic statement of the Hippocratic oath, which medical students have been taking in one form or another for centuries: “First, do no harm” (*Primum non nocere*). This is the oath David Reimer’s doctors violated catastrophically, not once, but twice.
 
-![](media/image1.png){width="6.5in" height="3.3333333333333335in"}
+![](media/image2.png){width="6.5in" height="3.3333333333333335in"}
 
 Non-binary gender identification is also increasingly available on official forms and documents, though here too, official acknowledgement lags a reality in which almost one in twenty young Americans identify as non-binary.
 

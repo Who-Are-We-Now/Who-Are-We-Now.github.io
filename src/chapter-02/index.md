@@ -88,7 +88,7 @@ There are no big surprises here. The hand you write with, and the hand you hold 
 
 Armed with this ability to determine a left-handedness score, we can now actually graph a nuanced, “halftoned” picture of left-handedness.
 
-![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image5.png){width="6.5in" height="2.8333333333333335in"}
 
 This is a histogram of left-handedness scores; for each bin, it shows the percentage of respondents who report being strictly left-handed in yellow, strictly right-handed in black, or whose responses are ambiguous (meaning that they answered “yes” to both, or “no” to both) in purple.[^3] Since there are no other possibilities, those three percentages add up to 100%.
 
@@ -104,9 +104,9 @@ Returning to the graph— the purple “ambiguously handed” curve is particula
 
 We can also compute the optimal question weights for strict right-handedness; the results are similar, though in mirror image (and notably, for reasons that will soon become clear, with less likelihood of an ambiguous response when the score is high).
 
-![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
 
-![](media/image5.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
 
 Something less obvious happens if we compute the optimal question weights to predict *ambiguous* handedness (again, this is a “yes” to both, or a “no” to both handedness questions). This prediction doesn’t work as well as the left-handed or right-handed predictions, which perhaps isn’t news— since in handedness as in anything else, there are few ways to be *un*ambiguous, but many ways to be ambiguous. More surprisingly, scoring high on the “ambiguity scale” not only rules out strict right-handedness, but also does a better job of predicting strict *left*-handedness than of predicting ambiguity! This tells us that if we start with “average” answers to every question and begin to slowly modify them to increase the ambiguity score, we’ll also be increasing the left-handedness score; in fact we can overshoot, and end up in more strictly left-handed than ambiguous territory.
 
@@ -116,11 +116,11 @@ So in this sense, it’s more accurate to call handedness ambiguity “a little 
 
 The question weights for ambiguous handedness are broadly similar to those for strict left-handedness— with one important exception, highlighted below:
 
-![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image3.png){width="6.5in" height="2.8333333333333335in"}
 
 “Were you made to change your dominant hand as a child?” got virtually zero weight for predicting strict left-handedness, but it’s the second most positive predictor of ambiguous handedness, just behind “Do you write with your left hand?” This implies that many of the ambiguous respondents were left-handed to one degree or another in childhood, but were made to switch their dominant hand. For completeness: “Were you made to change your dominant hand as a child?” has a strong *negative* weight for the strict right-handedness predictor. So, strongly right-handed kids are made to change their dominant hand much less often— because it’s already the “right” one!
 
-![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image1.png){width="6.5in" height="2.8333333333333335in"}
 
 This difference is obvious if we separately graph the proportion of strictly right-handed people who were made to switch and the *non* strictly right-handed people who were made to switch. The full effect is probably even greater, since plenty of people’s “handedness scores” fall somewhere in the middle, even if they identify as strictly right-handed on the survey. After all, if you have some flexibility with regard to handedness as a kid, you may as well go with the right-handed majority and reap the social benefits.
 
@@ -151,9 +151,9 @@ For now, we can ask the same question about handedness. Adaptation *does* seems 
 With the data we have, it’s impossible to guess how many people could have been left-handed tradespeople or visual artists, but never developed their gifts because they were forced to use their right hands. But clearly, harm has been done. It’s reassuring to see that this is happening less in the United States nowadays, though sobering to notice how recent the change is. Questions about the “natural” range and balance of handedness over a human lifetime may only be answerable in another generation, by which time we’ll perhaps have seen a whole cohort grow up without the pressure to switch. Or else, it could be that trying to find this “natural state of things” is a fool’s errand, because we’re such an inherently social species. Pressures to conform are ever-present, as are shifts in language and behavioral norms.
 
 
-[^1]: Artistic tendencies have been, at times, linked to left-handedness, these being perhaps a silver lining of “aberrancy.” Ellen Forney, for instance, writes about the link (at least in the popular imagination) between creative genius and bipolar disorder in her graphic memoir, *Marbles: Mania, Depression, Michelangelo, and Me: A Graphic Memoir*.
+[^1]: Artistic tendencies have been, at times, linked to left-handedness, these being perhaps a silver lining of “aberrancy.” Ellen Forney, for instance, writes about the link (at least in the popular imagination) between creative genius and bipolar disorder in her graphic memoir, *Marbles: Mania, Depression, Michelangelo, and Me: A Graphic Memoir*, 2012.
 
-[^2]: This is consistent with the literature. Herron and James, *Neuropsychology of Left-Handedness*, 171.
+[^2]: This is consistent with the literature. Herron and James, *Neuropsychology of Left-Handedness*, 171, 1980.
 
 [^3]: The actual numerical values on the *x* axis don’t matter here; they’re just a function of the arbitrary way the weights are scaled. If the weights were all doubled, for example, then the overall score would also be doubled, but the predictions would be the same; only the proportions matter. The error bars in this histogram are calculated by rerunning the whole procedure many times with random subsets of respondents “held out,” giving us a sense of how reliable the calculation is, or more precisely much variability is due to the limited size of the sample.
 
