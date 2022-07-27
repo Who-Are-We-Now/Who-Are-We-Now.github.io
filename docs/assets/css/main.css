@@ -111,7 +111,8 @@ body {
 /*--------------------------------------*/
 /* TYPOGRAPHY --------------------------*/
 /*--------------------------------------*/
-.belarius, .questions, blockquote, p {
+.belarius, body#home div.summery article h1,
+body#home div.summery article h2, .questions, blockquote + h4, blockquote, p {
   font-family: "Belarius Variable";
   font-variation-settings: "wght" var(--wght), "wdth" var(--wdth), "SRIF" var(--SRIF);
 }
@@ -139,6 +140,9 @@ p {
   text-indent: var(--indent);
   line-height: 1.6;
 }
+h1 + p, h2 + p {
+  text-indent: 0;
+}
 
 p:first-child, hr + p, blockquote + p {
   text-indent: 0;
@@ -153,9 +157,26 @@ li {
 }
 
 blockquote {
-  --wdth: 80;
-  --wght: 400;
+  --wdth: 160;
+  --wght: 600;
   margin: 1em var(--indent);
+}
+blockquote + h4 {
+  /*citation*/
+  position: relative;
+  --wdth: 160;
+  --wght: 100;
+  margin: -1em var(--indent) 0;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  top: -0.7em;
+}
+
+article {
+  width: 60%;
+}
+article h1, article h2 {
+  display: none;
 }
 
 hr {
@@ -177,44 +198,68 @@ footer {
 /*--------------------------------------*/
 /* STRUCTURES & LAYOUTS ----------------*/
 /*--------------------------------------*/
-header, main, footer, section {
+main, footer, section {
   padding: var(--sectionpad) 0;
 }
 
 /* Navigation ----------------*/
-header {
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  padding: 0;
-  background-color: var(--white);
-}
-
 nav .navlink {
   position: fixed;
-  top: 10px;
-  left: 2rem;
   z-index: 100;
+  width: calc(100% - 40px);
+  top: 0;
+  left: 20px;
+  transform: translateY(0);
+  transition: transform 0.2s ease-in-out;
+  padding: 10px 0;
+  background-color: var(--white);
+  border-bottom: solid 1px;
+  z-index: 20;
+}
+nav .navlink.no-border {
+  border-bottom: none;
+}
+nav .navlink.nav-up {
+  transform: translateY(-100%);
 }
 nav div.home,
-nav div.current-page {
+nav div.current-page,
+nav div.info {
   display: inline-block;
   font-size: calc(var(--medium-size) / 1.5);
   padding: 5px;
   margin-right: 5px;
   font-family: "Osram black";
   cursor: pointer;
-  border: solid 2px;
+  border: solid 1px;
   background-color: var(--white);
 }
+nav div.home a,
+nav div.current-page a,
+nav div.info a {
+  color: var(--default);
+  text-decoration: none;
+}
 nav div.home:hover,
-nav div.home a:hover,
 nav div.current-page:hover,
-nav div.current-page a:hover {
+nav div.info:hover {
   background-color: var(--default);
   border-color: var(--default);
   color: var(--white);
+}
+nav div.home:hover a:hover,
+nav div.current-page:hover a:hover,
+nav div.info:hover a:hover {
+  color: var(--white);
+}
+nav div.info {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 0px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
 }
 nav ul.toc {
   position: fixed;
@@ -226,52 +271,40 @@ nav ul.toc {
   overflow: auto;
   padding: 60px 0;
   min-height: 100vh;
-  display: none;
+  z-index: 50;
+  transform: translateY(-100%);
   background-color: var(--white);
-  transition: display ease-in 0.5s;
 }
 nav ul.toc.display {
-  display: block;
+  transform: translateY(0);
+}
+nav ul.toc a {
+  display: inline-block;
+  line-height: 1;
+  color: var(--default);
+  text-decoration: none;
+}
+nav ul.toc .marker a, nav ul.toc .marker {
+  font-family: "Osram Regular";
+  text-transform: capitalize;
 }
 nav ul.toc li {
   width: 100vw;
+  padding: 15px 0 20px 2rem;
   border-bottom: 1px solid;
   font-family: "Osram Black";
-  font-size: var(--medium-size);
+  font-size: var(--large-size);
   transition: all ease-in 0.2s;
 }
-nav ul.toc li::before {
-  content: "";
-  display: inline-block;
-}
-nav ul.toc li:hover {
+nav ul.toc li:not(.part):hover {
   background-color: var(--default);
 }
-nav ul.toc li:hover a {
+nav ul.toc li:not(.part):hover a {
   color: var(--white);
 }
-nav ul.toc li a {
-  display: inline-block;
-  padding: 16px 0 20px 0;
-  padding-left: 2rem;
-  line-height: 2rem;
-  color: var(--default);
-  font-size: var(--large-size);
-  text-decoration: none;
-}
-nav ul.toc li.part {
-  display: list-item;
-}
-nav ul.toc li.part .chapter-intro {
-  display: inline-block;
-  width: 30px;
-}
-nav ul.toc li.chapter {
-  list-style-type: none;
-  font-variation-settings: "wght" var(--wght);
-}
-nav ul.toc li.chapter a {
-  padding-left: 70px;
+nav ul.toc li.chapter a,
+nav ul.toc li.toc-interlude a {
+  padding-left: 3rem;
 }
 nav ul.toc h4 {
   font-size: var(--caption-size);
@@ -313,11 +346,30 @@ main {
 }
 
 /* Chapters ----------------*/
-.chapter-header {
-  padding: var(--sectionpad) 0;
+.chapter-next {
+  border-top: solid 1px;
+  margin: var(--sectionpad) -40px 0;
+  width: calc( 100% + 80px);
+  padding: calc(var(--sectionpad)/2) 0 var(--sectionpad) 0;
 }
-.chapter-header h1 {
+.chapter-next .border {
+  background-color: var(--default);
+  height: 1px;
+  margin-bottom: calc(var(--sectionpad)/2);
+}
+.chapter-next h1 {
+  padding-left: 2rem;
+}
+.chapter-next.interlude a {
+  display: block;
+}
+
+[class*=chapter-] h1, [class*=chapter-] a {
   display: flex;
+}
+[class*=chapter-] a {
+  color: var(--default);
+  text-decoration: none;
 }
 
 .chapter-number {
@@ -328,6 +380,8 @@ main {
 .chapter-intro {
   font-family: "Osram Regular";
   text-transform: capitalize;
+  margin-bottom: 0;
+  display: block;
 }
 
 /* Article layout ----------------*/
@@ -362,16 +416,16 @@ table td:first-child {
 }
 
 /* Interlude ----------------*/
-.interlude {
+body.interlude {
   background: var(--default);
   color: var(--white);
 }
-.interlude nav .navlink,
-.interlude nav ul.toc {
+body.interlude nav .navlink,
+body.interlude nav ul.toc {
   background: var(--default);
   color: var(--white);
 }
-.interlude nav a {
+body.interlude nav a {
   color: var(--white);
 }
 
@@ -379,30 +433,36 @@ table td:first-child {
 /* REFERENCE & FOOTNOTE STYLES ---------*/
 /*--------------------------------------*/
 .reference {
-  display: inline;
+  display: inline-block;
   cursor: pointer;
+  text-indent: 0;
+  margin: 0 3px;
 }
-.reference .ref-no {
-  font-family: "Osram Medium";
-  font-size: var(--small-size);
-  position: relative;
-  bottom: 8px;
-}
-.reference .ref-no:hover {
+.reference:hover {
   color: var(--orange);
 }
-.reference .ref-text {
+.reference .footnote-ref {
+  font-family: "Osram Black";
+  font-size: var(--caption-size);
+  position: relative;
+  line-height: 0;
+  border-bottom: 3px solid;
+  padding-bottom: 3px;
+}
+
+.footnote-text {
   line-height: 1.5;
-  display: none;
   position: absolute;
   z-index: 20;
   width: 300px;
-  left: 0px;
-  background: var(--light-grey);
+  font-size: var(--caption-size);
+  background: var(--white);
   border: 1px solid var(--default);
   padding: var(--pad);
+  transition: all ease-in 0.25s;
+  display: none;
 }
-.reference .ref-text.visible {
+.footnote-text.visible {
   display: block;
 }
 
@@ -421,6 +481,11 @@ table td:first-child {
   width: var(--indent);
   text-align: right;
   padding-right: 1em;
+}
+
+.footnotes-sep,
+section.footnotes {
+  display: none;
 }
 
 /*--------------------------------------*/
@@ -625,16 +690,88 @@ body#home header, body#home nav {
   position: relative;
 }
 body#home nav .navlink {
+  background-color: transparent;
+  border: none;
+}
+body#home nav div.home {
   display: none;
+}
+body#home nav div.current-page,
+body#home nav div.info {
+  background-color: transparent;
+  border: solid 1px var(--white);
+  color: var(--white);
+}
+body#home nav div.current-page a,
+body#home nav div.info a {
+  color: var(--white);
+}
+body#home nav div.current-page::before {
+  content: "Table of Contents";
+  color: var(--white);
+}
+body#home nav div.info {
+  display: block;
 }
 body#home nav ul.toc {
   display: block;
   position: relative;
   height: auto;
   padding: 0;
+  transform: translateY(0);
 }
 body#home footer {
   order: 3;
+}
+body#home div.summery {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  height: 100vh;
+  background-color: var(--white);
+  color: var(--default);
+  padding: calc(var(--sectionpad)/2) var(--sectionpad);
+  transform: translateX(100%);
+  transition: transform ease-in 0.25s;
+  z-index: 100;
+  overflow-y: scroll;
+}
+body#home div.summery.visible {
+  transform: translateX(0%);
+}
+body#home div.summery.visible + div.summery-bg {
+  display: block;
+}
+body#home div.summery article {
+  width: 100%;
+}
+body#home div.summery article a {
+  color: var(--orange);
+}
+body#home div.summery article a:hover {
+  color: var(--default);
+}
+body#home div.summery article h1,
+body#home div.summery article h2 {
+  display: block;
+  font-size: var(--base-size);
+  position: relative;
+  text-indent: var(--indent);
+  line-height: 1.6;
+  margin-block-start: 0.75em;
+  margin-block-end: 0em;
+}
+body#home div.summery-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--default);
+  opacity: 0.7;
+  z-index: 50;
+  display: none;
 }
 body#home main {
   display: flex;
@@ -665,6 +802,14 @@ body#home main a.title h3 {
   font-size: 36px;
   margin-bottom: -20px;
 }
+body#home main .bg {
+  background-color: var(--accent);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+}
 body#home main .bg img {
   position: absolute;
   mix-blend-mode: multiply;
@@ -694,6 +839,27 @@ body#home main .bg img:nth-child(5) {
   top: 60vh;
   left: -10vw;
   width: 55vw;
+}
+body.interlude nav div.home,
+body.interlude nav div.current-page {
+  background-color: var(--default);
+  color: var(--white);
+}
+body.interlude nav div.home a,
+body.interlude nav div.current-page a {
+  color: var(--white);
+}
+body.interlude nav div.home:hover,
+body.interlude nav div.current-page:hover {
+  background-color: var(--white);
+  color: var(--default);
+}
+body.interlude nav div.home:hover a,
+body.interlude nav div.current-page:hover a {
+  color: var(--default);
+}
+body.interlude [class*=chapter-] a {
+  color: var(--white);
 }
 
 /*# sourceMappingURL=main.css.map */

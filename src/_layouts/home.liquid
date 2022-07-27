@@ -1,11 +1,10 @@
 ---
 layout: default.liquid
 ---
-
 <div class="cover">
 	<a class="title" href="#toc">
 		<h3>Blaise Aguera y Arcas</h3>
-		<h1>Where are We Now</h1>
+		<h1>Who are We Now</h1>
 	</a>
 	<div class="bg">
 		<img src="../assets/images/home/4174244018_df4e606bf4_o-Enhanced-Enhanced Bitmap.png">
@@ -14,16 +13,21 @@ layout: default.liquid
 		<img src="../assets/images/home/IMG_9577-Enhanced Crop Bitmap Cutout.png">
 		<img src="../assets/images/home/Jetsons-Enhanced Bitmap 20.png">
 	</div>
-
-
-
-
 </div>
+<div class="summery">
+	{%- for item in collections.all | getNextCollectionItem: page -%}
+	{% assign part = item.data.part %}
+		{% if item.data.layout == "summery" %}
+			<section class="chapter-header">
+				<h1 class="chapter-intro">About</h1>
+				<h1>{{item.data.title}}</h1>
+			</section>
+			<article>
+				{{item.data.content}}
+				<div id="footnote-popup" class="footnote-text"></div>
+			</article>
+		{% endif %}
+	{%- endfor -%}
+</div>
+<div class="summery-bg"></div>
 
-<!-- <ul>
-{% for c in collections.all %}
-<li>
-	<a href="{{c.url | url}}">{{c.data.title}}</a>
-</li>
-{% endfor %}
-</ul> -->

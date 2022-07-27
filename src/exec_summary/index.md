@@ -1,8 +1,8 @@
 ---
 part: 0
 chapter: -2
-title: (Executive summary and About the author)
-layout: chapter
+title: Executive summary and About the author
+layout: summery
 ---
 
 by Blaise Agüera y Arcas
