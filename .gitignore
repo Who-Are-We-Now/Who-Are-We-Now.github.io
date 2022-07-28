@@ -3,3 +3,6 @@ node_modules/
 wawn-354614-cf71ca21de3c.json
 chapter_process.py
 chapters_old.json
+scripts/imgs_tmp
+scripts/raw_docs
+*.swp
