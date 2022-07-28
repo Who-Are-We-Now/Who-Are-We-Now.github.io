@@ -130,7 +130,10 @@ def process_image_tag(line):
         shortname = m.group(1)
         # Get to filename using lookup table
         img_name = img_lookup[shortname]['file'][0]
-        caption = img_lookup[shortname]['caption']
+        if 'caption' in img_lookup[shortname]:
+            caption = img_lookup[shortname]['caption']
+        else:
+            caption = 'caption text'
     # IF [[]] tag, 
     elif (re_defaulttag.search(line)):
         # Get file name from tag
