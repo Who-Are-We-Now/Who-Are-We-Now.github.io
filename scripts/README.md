@@ -42,6 +42,11 @@ Install the Google Drive API
 pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 ```
 
+Install Pandoc for document formatting
+```
+brew install pandoc
+```
+
 _I believe that's it for now. Give it a try, and contact me if it doesn't work for some reason and we can debug it together, as I haven't tried reproducing these steps on another system yet._
 
 ## Download auth token
@@ -49,7 +54,7 @@ To use the `make_wawn.py` book build script, download this auth file from the [w
 
 Note where you've saved the file, e.g., in this directory, and then update the `GOOGLE_APPLICATION_CREDENTIALS` environment variable.
 
-Add to your `.bashrc` or `.bash_profile`:
+Add to your `.bashrc`, `.bash_profile`, or paste directly into your Terminal:
 ```
 export GOOGLE_APPLICATION_CREDENTIALS="/<path to credentials file>/wawn-354614-cf71ca21de3c.json"
 ```
