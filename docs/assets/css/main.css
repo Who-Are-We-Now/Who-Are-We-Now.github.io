@@ -359,7 +359,7 @@ main {
 .chapter-next h1 {
   padding-left: 2rem;
 }
-.chapter-next.interlude a {
+.chapter-next.interlude a, .chapter-next.introduction a {
   display: block;
 }
 

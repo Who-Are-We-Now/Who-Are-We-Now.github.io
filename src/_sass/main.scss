@@ -379,7 +379,8 @@ main {
 	h1 {
 		padding-left: 2rem;
 	}
-	&.interlude {
+	&.interlude,
+	&.introduction {
 		a {
 			display: block;
 		}

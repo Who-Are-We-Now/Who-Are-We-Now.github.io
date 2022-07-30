@@ -33,9 +33,10 @@
 				
 
 				
-				<li>
+				<li class="chapter">
 					<a href="/preface/" class=""> 
-						Preface					
+						<span class="marker">-1</span><br>
+						Preface
 					</a>
 				</li>
 				
@@ -396,7 +397,7 @@
           </span>
            Questions about drawing, music, working in tech, and being a strong verbal communicator are so close to zero as to be uninformative— it doesn’t seem (at least based on people’s self-reporting) that theories about these traits being tied to handedness hold water.</p>
 <p>Armed with this ability to determine a left-handedness score, we can now actually graph a nuanced, “halftoned” picture of left-handedness.</p>
-<p><img src="media/image3.png" alt="" width="6.5in" height="2.8333333333333335in"></p>
+<p><img src="media/image5.png" alt="" width="6.5in" height="2.8333333333333335in"></p>
 <p>This is a histogram of left-handedness scores; for each bin, it shows the percentage of respondents who report being strictly left-handed in yellow, strictly right-handed in black, or whose responses are ambiguous (meaning that they answered “yes” to both, or “no” to both) in purple.<span id="fnref3" class="reference">
             <sup class="footnote-ref">3</sup>
           </span>
@@ -407,15 +408,15 @@
 <p>Madam: if you’re reading, I apologize. I didn’t define the words because part of the point of the survey was to find out what they actually mean to people! This is true even for seemingly boring terms like “left-handed” and “ambidextrous.” If I had tried to define them, I’d have needed to pick a definition, and then it would likely have shifted the ground of many comments toward debates about these definitions (sometimes this happened anyway), and in the yes/no section, I’d end up with some unknown number of “well, technically…” answers at odds with what people would have clicked on otherwise.</p>
 <p>Returning to the graph— the purple “ambiguously handed” curve is particularly interesting. Remember that the weights behind calculating this strict left-handedness score are based only on predicting the responses of people who were <em>unambiguously</em> left-handed. So, when we see that people whose responses were ambiguous actually do fall in the blurry region between the strictly right-handed and strictly left-handed groups, this is powerful evidence that those respondents aren’t making mistakes or clicking at random— they really are an “excluded middle.” For most, identifying as ambiguously handed goes along with “in the middle” answers to a series of other questions relating to bodies, histories, and behaviors.</p>
 <p>We can also compute the optimal question weights for strict right-handedness; the results are similar, though in mirror image (and notably, for reasons that will soon become clear, with less likelihood of an ambiguous response when the score is high).</p>
-<p><img src="media/image1.png" alt="" width="6.5in" height="2.8333333333333335in"></p>
-<p><img src="media/image5.png" alt="" width="6.5in" height="2.8333333333333335in"></p>
+<p><img src="media/image2.png" alt="" width="6.5in" height="2.8333333333333335in"></p>
+<p><img src="media/image4.png" alt="" width="6.5in" height="2.8333333333333335in"></p>
 <p>Something less obvious happens if we compute the optimal question weights to predict <em>ambiguous</em> handedness (again, this is a “yes” to both, or a “no” to both handedness questions). This prediction doesn’t work as well as the left-handed or right-handed predictions, which perhaps isn’t news— since in handedness as in anything else, there are few ways to be <em>un</em>ambiguous, but many ways to be ambiguous. More surprisingly, scoring high on the “ambiguity scale” not only rules out strict right-handedness, but also does a better job of predicting strict <em>left</em>-handedness than of predicting ambiguity! This tells us that if we start with “average” answers to every question and begin to slowly modify them to increase the ambiguity score, we’ll also be increasing the left-handedness score; in fact we can overshoot, and end up in more strictly left-handed than ambiguous territory.</p>
 <p>So in this sense, it’s more accurate to call handedness ambiguity “a little bit left-handed” than “a little bit right-handed.” That’s because right-handedness basically <em>is</em> the average; it’s the default, and variations are defined relative to it. This isn’t just a mathematical subtlety, but a basic truth about majority and minority, as we’ll find again and again.</p>
 <hr>
 <p>The question weights for ambiguous handedness are broadly similar to those for strict left-handedness— with one important exception, highlighted below:</p>
-<p><img src="media/image4.png" alt="" width="6.5in" height="2.8333333333333335in"></p>
+<p><img src="media/image3.png" alt="" width="6.5in" height="2.8333333333333335in"></p>
 <p>“Were you made to change your dominant hand as a child?” got virtually zero weight for predicting strict left-handedness, but it’s the second most positive predictor of ambiguous handedness, just behind “Do you write with your left hand?” This implies that many of the ambiguous respondents were left-handed to one degree or another in childhood, but were made to switch their dominant hand. For completeness: “Were you made to change your dominant hand as a child?” has a strong <em>negative</em> weight for the strict right-handedness predictor. So, strongly right-handed kids are made to change their dominant hand much less often— because it’s already the “right” one!</p>
-<p><img src="media/image2.png" alt="" width="6.5in" height="2.8333333333333335in"></p>
+<p><img src="media/image1.png" alt="" width="6.5in" height="2.8333333333333335in"></p>
 <p>This difference is obvious if we separately graph the proportion of strictly right-handed people who were made to switch and the <em>non</em> strictly right-handed people who were made to switch. The full effect is probably even greater, since plenty of people’s “handedness scores” fall somewhere in the middle, even if they identify as strictly right-handed on the survey. After all, if you have some flexibility with regard to handedness as a kid, you may as well go with the right-handed majority and reap the social benefits.</p>
 <p>In fact, depending on where, when, and how you grew up, you may be compelled to, whether by parents, siblings, teachers, nuns, or other authority figures. As a 27 year old from Phoenix, Arizona put it, “ambidextrous as a child and pushed to choose right handedness.” Or, in the words of a 54 year old from Southwith, Massachusetts, “My sister took the pencil out of my left hand, put it in my right hand, and said ‘You’re a (family name). We write with our right hands.’ I was in first or second grade. I used my right hand from there on.” It’s likely that many people who were similarly pushed to choose right-handedness didn’t notice it as kids or don’t remember it as adults; they just adapted. Latent signs of left-handedness may remain in these cases, whether the respondent is conscious of them or not.</p>
 <p>People do tend to remember the social pressure to conform when there’s embarrassment or trauma involved, though, or when adaptation is especially hard. Those who answered “yes” to “Were you made to change your dominant hand as a child?” often had such stories to tell: “Early school teachers often taped one hand to my waist to force me to always use the other. It was strange and [embarrassing] to be selected for this punishment.”<span id="fnref4" class="reference">
@@ -445,9 +446,9 @@
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>Artistic tendencies have been, at times, linked to left-handedness, these being perhaps a silver lining of “aberrancy.” Ellen Forney, for instance, writes about the link (at least in the popular imagination) between creative genius and bipolar disorder in her graphic memoir, <em>Marbles: Mania, Depression, Michelangelo, and Me: A Graphic Memoir</em>. <a href="#fnref1" class="footnote-backref" aria-label="back to text">↩︎</a></p>
+<li id="fn1" class="footnote-item"><p>Artistic tendencies have been, at times, linked to left-handedness, these being perhaps a silver lining of “aberrancy.” Ellen Forney, for instance, writes about the link (at least in the popular imagination) between creative genius and bipolar disorder in her graphic memoir, <em>Marbles: Mania, Depression, Michelangelo, and Me: A Graphic Memoir</em>, 2012. <a href="#fnref1" class="footnote-backref" aria-label="back to text">↩︎</a></p>
 </li>
-<li id="fn2" class="footnote-item"><p>This is consistent with the literature. Herron and James, <em>Neuropsychology of Left-Handedness</em>, 171. <a href="#fnref2" class="footnote-backref" aria-label="back to text">↩︎</a></p>
+<li id="fn2" class="footnote-item"><p>This is consistent with the literature. Herron and James, <em>Neuropsychology of Left-Handedness</em>, 171, 1980. <a href="#fnref2" class="footnote-backref" aria-label="back to text">↩︎</a></p>
 </li>
 <li id="fn3" class="footnote-item"><p>The actual numerical values on the <em>x</em> axis don’t matter here; they’re just a function of the arbitrary way the weights are scaled. If the weights were all doubled, for example, then the overall score would also be doubled, but the predictions would be the same; only the proportions matter. The error bars in this histogram are calculated by rerunning the whole procedure many times with random subsets of respondents “held out,” giving us a sense of how reliable the calculation is, or more precisely much variability is due to the limited size of the sample. <a href="#fnref3" class="footnote-backref" aria-label="back to text">↩︎</a></p>
 </li>
@@ -471,7 +472,6 @@
 		<!-- <div class="border"></div> -->
 		<h1>
 			<a href="/chapter-03/">
-	
 	
 			<span class="chapter-number">3</span>
 	

@@ -1,8 +1,8 @@
 ---
 part: 2
 chapter: 11.5
-title: Interlude: Ycleptance
-layout: chapter
+title: Ycleptance
+layout: interlude
 ---
 
 Interlude: Ycleptance

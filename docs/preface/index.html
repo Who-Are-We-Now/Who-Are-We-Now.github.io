@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <script src="/assets/js/script.js"></script>
 </head>
-<body id="preface" class="preface">
+<body id="preface" class="chapter">
 <header>
 	<nav>
 		<div class="navlink">
@@ -33,9 +33,10 @@
 				
 
 				
-				<li>
+				<li class="chapter">
 					<a href="/preface/" class="is-active"> 
-						Preface					
+						<span class="marker">-1</span><br>
+						Preface
 					</a>
 				</li>
 				
@@ -281,8 +282,10 @@
 <main>
     
 <section class="chapter-header">
-	<h1 class="chapter-intro"></h1>
-	<h1>Preface</h1>
+	<h1>
+		<span class="chapter-number">-1</span>
+		<span class="chapter-title">Preface</span>
+	</h1>
 </section>
 <article>
 	<h1>Preface</h1>
@@ -310,9 +313,9 @@
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>Edelman, <em>No Future: Queer Theory and the Death Drive</em>, 3. <a href="#fnref1" class="footnote-backref" aria-label="back to text">↩︎</a></p>
+<li id="fn1" class="footnote-item"><p>Edelman, <em>No Future: Queer Theory and the Death Drive</em>, 3, 2004. <a href="#fnref1" class="footnote-backref" aria-label="back to text">↩︎</a></p>
 </li>
-<li id="fn2" class="footnote-item"><p>Kulu, “Why Do Fertility Levels Vary between Urban and Rural Areas?”; Ortiz-Ospina and Roser, “Marriages and Divorces”; Roser, “Fertility Rate.” <a href="#fnref2" class="footnote-backref" aria-label="back to text">↩︎</a></p>
+<li id="fn2" class="footnote-item"><p>Kulu, “Why Do Fertility Levels Vary between Urban and Rural Areas?,” 2013; Ortiz-Ospina and Roser, “Marriages and Divorces,” 2020; Roser, “Fertility Rate,” 2014. <a href="#fnref2" class="footnote-backref" aria-label="back to text">↩︎</a></p>
 </li>
 <li id="fn3" class="footnote-item"><p>A 33 year old man from Kalamazoo, Michigan. <a href="#fnref3" class="footnote-backref" aria-label="back to text">↩︎</a></p>
 </li>
@@ -321,17 +324,11 @@
 
 	<div id="footnote-popup" class="footnote-text"></div>
 </article>
-	
 
-	<section class="chapter-next">
-		<h1>
-			<a href="/introduction/">
-				<span class="chapter-number">0</span>
-				<span class="chapter-title">Anonymous identity</span>
-			</a>
-		</h1>
-	</section>
 
+
+<!-- script that draws plots into containers -->
+<script src="/assets/js/plot.js"></script>
     	
 
 	<section class="chapter-next introduction">
@@ -340,7 +337,6 @@
 			<a href="/introduction/">
 	
 		<span class="chapter-intro">introduction</span>
-	
 	
 			<span class="chapter-title">Anonymous identity</span>
 			</a>

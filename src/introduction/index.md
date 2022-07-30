@@ -1,8 +1,8 @@
 ---
 part: 0
 chapter: 0
-title: Introduction: Anonymous identity
-layout: chapter
+title: Anonymous identity
+layout: introduction
 ---
 
 {% img 'xenofem' %}
