@@ -127,7 +127,7 @@ $(function(){
 				}, 500);
 			});
 		} 
-			$('body#introduction .current-page').click(function() {
+			$('.current-page').click(function() {
 				
 				if ($('ul.toc').hasClass('display')) {
 					$('.navlink').addClass('no-border');

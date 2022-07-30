@@ -214,7 +214,6 @@ nav .navlink {
   padding: 10px 0;
   background-color: var(--white);
   border-bottom: solid 1px;
-  z-index: 20;
 }
 nav .navlink.no-border {
   border-bottom: none;
