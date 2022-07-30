@@ -2,7 +2,7 @@
 part: 0
 chapter: -1
 title: Preface
-layout: chapter
+layout: preface
 ---
 
 Preface
