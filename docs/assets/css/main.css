@@ -840,6 +840,23 @@ body#home main .bg img:nth-child(5) {
   left: -10vw;
   width: 55vw;
 }
+@keyframes float {
+  0% {
+    transform: rotate(0deg) translate(1.5vh, -1.5vh) rotate(0deg);
+  }
+  25% {
+    transform: rotate(-420deg) translate(1.5vh, -1.5vh) rotate(420deg);
+  }
+  50% {
+    transform: rotate(0deg) translate(1.5vh, -1.5vh) rotate(0deg);
+  }
+  75% {
+    transform: rotate(420deg) translate(1.5vh, -1.5vh) rotate(-420deg);
+  }
+  100% {
+    transform: rotate(0deg) translate(1.5vh, -1.5vh) rotate(0deg);
+  }
+}
 body.interlude nav div.home,
 body.interlude nav div.current-page {
   background-color: var(--default);

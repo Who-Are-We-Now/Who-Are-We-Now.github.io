@@ -985,6 +985,9 @@ body#home {
 					top: -5vh;
 					left: -5vw;
 					width: 40vw;
+					// animation: float 60s ease-in-out infinite;
+					// animation-timing-function: ease-in-out;
+					// animation-direction: alternate, reverse, normal;
 				}
 				&:nth-child(2) {
 					top: -5vh;
@@ -1016,6 +1019,26 @@ body#home {
 	}
 
 }
+
+
+@keyframes float {
+	0% {
+		transform: rotate(0deg) translate(1.5vh,-1.5vh) rotate(0deg);
+	}
+	25% {
+		transform: rotate(-420deg) translate(1.5vh,-1.5vh) rotate(420deg);
+	}
+	50% {
+		transform: rotate(0deg) translate(1.5vh,-1.5vh) rotate(0deg);
+	}
+	75% {
+		transform: rotate(420deg) translate(1.5vh,-1.5vh) rotate(-420deg);
+	}
+	100% {
+		transform: rotate(0deg) translate(1.5vh,-1.5vh) rotate(0deg);
+	}
+}
+
 
 body.interlude {
 	nav {

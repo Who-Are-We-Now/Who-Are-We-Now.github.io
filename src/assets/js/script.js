@@ -126,17 +126,20 @@ $(function(){
 					scrollTop: $('#toc').offset().top
 				}, 500);
 			});
-		} else {
-			$('.current-page').click(function() {
-				$('ul.toc').toggleClass('display');
+		} 
+			$('body#introduction .current-page').click(function() {
+				
 				if ($('ul.toc').hasClass('display')) {
 					$('.navlink').addClass('no-border');
+					$('ul.toc').removeClass('display');
 				} else {
+					$('ul.toc').addClass('display');
 					$('.navlink').removeClass('no-border');
 				}
-			  });
 
-		}
+			});
+			 
+		
 // HOME: info page 
 		if( $('body#home'.length > 0)) { 
 			
