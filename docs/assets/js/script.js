@@ -130,11 +130,11 @@ $(function(){
 			$('.current-page').click(function() {
 				
 				if ($('ul.toc').hasClass('display')) {
-					$('.navlink').addClass('no-border');
+					$('.navlink').removeClass('no-border');
 					$('ul.toc').removeClass('display');
 				} else {
 					$('ul.toc').addClass('display');
-					$('.navlink').removeClass('no-border');
+					$('.navlink').addClass('no-border');
 				}
 
 			});
