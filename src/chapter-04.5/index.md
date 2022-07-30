@@ -1,8 +1,8 @@
 ---
 part: 2
 chapter: 4.5
-title: Planetary consciousness
-layout: interlude 
+title: Interlude: Planetary consciousness
+layout: chapter
 ---
 
 Interlude: Planetary consciousness
@@ -81,20 +81,20 @@ She prophesied thusly:
 > I feel that this whole polyamorous lifestyle is the avant garde of the 21st Century. Expanded families will become a pattern with wider acceptance as the monogamous nuclear family system breaks apart [...]. In many ways, polyamorous extended relationships mimic the old multigenerational families before the Industrial Revolution, but they are better because the ties are voluntary and are, by necessity, rooted in honesty, fairness, friendship and mutual interests. Eros is, after all, the primary force that binds the universe together; so we must be creative in the ways we use that force to evolve new and appropriate ways to solve our problems and to make each other and ourselves happy.
 
 
-[^1]: Lovejoy, *The Great Chain of Being: A Study of the History of an Idea*, 1964; “Great Chain of Being,” 2022.
+[^1]: Lovejoy, *The Great Chain of Being: A Study of the History of an Idea*, 1964; Wikipedia, “Great Chain of Being,” 2022, https://en.wikipedia.org/w/index.php?title=Great_chain_of_being&oldid=1093238660.
 
 [^2]: Francis Bacon, *Temporis Partus Masculus*; translation Anthony Wilden, 1972; see also Bacon 1964. Bacon, “Temporis Partus Masculus,” 1964.
 
 [^3]: Sheldrake, *Entangled Life: How Fungi Make Our Worlds, Change Our Minds & Shape Our Futures*, 2020.
 
-[^4]: [[REF]] oberonzell.com
+[^4]: Zell, “Oberon Zell – Master Wizard,” 2018, https://oberonzell.com/.
 
-[^5]: [[REF]]
+[^5]: “The Grey School of Wizardry,” https://www.greyschool.net/.
 
-[^6]: [[REF]] Ellen’s book.
+[^6]: Wayland-Smith, *Oneida: From Free Love Utopia to the Well-Set Table*, 2016.
 
-[^7]: [[REF]] Green Egg Omelet.
+[^7]: Zell-Ravenheart, *Green Egg Omelette: An Anthology of Art and Articles from the Legendary Pagan Journal*, 2008.
 
-[^8]: [[REF]] Henrich papers.
+[^8]: Henrich, Heine, and Norenzayan, “The Weirdest People in the World?,” 2010; Henrich, Heine, and Norenzayan, “Most People Are Not WEIRD,” 2010; Henrich, Heine, and Norenzayan, “Beyond WEIRD: Towards a Broad-Based Behavioral Science,” 2010; Apicella, Norenzayan, and Henrich, “Beyond WEIRD: A Review of the Last Decade and a Look Ahead to the Global Laboratory of the Future,” 2020.
 
 [^9]: A phrase trademarked by TED Conferences, LLC, in 2015.

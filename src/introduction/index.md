@@ -1,21 +1,25 @@
 ---
 part: 0
 chapter: 0
-title: Anonymous identity
-layout: introduction 
+title: Introduction: Anonymous identity
+layout: chapter
 ---
 
-[[xenofeminist_manifesto.jpg]]
+{% img 'xenofem' %}
 
 > Ours is a world in vertigo. [...] We are all alienated – but have we ever been otherwise? It is through, and not despite, our alienated condition that we can free ourselves [...] nothing is so sacred that it cannot be reengineered and transformed so as to widen our aperture of freedom, extending to gender and the human. To say that nothing is sacred, that nothing is transcendent or protected from the will to know, to tinker and to hack, is to say that nothing is supernatural.
 
 #### Laboria Cuboniks, *Xenofeminist Manifesto*, 2018
 
+{% endimg %}
+
 > You will find your answers in the secrets of strangers.
 
 #### Frank Warren, *reluctant oracle*, 2004
 
-[[postsecrets-postcard-gallery-everyone-has-a-story.jpg and/or 816wuEBCl3L.jpg]]
+{% img 'postsecret' %}
+
+{% endimg %}
 
 Introduction: anonymous identity
 ================================
@@ -197,32 +201,32 @@ In the quiet moments after each of these rocket stages has finished its burn and
 [[earth-at-night-1_wide-157394396924e2d1f7ff855e6bf53b13ed95a145.jpg 1200px-Iberian_Peninsula_at_Night_-_NASA_Earth_Observatory.jpg 24260073679_5e5ef1d481_b.jpg ISS025-E-09858_lrg.jpg Mapping_the_night.jpg Midwestern_USA_at_Night_with_Aurora_Borealis_-_NASA_Earth_Observatory.jpg]]
 
 
-[^1]: The segment aired a few weeks later, on Dan Savage and Blaise Agüera y Arcas, “The Sex Robots Are Coming!!!,” Podcast, *Savage Lovecast*, November 22, 2016, https://savage.love/lovecast/2016/11/22/the-sex-robots-are-coming/.
+[^1]: The segment aired a few weeks later, on Savage and Agüera y Arcas, “The Sex Robots Are Coming!!!,” 2016.
 
-[^2]: Ginia Bellafante, “Why the Big City President Made Cities the Enemy,” *The New York Times*, July 24, 2020, https://www.nytimes.com/2020/07/24/nyregion/trump-cities.html.
+[^2]: Bellafante, “Why the Big City President Made Cities the Enemy,” 2020.
 
 [^3]: A 28 year old from Burnsville, Minnesota.
 
-[^4]: Patricia Dennis, Stephen M. Shuster, and C. N. Slobodchikoff, “Dialects in the Alarm Calls of Black- Tailed Prairie Dogs (Cynomys Ludovicianus): A Case of Cultural Diffusion?,” *Behavioural Processes* 181 (December 2020): 104243.
+[^4]: Dennis, Shuster, and Slobodchikoff, “Dialects in the Alarm Calls of Black- Tailed Prairie Dogs (Cynomys Ludovicianus): A Case of Cultural Diffusion?,” 2020.
 
-[^5]: F. G. Patterson, “The Gestures of a Gorilla: Language Acquisition in Another Pongid,” *Brain and Language* 5, no. 1 (January 1978): 72–97; Irene M. Pepperberg, *The Alex Studies: Cognitive and Communicative Abilities of Grey Parrots* (Harvard University Press, 2009).
+[^5]: Patterson, “The Gestures of a Gorilla: Language Acquisition in Another Pongid,” 1978; Pepperberg, *The Alex Studies: Cognitive and Communicative Abilities of Grey Parrots*, 2009.
 
 [^6]: Scientists who study animal behavior call the result “fission-fusion societies,” where the clusters can change either over the course of a day (for example, as foraging parties go out in the morning but reconvene at night) or over longer periods of time (as when a few individuals decide to strike out on their own, or join an existing group).
 
-[^7]: [[]] Jared Diamond, *Guns, Germs, and Steel: The Fates of Human Societies* (New York: Norton, 2005), 312–13; Adam Goodheart, “The Last Island of the Savages,” *The American Scholar* 69, no. 4 (2000): 17.
+[^7]: [[]] Diamond, *Guns, Germs, and Steel: The Fates of Human Societies*, 312–13, 2005; Goodheart, “The Last Island of the Savages,” 17, 2000.
 
-[^8]: Mark W. Moffett, “Human Identity and the Evolution of Societies,” *Human Nature* 24, no. 3 (September 2013): 219–67.
+[^8]: Moffett, “Human Identity and the Evolution of Societies,” 2013.
 
-[^9]: There have also been large-scale societies that didn’t rely heavily on farming, but spent part of the year roaming over a large area, only convening seasonally to create “temporary cities,” as described by Robert H. Lowie, “Some Aspects of Political Organization Among the American Aborigines,” *The Journal of the Royal Anthropological Institute of Great Britain and Ireland* 78, no. 1/2 (1948): 11–24. Obviously, this way of life also requires a shared anonymous identity.
+[^9]: There have also been large-scale societies that didn’t rely heavily on farming, but spent part of the year roaming over a large area, only convening seasonally to create “temporary cities,” as described by Lowie, “Some Aspects of Political Organization Among the American Aborigines,” 1948. Obviously, this way of life also requires a shared anonymous identity.
 
-[^10]: Agreement isn’t universal on this point, though. Large anonymous societies can bring with them feelings of alienation. As David Graeber and David Wengrow point out in their 2021 book *The Dawn of Everything*, “‘Security’ takes many forms. There is the security of knowing one has a statistically smaller chance of getting shot with an arrow. And then there’s the security of knowing that there are people in the world who will care deeply if one is.” David Graeber and David Wengrow, *The Dawn of Everything: A New History of Humanity* (Penguin UK, 2021), chap. 1.
+[^10]: Agreement isn’t universal on this point, though. Large anonymous societies can bring with them feelings of alienation. As David Graeber and David Wengrow point out in their 2021 book *The Dawn of Everything*, “‘Security’ takes many forms. There is the security of knowing one has a statistically smaller chance of getting shot with an arrow. And then there’s the security of knowing that there are people in the world who will care deeply if one is.” Graeber and Wengrow, *The Dawn of Everything: A New History of Humanity*, chap. 1, 2021.
 
-[^11]: Denis Fournier and Serge Aron, “Evolution: No-Male’s Land for an Amazonian Ant,” *Current Biology: CB* 19, no. 17 (September 15, 2009): R738–40.
+[^11]: Fournier and Aron, “Evolution: No-Male’s Land for an Amazonian Ant,” 2009.
 
-[^12]: Shulamith Firestone, *The Dialectic of Sex : The Case for Feminist Revolution* (New York: Morrow, 1970), 2.
+[^12]: Firestone, *The Dialectic of Sex : The Case for Feminist Revolution*, 2, 1970.
 
 [^13]: The historical materials, too, focus on the United States and Western Europe, both because of my own limitations as a researcher and to offer timely context for the survey data.
 
-[^14]: Rosling et al., *Factfulness*, 2018.Hans Rosling, Ola Rosling, and Anna Rosling Rönnlund, *Factfulness: Ten Reasons We’re Wrong About the World – and Why Things Are Better Than You Think* (Flatiron Books, 2018), chap. 5.
+[^14]: Rosling et al., *Factfulness*, 2018.Rosling, Rosling, and Rönnlund, *Factfulness: Ten Reasons We’re Wrong About the World – and Why Things Are Better Than You Think*, chap. 5, 2018.
 
-[^15]: “Overview Effect,” *Wikipedia*, May 29, 2020, https://en.wikipedia.org/w/index.php?title=Overview_effect&oldid=959479674.
+[^15]: “Overview Effect,” 2020, https://en.wikipedia.org/w/index.php?title=Overview_effect&oldid=959479674.

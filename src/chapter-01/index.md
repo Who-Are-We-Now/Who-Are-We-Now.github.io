@@ -75,13 +75,13 @@ So what patterns do we see? There’s more afoot here than all-in, age-blind tab
 
 Big meta-analyses of the scientific literature suggest that about 10% of people are left-handed on average, and that left-handedness is about 23% more common in men (so, closer to about 9% of women and 11% of men).[^13] It’s generally been theorized that this is due to some inherent sex-linked difference in brain development. There may be such a factor, but zooming in on the strictly left-handed curve and breaking it down by sex, we see something interesting.
 
-![](media/image5.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
 
 On the whole, our survey data are consistent with the big studies— showing 9.6% of women strictly left-handed and 11.7% of men.[^14] However, that difference may only be significant before middle age; by 45, men and women seem pretty much alike, with both under 10% and falling. What’s going on here?
 
 Looking at strict *right*-handedness adds some further color.
 
-![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
 
 Here, it’s *young* men and women who are all but indistinguishable; but as they age, fewer and fewer men report being strictly right-handed. By age 65, only about 75% are, as compared to about 83% of women. Those 90% confidence intervals show us that this effect is probably quite significant.
 
@@ -91,7 +91,7 @@ The apparent result is that regardless of initial handedness, with every passing
 
 The evidence mounts when we look at the “excluded middle.” With declines in both strict left- and strict right-handedness, it follows that an increasing number of people are answering the handedness questions ambiguously. This is true; that curve is in fact very similar to the rate at which people answer “yes” to “Are you ambidextrous?,” and consists largely of the same population (though “ambidextrous” seems to be a somewhat stronger statement, as it’s used a tad less often, at every age).
 
-![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image5.png){width="6.5in" height="2.8333333333333335in"}
 
 When people say they’re ambidextrous, it’s often accompanied by an account of injury, as in “I have severe deficiencies with my right arm I've had 9 surgeries so I became ambidextrous”[^16] or “ambidextrous in some things due to having a severely broken right hand wrist, in a cast/pins for 6 months”[^17]. So, that likely accounts for the increasing numbers with age.
 
@@ -130,7 +130,7 @@ More fundamentally, though, the survey doesn’t bear out the idea that either l
 
 [^5]: After some initial experimentation to get survey designs right, I used a Mechanical Turk feature called “qualifications” to make sure that nobody could take a survey twice (unless they went to the trouble of creating a fake second account, which is against Mechanical Turk’s policies).
 
-[^6]: Ziegler-Graham et al., “Estimating the Prevalence of Limb Loss in the United States: 2005 to 2050.”
+[^6]: Ziegler-Graham et al., “Estimating the Prevalence of Limb Loss in the United States: 2005 to 2050,” 2008.
 
 [^7]: A 36 year old man from Henderson, Kentucky.
 
@@ -144,20 +144,20 @@ More fundamentally, though, the survey doesn’t bear out the idea that either l
 
 [^12]: I’ve chosen a generous 90% confidence interval rather than the more common 68% confidence interval (one “standard deviation”) in order to both emphasize uncertainty where it exists and, where the regions are tight, make clear how many of the effects we’ll see are so large that they’re highly unlikely to be statistical artifacts.
 
-[^13]: Papadatou-Pastou et al., “Sex Differences in Left-Handedness: A Meta-Analysis of 144 Studies.”
+[^13]: Papadatou-Pastou et al., “Sex Differences in Left-Handedness: A Meta-Analysis of 144 Studies,” 2008.
 
 [^14]: Later on we’ll delve into the non-binariness of sex and gender. For purposes of the analysis here, “women” is a shorthand for those who answer “yes” to “Do you identify as female?” and “no” to “Do you identify as male?,” and vice versa for “men.” There are a number of other possible definitions based on the survey questions, but none of them would materially affect these results.
 
-[^15]: [[Citations for all of these.]] On lightning see Jensenius, “A Detailed Analysis of Lightning Deaths in the United States from 2006 through 2019”; Williams, “Men vs. Women: Which Gender Is More Likely to Be Fatally Struck by Lightning?”
+[^15]: [[Citations for all of these.]] On lightning see Jensenius, “A Detailed Analysis of Lightning Deaths in the United States from 2006 through 2019,” 2020; Williams, “Men vs. Women: Which Gender Is More Likely to Be Fatally Struck by Lightning?,” 2018, https://www.accuweather.com/en/weather-news/men-vs-women-which-gender-is-more-likely-to-be-fatally-struck-by-lightning/351789.
 
 [^16]: A woman from Elkton, Maryland.
 
 [^17]: A woman from Kansas City, Kansas.
 
-[^18]: Porac, *Laterality: Exploring the Enigma of Left-Handedness*.
+[^18]: Porac, *Laterality: Exploring the Enigma of Left-Handedness*, 2016.
 
-[^19]: Rodriguez et al., “Mixed-Handedness Is Linked to Mental Health Problems in Children and Adolescents.”
+[^19]: Rodriguez et al., “Mixed-Handedness Is Linked to Mental Health Problems in Children and Adolescents,” 2010.
 
-[^20]: Hardyck and Petrinovich, “Left-Handedness.”
+[^20]: Hardyck and Petrinovich, “Left-Handedness,” 1977.
 
 [^21]: Only 14 people surveyed have cerebral palsy, but 4 of those are left-handed, which at about 29% is much higher than the expected rate of left-handedness. This is consistent with the medical literature.

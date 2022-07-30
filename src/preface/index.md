@@ -2,11 +2,11 @@
 part: 0
 chapter: -1
 title: Preface
-layout: preface
+layout: chapter
 ---
 
 Preface
-==================
+=======
 
 [[Dick and Jane A1R2W5kvoEL.jpg]]
 
@@ -33,8 +33,8 @@ This same struggle to define and delimit humanity in some elusive “natural” 
 On optimistic days, I imagine natural systems, together with blended human and machine intelligence, converging into something smart, intentional, and planet-wide. I don’t think of AI and human intelligence in opposition, or of one as subservient to the other in some kind of Medieval Chain of Being; rather, I think that all intelligence on Earth is part of a larger whole. I hope that we can think and act soon on a planetary scale, because the existential threats we now face are all planetary in scale too— and largely of our own making: climate collapse, pollution, pandemics, droughts and crop failures, desperate mass migrations. We’ve gotten into this pickle thanks to the advanced technologies civilization has developed over thousands of years, enabling us to explode in numbers, burn fuels, and consume resources far in excess of what can be sustained. It’s not just human bodies that are burning and consuming too much, but cows, factories, jet engines, and crops— a multispecies, cyborg lichen whose reach has, for the moment, exceeded its grasp. Major changes will be needed. Our challenge is that while our technologies may be collective, our actions, our will, and the ways we identify are still not collective enough.
 
 
-[^1]: Edelman, *No Future: Queer Theory and the Death Drive*, 3.
+[^1]: Edelman, *No Future: Queer Theory and the Death Drive*, 3, 2004.
 
-[^2]: Kulu, “Why Do Fertility Levels Vary between Urban and Rural Areas?”; Ortiz-Ospina and Roser, “Marriages and Divorces”; Roser, “Fertility Rate.”
+[^2]: Kulu, “Why Do Fertility Levels Vary between Urban and Rural Areas?,” 2013; Ortiz-Ospina and Roser, “Marriages and Divorces,” 2020; Roser, “Fertility Rate,” 2014.
 
 [^3]: A 33 year old man from Kalamazoo, Michigan.

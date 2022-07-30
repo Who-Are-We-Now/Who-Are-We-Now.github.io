@@ -9,6 +9,8 @@ parser.add_argument('--input', type=str)
 parser.add_argument('--output', type=str)
 parser.add_argument('--chapter', type=float)
 parser.add_argument('--chapters_file', type=str)
+parser.add_argument('--figure_data_file', type=str, default="")
+parser.add_argument('--img_dir_path', type=str, default="")
 parser.add_argument('--book', type=bool, default=False)
 
 args = parser.parse_args()
@@ -19,6 +21,7 @@ f = open(args.input, 'r')
 # TODO: add file naming, with dates, etc. once it's added to the codebase
 o = open(args.output, 'w')
 
+# Load chapters.json file
 chs_f = open(args.chapters_file, 'r')
 chapters = json.load(chs_f)
 chapter_metadata = None
@@ -27,6 +30,13 @@ for entry in chapters:
     if float(entry['chapter']) == args.chapter:
         chapter_metadata = entry
         break
+
+img_dir = args.img_dir_path
+
+# Load figure data file (lookup data between shortname and image long-name)
+img_lookup_f = open(args.figure_data_file, 'r')
+# TODO: process this file (maybe write in separate python file)
+img_lookup = json.load(img_lookup_f)
 
 count = 0 
 
@@ -108,6 +118,47 @@ def skip_section(line):
     else:
         return Line(line, True)
 
+def process_image_tag(line):
+    line = line.text
+
+    re_shortcode = re.compile(r"\{% img '(.*)' \%\}")
+    re_defaulttag = re.compile(r"(\[\[|\b)(.+?\.(HEIC|svg|webp|png|jpg|jpeg))\b")
+    # Match image tag type
+    # IF shortcode
+    if (re_shortcode.search(line)):
+        m = re_shortcode.match(line)
+        shortname = m.group(1)
+        # Get to filename using lookup table
+        img_name = img_lookup[shortname]['file'][0]
+        if 'caption' in img_lookup[shortname]:
+            caption = img_lookup[shortname]['caption']
+        else:
+            caption = 'caption text'
+    # IF [[]] tag, 
+    elif (re_defaulttag.search(line)):
+        # Get file name from tag
+        m = re_defaulttag.match(line)
+        if m:
+            img_name = m.group(2)
+            caption = 'caption text'
+        else:
+            print('ERROR, CANNOT PARSE ', line)
+            return Line(line, True)
+        # TODO: handle case of multiple names
+    elif "{% endimg %}" in line:
+        # Skip line
+        return Line(line, False)
+    else:
+        # No match
+        return Line(line, True)
+    
+    #Assumes path src_dir/assets/shortname/img_name
+    img_name = '/'.join([img_dir, img_name])
+    # Update to .md format with file path 
+    line = '\n![{}]({})'.format(caption, img_name) + '{ width="4.5in" }\n'
+
+    return Line(line, True)
+
 
 # Returns true if the line needs to be printed
 def remove_ref_metadata(line):
@@ -173,7 +224,7 @@ for line in f.readlines():
     write &= line.write
 
     if args.book:
-        line = remove_web_tags(line)
+        line = process_image_tag(line)
         write &= line.write
 
 

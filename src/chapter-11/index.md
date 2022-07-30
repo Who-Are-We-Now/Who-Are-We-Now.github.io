@@ -12,7 +12,7 @@ Until very recently, every state in the US listed only “male” or “female�
 
 This is hard to square with the actual incidence of intersexuality in the population, which the survey suggests is well above 1%. This figure is consistent with the medical literature, though the range of percentages is very broad due to varying definitions, much as with ambidexterity. For comparison, the graph below also shows the number of people who answered “yes” to both or neither of “Do you have a vagina?” and “Do you have a penis?”; while there are a variety of potential reasons for *that* excluded middle (and it’s a population that doesn’t fully overlap the intersex population), it’s noteworthy that the curves look quite similar. In particular, they both rise from 0% at the youngest end of the age range, for reasons that will soon become clear.
 
-![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image7.png){width="6.5in" height="2.8333333333333335in"}
 
 There’s much more to intersexuality than ambiguous genitals, but they’re a good place to start, since for many thousands of years the “Boy or girl?” question has been answered within seconds, by visual inspection at birth. This is still how sex is determined for the overwhelming majority of babies, and that determination goes on to influence nearly every aspect of that child’s upbringing and place in the world.
 
@@ -56,11 +56,11 @@ So, does DNA always tell us whether someone is a man or a woman? Firstly, there 
 
 I found a curious short comment among the survey responses from a 61 year old man: “chromosomal mix, xx and xy. fusing of fraternal twin eggs.” This remarkable phenomenon is called *chimerism*, after the chimera of Greek mythology, an imaginary creature composed of the parts of other animals (traditionally, a lion’s head, a goat’s body, and a serpent’s tail). The survey respondent was originally a pair of twins in the womb, each a different egg fertilized by a different sperm cell, which fused early in development to form a single fetus. In such cases, there’s a 50% chance that the fused fraternal twins won’t be the same sex, as happened here. In adulthood, each of his body’s cells has a lineage tracing back to one or the other embryo, so genetically, his body is a mosaic of male and female cells! How those cells are distributed throughout the body depends on the timing and details of the fusion.
 
-![](media/image7.png){width="1.890625546806649in" height="1.9485017497812773in"}![](media/image3.png){width="2.0364588801399823in" height="2.0364588801399823in"}![](media/image6.png){width="2.182292213473316in" height="2.5692989938757655in"}
+![](media/image4.png){width="1.890625546806649in" height="1.9485017497812773in"}![](media/image6.png){width="2.0364588801399823in" height="2.0364588801399823in"}![](media/image5.png){width="2.182292213473316in" height="2.5692989938757655in"}
 
 Chimerism is possible for any multicellular organism, including plants. Many calico or tortoiseshell cats are chimeras. So-called gynandromorphs, half female and half male, are especially striking in animals that are more sharply *sexually dimorphic* than we are— that is, where the sexes differ dramatically in size or coloration, as with peacocks and pea hens, or certain butterflies.
 
-![](media/image5.png){width="3.153846237970254in" height="2.3969225721784775in"}![](media/image4.png){width="3.153846237970254in" height="2.362944006999125in"}
+![](media/image3.png){width="3.153846237970254in" height="2.3969225721784775in"}![](media/image2.png){width="3.153846237970254in" height="2.362944006999125in"}
 
 Like PMDS, chimerism in humans is considered very rare; there are only about a hundred documented cases.[^5] Singer-songwriter Taylor Muhl is one. She has taken selfies showing the striking change in coloration between the left and right sides of her abdomen, revealing the different genetic origins of those cells.
 

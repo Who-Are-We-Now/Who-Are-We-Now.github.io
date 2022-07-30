@@ -3,7 +3,8 @@
 # 1) a .md file with formatting for 11y called index_<file name>
 # 2) a .docx file with formatting for importing to in-design
 # Args:
-# $1 - input docx file name without '.docx' extension, like 'wawn00'
+# 1 - chapter shortname
+# 2 - chapter number
 
 mkdir tmp
 cd tmp
@@ -20,18 +21,18 @@ sed -e 's!\\\[\\@\([^}]*\)\\\]!\[@\1]!g;s@\\@@g;s/^###\ />\ /g' 0_${1}.md > 1_${
 
 src_dir='../../../src'
 book_dir='../../../book'
-scripts_dir='../../'
+scripts_dir='../..'
 
 mkdir -p ${src_dir}/${1}
 
 # ...OR without citation setting
-python ../../process_md.py --input 1_${1}.md --chapter ${2} --output ${src_dir}/${1}/index.md --chapters_file ${scripts_dir}/chapters.json
+python ../../process_md.py --input 1_${1}.md --chapter ${2} --output ${src_dir}/${1}/index.md --chapters_file ${scripts_dir}/chapters.json --figure_data_file ${scripts_dir}/figures.json --img_dir_path ${src_dir}/assets/${1}
 
 # generate .docx file
 # TODO -- need to test with properly formatted file
 
-python ../../process_md.py --input 1_${1}.md --chapter ${2} --output ${book_dir}/${1}.md --chapters_file ${scripts_dir}/chapters.json --book True
-pandoc --lua-filter=${scripts_dir}/stripmeta.lua -o ${book_dir}/${1}.docx --reference-doc=${scripts_dir}/custom-reference.docx ${book_dir}/${1}.md 
+python ../../process_md.py --input 1_${1}.md --chapter ${2} --output ${book_dir}/${1}.md --chapters_file ${scripts_dir}/chapters.json --book True --figure_data_file ${scripts_dir}/figures.json --img_dir_path ${scripts_dir}/imgs_tmp
+pandoc --reference-location=document --lua-filter=${scripts_dir}/stripmeta.lua -o ${book_dir}/${1}.docx --reference-doc=${scripts_dir}/custom-reference.docx ${book_dir}/${1}.md 
 rm ${book_dir}/${1}.md
 
 cd ..

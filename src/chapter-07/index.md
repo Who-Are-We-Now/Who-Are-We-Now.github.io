@@ -12,7 +12,7 @@ So what do the data tell us? Let’s begin with the basics.
 
 The 2015 U.S. Census estimated that only 3.8% of Americans are LGBT, but for a variety of reasons— likely including concerns about anonymity— this number falls well short of reality. The 2017 Gallup poll found that 4.5% of adult Americans identify as LGBT— 5.1% of women, and 3.9% of men. This “1 in 20” number has been widely cited, and is roughly comparable with the way older Americans respond in our survey. However, when we look across ages, we see a sharp decline in traditional heterosexual norms among the young. While nearly 95% of 65 year olds report being heterosexual, only 76% of 18 year olds do. This is an enormous change, and alarming to some: from 19 out of 20 at the older end to only 3 out of 4 young people!
 
-![](media/image5.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image7.png){width="6.5in" height="2.8333333333333335in"}
 
 This graph and others like it illustrate why it’s so important to break down statistics like these by age, and where possible, to use smaller age bins at the younger end of the scale, where the changes are often most rapid. Especially in highly developed countries like the U.S., the population is heavily skewed toward older people. Averages will thus be dominated by those older people, and won’t reveal how different the numbers are among the young. Yet arguably, the statistics of the young tell us more about the shape of the future.
 
@@ -34,7 +34,7 @@ Despite overwhelming heterosexual majorities among older people, the “heterono
 
 Some of them aren’t sexually attracted to either men or women; though these numbers are comparatively small, they aren’t negligible, amounting to about 3.5% among the young and gradually dropping to under 2% by age sixty.
 
-![](media/image7.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image2.png){width="6.5in" height="2.8333333333333335in"}
 
 While both the overall percentage and the difference between men and women shrink with age, it’s notable that at every age, more women than men report a lack of sexual attraction to anyone. We see a similar pattern when we ask about asexuality, meaning a low or absent sex drive.
 
@@ -64,13 +64,13 @@ Like any other identity, asexuality is defined socially, based on the labels and
 
 Interestingly, some young respondents identify as both asexual *and* as bi- or pansexual.[^2] This can be confusing to those of us who think of sexuality in terms of a simple knob, with “gay” at one end, “straight” at the other end, and “bi or pan” somewhere in the middle. In the 1940s, pioneering sexologist Alfred Kinsey and his collaborators came up with just this model, which came to be known as the Kinsey Scale. To this day, it’s often invoked as a counterargument to the idea of attraction being binary, either strictly homosexual or heterosexual (“I’m around kinsey 4 lol,” wrote a 20 year old from Poquoson, Virginia). The Kinsey Scale may be the archetypal “spectrum.”
 
-![](media/image6.jpg){width="4.5969389763779525in" height="4.3317311898512685in"}
+![](media/image5.jpg){width="4.5969389763779525in" height="4.3317311898512685in"}
 
 Although more nuanced than a simple dichotomy, there are many ways in which this model falls short, especially in presuming that everybody can be assigned a number on a one-dimensional scale. Even when gathering their data, Kinsey and collaborators found that they had to define a special off-scale category that they simply called “X”— which today we’d associate with asexuality. The need for this “X” category illustrates a problem with thinking about orientation one-dimensionally: being less attracted to the same sex doesn’t automatically make you more attracted to the opposite sex, or vice versa.
 
 A two-dimensional sexual attraction scale accounts for asexuality more naturally, and doesn’t presume a tradeoff between same-sex and opposite-sex attraction:[^3]
 
-![](media/image2.jpg){width="3.2292989938757657in" height="2.4375in"}
+![](media/image8.jpg){width="3.2292989938757657in" height="2.4375in"}
 
 This two-dimensional model, like any model, is still incomplete (for instance, it presumes that same and opposite sexes can be clearly defined, which as we’ll explore further in Chapters 8-9, isn’t always the case), but at least it allows us to place an asexual “X” on the map— somewhere near the lower left— rather than awkwardly off it. It also reveals the way asexuality and bisexuality can themselves be regarded as a continuum, ranging from the lower left to the upper right. Describing his position near the asexual end of this continuum, a 39 year old from Moorhead, Minnesota wrote,
 
@@ -92,7 +92,7 @@ The frequency with which women, especially, express these feelings when asked an
 
 In addition to sexual attraction, the survey also asks questions about romantic attraction. Although they’re often in alignment, sexual and romantic attraction work differently for some people. The breakdown of romantic attraction by age and gender certainly looks very different from sexual attraction.
 
-![](media/image8.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image6.png){width="6.5in" height="2.8333333333333335in"}
 
 As with lack of sexual attraction, the numbers converge to roughly 2% for older respondents, but in this case, at younger ages a lack of romantic interest is far more prevalent among men— rising above 10% for the youngest men. Men appear to become more interested in romance as they get older, while women become less so.
 

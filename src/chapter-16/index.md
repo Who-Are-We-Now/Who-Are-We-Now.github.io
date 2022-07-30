@@ -51,7 +51,7 @@ In more recent memory, the US has often been thought of as suburban, typified by
 
 The reality, though, becomes clearer when we look at data from the Census Bureau. The Census tells us how many people live in every ZIP code, and also gives us ZIP code maps. Technically, these are maps of “ZIP Code Tabulation Areas” (ZCTAs), since ZIP codes were originally defined for delivering mail, and until the year 2000 didn’t correspond to areas on the map with precisely defined borders. ZCTAs let us calculate the ground area of every ZIP code, which in turn lets us make a detailed map of population density. By coloring in the ZIP code areas from densest to sparsest, stopping when we’ve covered 62.7% of the population, we can get a sense of the country’s urban character.
 
-![](media/image1.png){width="4.875801618547682in" height="2.8137029746281716in"}
+![](media/image15.png){width="4.875801618547682in" height="2.8137029746281716in"}
 
 This cutoff is arbitrary, but for now, let’s think of the colored-in ZIP codes as “urban”, and the others as “rural”. (White areas, mostly representing mountainous and wild terrain where there are no mail delivery routes, have— at least officially— no permanent population.) The result looks a lot like NASA’s satellite-imaged “night map”, since terrestrial light sources and cities generally coincide.
 
@@ -71,13 +71,13 @@ It’s exactly these technologies and services that have not only allowed cities
 
 Keeping this in mind, it may come as less of a surprise that the US, with its advanced economy and relatively recent colonial reformatting, is *especially* urbanized relative to the rest of the world. In fact, there’s a strong argument to be made that this is the very reason the US has been the world’s leading economy over the past century or so— not some uniquely American character trait, but rather, the country’s urban density and overall scale. Achieving such scale and density was in turn a product of the particular timing and manner of American colonization by a people who had just invented the key enabling technologies for urbanization.
 
-![](media/image8.png){width="6.5in" height="3.0in"}
+![](media/image13.png){width="6.5in" height="3.0in"}
 
 The trends over time tell this story clearly. In 1800, around 10% of Europeans lived in cities, and in the United States, about half as many. Farming efficiency only needed to be marginally above subsistence level to support these small urban populations. Then, the technologies of the Industrial Revolution, first invented in the UK and Europe, began to take root in the US, relatively unimpeded by existing traditions and fueled by plentiful space and natural resources. Machinery and agricultural engineering greatly scaled up farming efficiency. This drove urbanization so quickly that by 1860, the US and Europe had both risen to 20% urban, with the US surpassing and remaining on a steeper slope than the rest of the world over the next century— until, in effect, the countryside was starting to run out of people who *could* fuel this great migration into cities. By 1920, half of Americans lived in cities; in the 1960s, two out of three; and by the 2000s, four out of five.
 
 West of the Mississippi, we can see the way later settlement, which could take advantage of more advanced technologies from the start, resulted in especially sparse rural populations, with the vast majority of people settling into a handful of dense urban pockets. East of the Mississippi, earlier settlement resulted in a more typically European pattern, full of small and mid-sized towns, but even there (with the exception of a dense corridor from Washington, DC to New York) most of the land is quite sparsely populated— and becoming more so every year.
 
-![](media/image5.png){width="6.5in" height="2.9444444444444446in"}
+![](media/image17.png){width="6.5in" height="2.9444444444444446in"}
 
 A graph showing the relationship between cumulative population and cumulative land area gives a more complete sense of today’s population distribution. The horizontal dotted red line is 62.7% of the US population, or just shy of 200 million people. The vertical red line shows how much land those ZIP codes occupy— just 3.23% of the total area of the US. The 100 million people living in the densest ZIP codes occupy only 0.63% of the total area! This also illustrates an effect that, while obvious, is worth calling out: that the growth of cities, driven as it is by migration from the countryside, both implies and creates vast, sparsely inhabited hinterlands.
 
@@ -85,7 +85,7 @@ A graph showing the relationship between cumulative population and cumulative la
 
 On the survey, I asked respondents for their ZIP code, so that it would be possible to break down their answers not only by age, but also by population density. In addition, the surveys included the seemingly redundant questions, “Do you live in the city?”, “Do you live in the suburbs?”, and “Do you live in the countryside?”. This offers us a chance to compare a real physical quantity— population density based on ZIP code, which varies continuously— with the subjective labels people use in describing themselves, as city, suburb, or countryside dwellers.
 
-![](media/image6.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image11.png){width="6.5in" height="2.8333333333333335in"}
 
 The horizontal axis shows ZIP code density, measured in square meters per person. Because this quantity varies over such a wide range (from only about 10 square meters per person in dense cities, where people might be living literally on top of each other in high-rise apartment buildings) to more than 100,000 square meters per person (think Montana), we need to use a logarithmic axis, meaning the evenly spaced tick marks are 100, 1,000, 10,000 rather than 100, 200, 300. The vertical axis shows, at each density, what percentage of people answer “yes” to the questions “Do you live in the city?”, “Do you live in the suburbs?”, and “Do you live in the countryside?”.
 
@@ -105,13 +105,13 @@ By this point in the book, these will all sound like very familiar themes. As wi
 
 We can do a fun experiment with the data to show how the definitions of words like “city” and “countryside” vary socially. Recall that the coasts of the continental US are particularly dense. If we segregate the ZIP codes by longitude, we can explore how “city” is defined differently for people on the coasts, as opposed to the interior. Let’s arbitrarily define the “Central USA” as ZIP codes that lie between 90°W and 115°W, and “Coastal USA” as ZIP codes lying outside this band. (Those lines of longitude are marked on the map.)
 
-![](media/image9.png){width="5.545672572178478in" height="2.4583333333333335in"}
+![](media/image12.png){width="5.545672572178478in" height="2.4583333333333335in"}
 
 On the coasts, the density of people has to be a good deal higher, on average, for people to consider themselves to be living in a city! If we slide one curve over to match the other, we find that the difference amounts to more than a threefold change in density. That is, on the coasts, the land area per person has to be one third of what it would have to be in the central US before an “average” person would consider themselves to be a city dweller. The same pattern holds for suburbs, and for the countryside, though for suburbs it’s a bit less dramatic.
 
-![](media/image15.png){width="5.520833333333333in" height="2.677884951881015in"}
+![](media/image2.png){width="5.520833333333333in" height="2.677884951881015in"}
 
-![](media/image2.png){width="5.521634951881015in" height="2.4895833333333335in"}
+![](media/image18.png){width="5.521634951881015in" height="2.4895833333333335in"}
 
 * * *
 
@@ -121,17 +121,17 @@ If even the definitions of “city” and “countryside” aren’t consistent 
 
 In the following graphs we’ll break responses down into those of “city people”, whom we define as those who both say that they live in the city and are in ZIP codes corresponding to the densest 62.7% of the American population, and “country people”, who both say they live in the country and are in ZIP codes corresponding to the sparsest 37.3%. This is necessarily arbitrary and noisy around the edges, and excludes some respondents, but it does a reasonable job of qualitatively illustrating some of the differences between urban and rural populations.
 
-![](media/image18.png){width="6.318745625546807in" height="2.838542213473316in"}
+![](media/image3.png){width="6.318745625546807in" height="2.838542213473316in"}
 
 First: there are fewer queer people in the countryside than in the city. This gap is insignificant for young people, among whom over 15% consider themselves queer regardless of where they live; but by age 65, nearly threefold more city-dwellers identify as queer: one in twenty in the city, and one in fifty in the country.
 
 This is partly explained by the fact that there are more heteronormatively attracted people in the countryside (as we’ve defined it before— women sexually and romantically attracted exclusively to men, and vice versa).
 
-![](media/image14.png){width="6.303622047244095in" height="2.8593755468066493in"}
+![](media/image8.png){width="6.303622047244095in" height="2.8593755468066493in"}
 
 Once again, young people are similar, but there’s a divergence with age. There’s more to the story, though. The *definition* of queerness also varies between these populations in interesting ways. We can see how, in the countryside, a large majority of older gay and lesbian people— perhaps 90%— consider themselves queer, while this is true of less than half of urban 70 year old gay and lesbian people. This gap illustrates the way older people in the countryside tend to use terms like “queer” in a way that’s more consistent with its historical connotation— which, remember, was not simply “different”, but specifically gay or lesbian. Hence, both self-reported attraction *and* the use of identity language are more traditional in the countryside, especially among older people.
 
-![](media/image11.png){width="6.014422572178478in" height="2.7110465879265093in"}
+![](media/image14.png){width="6.014422572178478in" height="2.7110465879265093in"}
 
 It would be exhausting to reproduce all of the plots in Part II in their city/countryside versions, so we’ll confine ourselves to a few highlights to illustrate these general patterns:
 
@@ -143,7 +143,7 @@ It would be exhausting to reproduce all of the plots in Part II in their city/co
 
 Non-monogamy and polyamory are far more common in the city, once again showing more modest differences for young people but an increasing divergence with age.
 
-![](media/image12.png){width="5.982381889763779in" height="2.691505905511811in"}
+![](media/image1.png){width="5.982381889763779in" height="2.691505905511811in"}
 
 ![](media/image7.png){width="5.96988845144357in" height="2.7323720472440947in"}
 
@@ -151,23 +151,23 @@ Non-monogamy looks similar for city and countryside dwellers in their 20s, but i
 
 Similar patterns are in evidence when we look at the lesbian, gay, and bi populations. As with the other trends, this is probably owes to several effects: first, young people live online more, which does a lot to erase the geographic distinctions between city and countryside; but also, young people are likelier to still live where they were born. As we get older, we often move, especially in the US. This results in a geographic sorting of the population, an effect we’ll return to. Finally, insofar as people have some degree of flexibility with respect to their gender or sexuality (or any other aspect of their behavior and identity), they’ll be biased based on their environment. Social contagion is just as likely to suppress a latent minority orientation or identity in the countryside as to amplify it in the city.
 
-![](media/image3.png){width="6.358172572178478in" height="2.836538713910761in"}
+![](media/image4.png){width="6.358172572178478in" height="2.836538713910761in"}
 
-![](media/image13.png){width="5.9164709098862645in" height="2.7131408573928257in"}
+![](media/image10.png){width="5.9164709098862645in" height="2.7131408573928257in"}
 
 It’s hard to overstate the divergent results of these effects on people’s mental models of what is “normal”. We see 10% of young people identifying as “Homosexual, gay or lesbian”, but among older people in the countryside, the number drops below 2%; for the earliest data from 2018, it’s closer to 1%. A property shared by one in ten people feels very different, psychologically, from one you believe to hold for only one in a hundred.
 
-![](media/image10.png){width="6.078826552930884in" height="2.765224190726159in"}
+![](media/image6.png){width="6.078826552930884in" height="2.765224190726159in"}
 
 Unlike the usual trend toward greater frequency of minorities among the young, we saw an unusual, U-shaped pattern for non-binary identity in Chapter 10. Exploring its origin led us into an investigation of intersexuality and the recent reversal in intersex medical protocols. Breaking the non-binary curve down by urban vs. rural populations adds some color to this story.
 
-![](media/image16.png){width="6.221989282589676in" height="2.847755905511811in"}
+![](media/image5.png){width="6.221989282589676in" height="2.847755905511811in"}
 
 As we’d expect, there are more non-binary people in the city than in the countryside— at *almost* all ages. Among the older cohort in the countryside, however, we see an even sharper upward turn than in the city; although the error bars are large, it looks like more 70+ year olds in the countryside identify as non-binary than city-dwellers, perhaps over 8%! Recall that the likely reason for this rise is the large number of intersex people who used to be arbitrarily assigned male at birth. Looking at intersex statistics may then help clarify what’s going on.
 
-![](media/image17.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image9.png){width="6.5in" height="2.8333333333333335in"}
 
-![](media/image4.png){width="6.5in" height="2.8333333333333335in"}
+![](media/image16.png){width="6.5in" height="2.8333333333333335in"}
 
 Although, once again, the error bars are large, what we see here is consistent with the broader idea that changes in culture and practices begin in the city, and propagate over time to the countryside. The first thing to notice is that knowledge of one’s own intersexuality is much more prevalent in the city than in the countryside, over all ages and regardless of sex assigned at birth. We can assume that the actual rate of intersexuality isn’t different, but the rate of diagnosis probably is. As the physician and sexologist David Oliver Cauldwell wrote back in 1948,[^10]
 
